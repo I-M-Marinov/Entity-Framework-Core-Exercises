@@ -1,301 +1,275 @@
-﻿using System.Collections;
+﻿namespace MiniORM;
+
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Common;
 using System.Reflection;
-using System.Reflection.Metadata;
-using System.Security.Cryptography;
-using System.Transactions;
 
-namespace MiniORM
+public abstract class DbContext
 {
-    public class DbContext
+    private readonly DatabaseConnection _connection;
+    private readonly IDictionary<Type, PropertyInfo> _dbSetProperties;
+    private readonly IDictionary<Type, DbSetDescriptor> _dbSetDescriptors;
+
+    protected DbContext(string connectionString)
     {
-        private readonly DatabaseConnection _connection;
-        private readonly Dictionary<Type, PropertyInfo> _dbSetProperties;
+        this._connection = new DatabaseConnection(connectionString);
 
-        internal static List<Type> AllowedSqlTypes { get; } =
-            new List<Type>()
-            {
-                typeof(string),
-                typeof(int),
-                typeof(uint),
-                typeof(long),
-                typeof(decimal),
-                typeof(bool),
-                typeof(DateTime)
-            };
+        this._dbSetProperties = this.DiscoverDbSets();
 
-        protected DbContext(string connectionString)
+        using (new ConnectionManager(this._connection))
+            this.InitializeDbSets();
+
+        this._dbSetDescriptors = this.DescribeDbSets();
+        MapAllRelations();
+    }
+
+    internal static HashSet<Type> AllowedSqlTypes { get; } = new HashSet<Type> { typeof(string), typeof(int), typeof(uint), typeof(long), typeof(ulong), typeof(decimal), typeof(bool), typeof(DateTime) };
+
+    public void SaveChanges()
+    {
+        foreach (var dbSetDescriptor in this._dbSetDescriptors.Values)
         {
-            _connection = new DatabaseConnection(connectionString);
-            _dbSetProperties = DiscoverDbSets();
-
-            using (new ConnectionManager(_connection))
-            {
-                InitializeDbSets();
-            }
-
-            MapAllRelations();
+            var invalidEntitiesCount = dbSetDescriptor.DbSet.Count(e => !IsValid(e));
+            if (invalidEntitiesCount > 0)
+                throw new InvalidOperationException($"{invalidEntitiesCount} invalid entities were found in DbSet {dbSetDescriptor.Name}.");
         }
 
-        public void SaveChanges()
+        using var connectionManager = new ConnectionManager(this._connection);
+        using var transaction = this._connection.StartTransaction();
+
+        foreach (var dbSetDescriptor in this._dbSetDescriptors.Values)
         {
-            var dbSets = _dbSetProperties.Select(pi => pi.Value.GetValue(this)).ToArray();
+            var persistMethod = typeof(DbContext).GetMethod(nameof(Persist), BindingFlags.Instance | BindingFlags.NonPublic)!.MakeGenericMethod(dbSetDescriptor.EntityType);
 
-            foreach (IEnumerable<object> dbSet in dbSets)
+            try
             {
-                var invalidEntities = dbSet.Where(entity => !IsObjectValid(entity)).ToArray();
-
-                if (invalidEntities.Any())
+                try
                 {
-                    throw new InvalidOperationException(
-                        $"{invalidEntities.Length} Invalid Entities Found in {dbSet.GetType().Name}");
+                    persistMethod.Invoke(this, new object?[] { dbSetDescriptor.DbSet });
                 }
-
-            }
-
-            using (new ConnectionManager(_connection))
-            {
-                using (var transaction = _connection.StartTransaction())
+                catch (TargetInvocationException e) when (e.InnerException is not null)
                 {
-                    foreach (IEnumerable dbSet in dbSets)
-                    {
-                        var persistMethod = typeof(DbContext)
-                            .GetMethod("Persist", BindingFlags.NonPublic | BindingFlags.Instance)!
-                            .MakeGenericMethod(dbSet.GetType());
-
-                        try
-                        {
-                            try
-                            {
-                                persistMethod.Invoke(this, new object[] { dbSet });
-                            }
-                            catch (TargetInvocationException e) when (e.InnerException != null)
-                            {
-                                throw e.InnerException;
-                            }
-                        }
-                        catch
-                        {
-                            Console.WriteLine("Rollback !!!");
-                            transaction.Rollback();
-                            throw;
-                        }
-                    }
-                    transaction.Commit();
+                    throw e.InnerException;
                 }
             }
+            catch
+            {
+                transaction.Rollback();
+                throw;
+            }
         }
 
-        private void Persist<TEntity>(DbSet<TEntity> dbSet)
-            where TEntity : class, new()
+        transaction.Commit();
+    }
+
+    private void Persist<T>(DbSet<T> dbSet)
+        where T : class, new()
+    {
+        var entityType = typeof(T);
+        var tableName = GetTableName(entityType);
+        var columnNames = GetColumnNames(tableName).ToArray();
+
+        if (dbSet.ChangeTracker.Added.Count > 0)
+            this._connection.InsertEntities(dbSet.ChangeTracker.Added, tableName, columnNames);
+
+        var modifiedEntities = dbSet.ChangeTracker.GetModifiedEntities(dbSet).ToArray();
+        if (modifiedEntities.Length > 0)
+            this._connection.UpdateEntities(modifiedEntities, tableName, columnNames);
+
+        if (dbSet.ChangeTracker.Removed.Count > 0)
+            this._connection.DeleteEntities(dbSet.ChangeTracker.Removed, tableName, columnNames);
+    }
+
+    private static bool IsValid(object entity)
+    {
+        var validationContext = new ValidationContext(entity);
+        return Validator.TryValidateObject(entity, validationContext, null);
+    }
+
+    private IDictionary<Type, PropertyInfo> DiscoverDbSets()
+    {
+        var dbSetProperties = this.GetType().GetProperties().Where(pi => pi.PropertyType.IsGenericType && pi.PropertyType.GetGenericTypeDefinition() == typeof(DbSet<>));
+
+        var result = new Dictionary<Type, PropertyInfo>();
+        foreach (var property in dbSetProperties)
         {
-            var tableName = GetTableName(typeof(TEntity));
-
-            var columns = _connection.FetchColumnNames(tableName).ToArray();
-
-            if (dbSet.ChangeTracker.Added.Any())
-            {
-                _connection.InsertEntities(dbSet.ChangeTracker.Added, tableName, columns);
-            }
-
-            var modifiedEntities = dbSet.ChangeTracker.GetModifiedEntities(dbSet).ToArray();
-            if (modifiedEntities.Any())
-            {
-                _connection.UpdateEntities(modifiedEntities, tableName, columns);
-            }
-
-            if (dbSet.ChangeTracker.Removed.Any())
-            {
-                _connection.DeleteEntities(dbSet.ChangeTracker.Removed, tableName, columns);
-            }
+            var entityType = property.PropertyType.GenericTypeArguments[0];
+            result[entityType] = property;
         }
 
-        private void InitializeDbSets()
+        return result;
+    }
+
+    private IDictionary<Type, DbSetDescriptor> DescribeDbSets()
+    {
+        var result = new Dictionary<Type, DbSetDescriptor>();
+        foreach (var (entityType, dbSetProperty) in this._dbSetProperties)
         {
-            foreach (var dbSet in _dbSetProperties)
-            {
-                var dbSetType = dbSet.Key;
-                var dbSetProperty = dbSet.Value;
+            var name = dbSetProperty.Name;
 
-                var populateDbSetGeneric = typeof(DbContext)
-                    .GetMethod("PopulateDbSet", BindingFlags.Instance | BindingFlags.NonPublic)
-                    .MakeGenericMethod(dbSetType);
+            var dbSet = dbSetProperty.GetValue(this);
+            if (dbSet is not IEnumerable<object> typedDbSet)
+                throw new InvalidOperationException($"DbSet {name} was not initialized correctly.");
 
-                populateDbSetGeneric.Invoke(this, new object[] { dbSetProperty });
-            }
+            var descriptor = new DbSetDescriptor(entityType, name, typedDbSet);
+            result[entityType] = descriptor;
         }
 
-        private void PopulateDbSet<TEntity>(PropertyInfo dbSet)
+        return result;
+    }
+
+    private void InitializeDbSets()
+    {
+        foreach (var (entityType, dbSetProperty) in this._dbSetProperties)
+        {
+            var populateMethod = typeof(DbContext).GetMethod(nameof(PopulateDbSet), BindingFlags.Instance | BindingFlags.NonPublic)!.MakeGenericMethod(entityType);
+
+            populateMethod.Invoke(this, new object?[] { dbSetProperty });
+        }
+    }
+
+    private void MapAllRelations()
+    {
+        foreach (var dbSetDescriptor in this._dbSetDescriptors.Values)
+        {
+            var mapRelationsMethod = typeof(DbContext).GetMethod(nameof(MapRelations), BindingFlags.Instance | BindingFlags.NonPublic)!.MakeGenericMethod(dbSetDescriptor.EntityType);
+
+            mapRelationsMethod.Invoke(this, new object?[] { dbSetDescriptor.DbSet });
+        }
+    }
+
+    private void PopulateDbSet<T>(PropertyInfo dbSetProperty)
+        where T : class, new()
+    {
+        var entities = LoadEntities<T>();
+        var dbSet = new DbSet<T>(entities);
+        ReflectionHelper.ReplaceBackingField(this, dbSetProperty.Name, dbSet);
+    }
+
+    private void MapRelations<T>(DbSet<T> dbSet)
+        where T : class, new()
+    {
+        MapNavigationProperties(dbSet);
+
+        var entityType = typeof(T);
+        var collectionProperties = entityType.GetProperties().Where(pi => pi.PropertyType.IsGenericType && pi.PropertyType.GetGenericTypeDefinition() == typeof(ICollection<>));
+        foreach (var property in collectionProperties)
+        {
+            var relatedEntityType = property.PropertyType.GenericTypeArguments[0];
+            var mapCollectionMethod = typeof(DbContext).GetMethod(nameof(MapCollection), BindingFlags.Instance | BindingFlags.NonPublic)!
+                .MakeGenericMethod(entityType, relatedEntityType);
+
+            mapCollectionMethod.Invoke(this, new object?[] { dbSet, property });
+        }
+    }
+
+    private void MapNavigationProperties<T>(DbSet<T> dbSet)
+        where T : class, new()
+    {
+        var entityType = typeof(T);
+        foreach (var foreignKeyProperty in entityType.GetProperties())
+        {
+            var foreignKeyAttribute = foreignKeyProperty.GetCustomAttribute<ForeignKeyAttribute>();
+            if (foreignKeyAttribute is null) continue;
+
+            var navigationPropertyName = foreignKeyAttribute.Name;
+            var navigationProperty = entityType.GetProperty(navigationPropertyName);
+            if (navigationProperty is null)
+                throw new InvalidOperationException($"Navigation property with name {navigationPropertyName} was not found");
+
+            var relatedEntityType = navigationProperty.PropertyType;
+            var relatedEntityKey = relatedEntityType.GetSingleKeyProperty();
+            var relatedDbSet = this._dbSetDescriptors[relatedEntityType].DbSet;
+
+            foreach (var entity in dbSet.Entities)
+            {
+                var foreignKey = foreignKeyProperty.GetValue(entity);
+                var relatedEntity = relatedDbSet
+                    .Single(re => Equals(relatedEntityKey.GetValue(re), foreignKey));
+
+                navigationProperty.SetValue(entity, relatedEntity);
+            }
+        }
+    }
+
+    private void MapCollection<TEntity, TRelated>(DbSet<TEntity> dbSet, PropertyInfo collectionProperty)
         where TEntity : class, new()
-        {
-            var entities = LoadTableEntities<TEntity>();
-            var dbSetInstance = new DbSet<TEntity>(entities);
+        where TRelated : class, new()
+    {
+        var entityType = typeof(TEntity);
+        var relatedEntityType = typeof(TRelated);
 
-            ReflectionHelper.ReplaceBackingField(this, dbSet.Name, dbSetInstance);
+        var primaryKeyProperty = entityType.GetSingleKeyProperty();
+        var relatedDbSet = this._dbSetDescriptors[relatedEntityType].DbSet;
+
+        var foreignKeyProperty = GetSingleForeignKeyProperty(relatedEntityType.GetProperties(), entityType);
+        if (foreignKeyProperty is null) return;
+
+        foreach (var entity in dbSet.Entities)
+        {
+            var primaryKey = primaryKeyProperty.GetValue(entity);
+
+            var relatedEntities = relatedDbSet.Where(re => Equals(foreignKeyProperty.GetValue(re), primaryKey)).Cast<TRelated>().ToArray();
+
+            collectionProperty.SetValue(entity, relatedEntities);
+            // ReflectionHelper.ReplaceBackingField(entity, collectionProperty.Name, relatedEntities);
+        }
+    }
+
+    private static PropertyInfo? GetSingleForeignKeyProperty(PropertyInfo[] properties, Type navigationType)
+    {
+        foreach (var property in properties)
+        {
+            var foreignKeyAttribute = property.GetCustomAttribute<ForeignKeyAttribute>();
+            if (foreignKeyAttribute is null) continue;
+
+            var navigationPropertyName = foreignKeyAttribute.Name;
+            var navigationProperty = property.DeclaringType!.GetProperty(navigationPropertyName);
+            if (navigationProperty is null)
+                throw new InvalidOperationException($"Navigation property with name {navigationPropertyName} was not found");
+
+            if (navigationProperty.PropertyType == navigationType) return property;
         }
 
-        private void MapAllRelations()
-        {
-            foreach (var dbSetProperty in _dbSetProperties)
-            {
-                var dbSetType = dbSetProperty.Key;
-                var mapRelationsGeneric = typeof(DbContext)
-                    .GetMethod("MapRelations", BindingFlags.Instance | BindingFlags.NonPublic)
-                    .MakeGenericMethod(dbSetType);
+        return null;
+    }
 
-                var dbSet = dbSetProperty.Value.GetValue(this);
-                mapRelationsGeneric.Invoke(this, new[] { dbSet });
-            }
+    private IEnumerable<T> LoadEntities<T>()
+        where T : class, new()
+    {
+        var entityType = typeof(T);
+
+        var tableName = this.GetTableName(entityType);
+        var columnNames = this.GetColumnNames(tableName).ToArray();
+
+        return this._connection.FetchResultSet<T>(tableName, columnNames);
+    }
+
+    private string GetTableName(Type entityType)
+    {
+        var tableAttribute = entityType.GetCustomAttribute<TableAttribute>();
+        if (tableAttribute is not null) return tableAttribute.Name;
+
+        var dbSetProperty = this._dbSetProperties[entityType];
+        return dbSetProperty.Name;
+    }
+
+    private IEnumerable<string> GetColumnNames(string tableName)
+    {
+        return this._connection.FetchColumnNames(tableName);
+    }
+
+    private class DbSetDescriptor
+    {
+        public DbSetDescriptor(Type entityType, string name, IEnumerable<object> dbSet)
+        {
+            this.EntityType = entityType;
+            this.Name = name;
+            this.DbSet = dbSet;
         }
 
-        private void MapRelations<TEntity>(DbSet<TEntity> dbSet)
-            where TEntity : class, new()
-        {
-            var entityType = typeof(TEntity);
-            MapNavigationProperties(dbSet);
-            var collections = entityType.GetProperties().Where(pi =>
-                    pi.PropertyType.IsGenericType &&
-                    pi.PropertyType.GetGenericTypeDefinition() == typeof(ICollection<>))
-                .ToArray();
-
-            foreach (var collection in collections)
-            {
-                var collectionType = collection.PropertyType.GenericTypeArguments.First();
-
-                var mapCollectionMethod = typeof(DbContext)
-                    .GetMethod("MapCollection", BindingFlags.Instance | BindingFlags.NonPublic)
-                    .MakeGenericMethod(entityType, collectionType);
-
-                mapCollectionMethod.Invoke(this, new object[] { dbSet, collection });
-            }
-        }
-
-        private void MapCollection<TDbSet, TCollention>(DbSet<TDbSet> dbSet, PropertyInfo collectionProperty)
-            where TDbSet : class, new()
-            where TCollention : class, new()
-        {
-
-            var entityType = typeof(TDbSet);
-            var collectionType = typeof(TCollention);
-
-            var primaryKeys = collectionType.GetProperties()
-                .Where(pi => pi.HasAttribute<KeyAttribute>())
-                .ToArray();
-
-            var primaryKey = primaryKeys.First();
-            var foreignKey = entityType.GetProperties()
-                .First(pi => pi.HasAttribute<KeyAttribute>());
-
-            var isManyToMany = primaryKeys.Length >= 2;
-            if (isManyToMany)
-            {
-                primaryKey = collectionType.GetProperties()
-                    .First(pi => collectionType
-                        .GetProperty(pi.GetCustomAttribute<ForeignKeyAttribute>().Name).PropertyType == entityType);
-            }
-
-            var navigationDbSet = (DbSet<TCollention>)_dbSetProperties[collectionType].GetValue(this);
-
-            foreach (var entity in dbSet)
-            {
-                var primaryKeyValue = foreignKey.GetValue(entity);
-                var navigationEntities = navigationDbSet
-                    .Where(navigationEntity =>
-                        primaryKey.GetValue(navigationEntity).Equals(primaryKeyValue)).ToArray();
-
-                ReflectionHelper.ReplaceBackingField(entity, collectionProperty.Name, navigationEntities);
-            }
-        }
-
-        private void MapNavigationProperties<TEntity>(DbSet<TEntity> dbSet)
-            where TEntity : class, new()
-        {
-            var entityType = typeof(TEntity);
-
-            var foreignKeys = entityType.GetProperties()
-                .Where(pi => pi.HasAttribute<ForeignKeyAttribute>())
-                .ToArray();
-
-            foreach (var foreignKey in foreignKeys)
-            {
-                var navigationPropertyName = foreignKey.GetCustomAttribute<ForeignKeyAttribute>().Name;
-
-                var navigationProperty = entityType.GetProperty(navigationPropertyName);
-
-                var navigationDbSet = _dbSetProperties[navigationProperty.PropertyType].GetValue(this);
-
-                var navigationPrimaryKey = navigationProperty.PropertyType.GetProperties()
-                    .First(pi => pi.HasAttribute<KeyAttribute>());
-
-                foreach (var entity in dbSet)
-                {
-                    var foreignKeyValue = foreignKey.GetValue(entity);
-
-                    var navigationPropertyValue = ((IEnumerable<object>)navigationDbSet)
-                        .First(currentNavigationProperty =>
-                            navigationPrimaryKey.GetValue(currentNavigationProperty).Equals(foreignKeyValue));
-
-                    navigationProperty.SetValue(entity, navigationPropertyValue);
-                }
-            }
-        }
-
-        private static bool IsObjectValid(object e)
-        {
-            var validationContext = new ValidationContext(e);
-            var validationErrors = new List<ValidationResult>();
-            var validationResult = Validator.TryValidateObject(e, validationContext, validationErrors, true);
-
-            return validationResult;
-        }
-
-        private IEnumerable<TEntity> LoadTableEntities<TEntity>()
-            where TEntity : class, new()
-        {
-            var table = typeof(TEntity);
-            var columns = GetEntityColumnNames(table);
-            var tableName = GetTableName(table);
-            var fetchedRows = _connection.FetchResultSet<TEntity>(tableName, columns).ToArray();
-
-            return fetchedRows;
-        }
-
-        private string GetTableName(Type tableType)
-        {
-            var tableAttribute = tableType.GetCustomAttribute<TableAttribute>();
-
-            if (tableAttribute is not null)
-            {
-                return tableAttribute.Name;
-            }
-
-            var dbSetProperty = this._dbSetProperties[tableType];
-
-            return dbSetProperty.Name;
-        }
-
-        private Dictionary<Type, PropertyInfo> DiscoverDbSets()
-        {
-            var dbSets = GetType().GetProperties()
-                .Where(pi => pi.PropertyType.GetGenericTypeDefinition() == typeof(DbSet<>))
-                .ToDictionary(pi => pi.PropertyType.GetGenericArguments().First(), pi => pi);
-
-            return dbSets;
-        }
-
-        private string[] GetEntityColumnNames(Type table)
-        {
-            var tableName = GetTableName(table);
-            var dbColumns = _connection.FetchColumnNames(tableName);
-
-            var columns = table.GetProperties()
-                .Where(pi => dbColumns.Contains(pi.Name) && !pi.HasAttribute<NotMappedAttribute>() && AllowedSqlTypes.Contains(pi.PropertyType))
-                .Select(pi => pi.Name)
-                .ToArray();
-
-            return columns;
-        }
+        public Type EntityType { get; }
+        public string Name { get; }
+        public IEnumerable<object> DbSet { get; }
     }
 }

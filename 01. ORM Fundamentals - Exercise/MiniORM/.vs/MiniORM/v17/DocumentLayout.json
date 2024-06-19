@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|solutionrelative:miniorm-app\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|solutionrelative:miniorm-app\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|solutionrelative:miniorm-app\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|solutionrelative:miniorm-app\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\changetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\changetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +15,40 @@
       "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\dbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\dbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\softunidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM.App.csproj|solutionrelative:miniorm-app\\softunidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\connectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\reflectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\reflectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D37D0A84-4ACC-460A-84F5-C701F1AAD200}|MiniORM-App\\MiniORM-App.csproj|solutionrelative:miniorm-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|d:\\lcfr\\developer\\entity framework core exercises\\01. orm fundamentals - exercise\\miniorm\\miniorm\\changetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4E30F1-AEEA-446B-8A14-4E619B2923CD}|MiniORM\\MiniORM.csproj|solutionrelative:miniorm\\changetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,95 +58,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Project.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Project.cs",
-              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Project.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Project.cs",
-              "RelativeToolTip": "MiniORM-App\\Entities\\Project.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Department.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Department.cs",
+              "RelativeToolTip": "MiniORM-App\\Entities\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:14:22.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeProject.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\EmployeeProject.cs",
-              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\EmployeeProject.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\EmployeeProject.cs",
-              "RelativeToolTip": "MiniORM-App\\Entities\\EmployeeProject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:12:40.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReflectionHelper.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ReflectionHelper.cs",
-              "RelativeDocumentMoniker": "MiniORM\\ReflectionHelper.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ReflectionHelper.cs",
-              "RelativeToolTip": "MiniORM\\ReflectionHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:40:44.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DbSet.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbSet.cs",
-              "RelativeDocumentMoniker": "MiniORM\\DbSet.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbSet.cs",
-              "RelativeToolTip": "MiniORM\\DbSet.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAkwEIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:39:45.695Z",
+              "WhenOpened": "2024-06-19T14:22:55.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Employee.cs",
+              "RelativeToolTip": "MiniORM-App\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T14:22:54.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Project.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Project.cs",
+              "RelativeToolTip": "MiniORM-App\\Entities\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T14:22:46.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "MiniORM\\DatabaseConnection.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DatabaseConnection.cs",
               "RelativeToolTip": "MiniORM\\DatabaseConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAAAAAA",
+              "ViewState": "AQIAANkAAAAAAAAAAIAwwOgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T07:20:01.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConnectionManager.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ConnectionManager.cs",
-              "RelativeDocumentMoniker": "MiniORM\\ConnectionManager.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ConnectionManager.cs",
-              "RelativeToolTip": "MiniORM\\ConnectionManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:20:00.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "DbContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbContext.cs",
               "RelativeDocumentMoniker": "MiniORM\\DbContext.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbContext.cs",
               "RelativeToolTip": "MiniORM\\DbContext.cs",
-              "ViewState": "AQIAAAEBAAAAAAAAAAAAwC0BAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwDIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T07:19:58.078Z",
               "EditorCaption": ""
@@ -150,53 +128,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ChangeTracker.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ChangeTracker.cs",
-              "RelativeDocumentMoniker": "MiniORM\\ChangeTracker.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ChangeTracker.cs",
-              "RelativeToolTip": "MiniORM\\ChangeTracker.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAiwGsAAAAIAAAA",
+              "Title": "DbSet.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbSet.cs",
+              "RelativeDocumentMoniker": "MiniORM\\DbSet.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\DbSet.cs",
+              "RelativeToolTip": "MiniORM\\DbSet.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAmwC8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:06:30.722Z",
+              "WhenOpened": "2024-06-19T07:39:45.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Employee.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Employee.cs*",
-              "RelativeToolTip": "MiniORM-App\\Entities\\Employee.cs*",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAowBMAAAABAAAA",
+              "DocumentIndex": 9,
+              "Title": "ConnectionManager.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ConnectionManager.cs",
+              "RelativeDocumentMoniker": "MiniORM\\ConnectionManager.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ConnectionManager.cs",
+              "RelativeToolTip": "MiniORM\\ConnectionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:05:33.875Z",
+              "WhenOpened": "2024-06-19T07:20:00.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\Department.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\Department.cs",
-              "RelativeToolTip": "MiniORM-App\\Entities\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "EmployeeProject.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\EmployeeProject.cs",
+              "RelativeDocumentMoniker": "MiniORM-App\\Entities\\EmployeeProject.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Entities\\EmployeeProject.cs",
+              "RelativeToolTip": "MiniORM-App\\Entities\\EmployeeProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:05:32.797Z",
+              "WhenOpened": "2024-06-19T14:22:53.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Program.cs",
               "RelativeDocumentMoniker": "MiniORM-App\\Program.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\Program.cs",
               "RelativeToolTip": "MiniORM-App\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwB0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:04:52.758Z",
+              "WhenOpened": "2024-06-19T14:22:43.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SoftUniDbContext.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\SoftUniDbContext.cs",
+              "RelativeDocumentMoniker": "MiniORM-App\\SoftUniDbContext.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\SoftUniDbContext.cs",
+              "RelativeToolTip": "MiniORM-App\\SoftUniDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T14:23:34.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReflectionHelper.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ReflectionHelper.cs",
+              "RelativeDocumentMoniker": "MiniORM\\ReflectionHelper.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ReflectionHelper.cs",
+              "RelativeToolTip": "MiniORM\\ReflectionHelper.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowC8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:40:44.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChangeTracker.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ChangeTracker.cs",
+              "RelativeDocumentMoniker": "MiniORM\\ChangeTracker.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM\\ChangeTracker.cs",
+              "RelativeToolTip": "MiniORM\\ChangeTracker.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowD8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:06:30.722Z",
               "EditorCaption": ""
             }
           ]

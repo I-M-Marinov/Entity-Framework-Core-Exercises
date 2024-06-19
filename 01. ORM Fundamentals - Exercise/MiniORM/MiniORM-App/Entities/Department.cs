@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace MiniORM.App.Entities;
+
+using MiniORM.App.Entities;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MiniORM_App.Entities
+public class Department
 {
-    public class Department
-    {
-        [Key] public int Id { get; set; }
-        [Required] public string Name { get; set; }
+    [Key] public int Id { get; set; }
+    [Required] public string Name { get; set; }
 
-        public ICollection<Employee> Employees { get; set; }
-    }
-
+    public ICollection<Employee> Employees { get; set; }
 }

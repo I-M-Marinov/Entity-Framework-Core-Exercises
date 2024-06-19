@@ -1,0 +1,13 @@
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\bin\Debug\net6.0\MiniORM.deps.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\bin\Debug\net6.0\MiniORM.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\bin\Debug\net6.0\MiniORM.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.csproj.AssemblyReference.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.AssemblyInfoInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.AssemblyInfo.cs
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.csproj.CoreCompileInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.sourcelink.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\refint\MiniORM.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\MiniORM.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\01. ORM Fundamentals - Exercise\MiniORM\MiniORM\obj\Debug\net6.0\ref\MiniORM.dll

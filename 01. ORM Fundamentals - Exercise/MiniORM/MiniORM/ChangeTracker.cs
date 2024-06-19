@@ -73,8 +73,7 @@ namespace MiniORM
             {
 
                 var primaryKeyValues = GetPrimaryKeyValues(primaryKeys, proxyEntity).ToArray();
-                var entity = dbSet.Entities.Single(e => GetPrimaryKeyValues(primaryKeys, e))
-                    .SequenceEqual(primaryKeyValues);
+                var entity = dbSet.Entities.Single(e => GetPrimaryKeyValues(primaryKeys, e).SequenceEqual(primaryKeyValues));
 
                 var isModified = IsModified(proxyEntity, entity);
 

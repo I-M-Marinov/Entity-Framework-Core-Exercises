@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kDpd0xYaGrQ=",
+  "dgSpecHash": "H/yVVDxgXr8=",
   "success": true,
-  "projectFilePath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM-App.csproj",
+  "projectFilePath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marinov\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Marinov\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

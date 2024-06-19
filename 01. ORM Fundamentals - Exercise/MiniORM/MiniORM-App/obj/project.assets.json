@@ -2925,9 +2925,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM-App.csproj",
-      "projectName": "MiniORM-App",
-      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM-App.csproj",
+      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM.App.csproj",
+      "projectName": "MiniORM.App",
+      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\MiniORM.App.csproj",
       "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
       "outputPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\01. ORM Fundamentals - Exercise\\MiniORM\\MiniORM-App\\obj\\",
       "projectStyle": "PackageReference",

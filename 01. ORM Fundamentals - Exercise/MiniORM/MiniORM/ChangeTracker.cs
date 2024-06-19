@@ -53,12 +53,12 @@ namespace MiniORM
             return copiedEntities;
         }
 
-        private void Add(T item)
+        public void Add(T item)
         {
             _added.Add(item);
         }
 
-        private void Remove(T item)
+        public void Remove(T item)
         {
             _removed.Remove(item);
         }

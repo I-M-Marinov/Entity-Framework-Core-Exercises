@@ -1,4 +1,5 @@
-﻿using SoftUni.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SoftUni.Data;
 using SoftUni.Models;
 
 
@@ -8,6 +9,25 @@ namespace SoftUni
 
     {
 
+        public static string GetEmployeesFromResearchAndDevelopment(SoftUniContext context)
+        {
+            var employees = context.Employees
+                .Where(e => e.Department.Name == "Research and Development")
+                .OrderBy(e => e.Salary)
+                .ThenByDescending(e => e.FirstName)
+                .Select(e => new
+                {
+                    e.FirstName,
+                    e.LastName,
+                    DepartmentName = e.Department.Name,
+                    Salary = e.Salary.ToString("F2")
+                })
+                .ToList();
+
+            var result = employees.Select(e => $"{e.FirstName} {e.LastName} from {e.DepartmentName} - ${e.Salary}");
+
+            return string.Join(Environment.NewLine, result);
+        }
         public static string GetEmployeesWithSalaryOver50000(SoftUniContext context)
         {
             var employees = context.Employees
@@ -53,7 +73,7 @@ namespace SoftUni
         public static void Main(string[] args)
         {
 
-                                                              /* EXERCISE 3 BELOW */
+            /* EXERCISE 3 BELOW */
 
             //using (var context = new SoftUniContext())
             //{
@@ -62,14 +82,23 @@ namespace SoftUni
             //    Console.WriteLine(employeeInfo);
             //}
 
-                                                             /* EXERCISE 4 BELOW */
+            /* EXERCISE 4 BELOW */
+            //using (var context = new SoftUniContext())
+            //{
+            //    string info = GetEmployeesWithSalaryOver50000(context);
+
+            //    Console.WriteLine(info);
+            //}
+
+
+            /* EXERCISE 5 BELOW */
+
             using (var context = new SoftUniContext())
             {
-                string info = GetEmployeesWithSalaryOver50000(context);
+                string info = GetEmployeesFromResearchAndDevelopment(context);
 
                 Console.WriteLine(info);
             }
-
 
         }
     }

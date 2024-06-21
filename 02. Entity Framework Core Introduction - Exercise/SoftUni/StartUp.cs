@@ -8,97 +8,7 @@ namespace SoftUni
     public class StartUp
 
     {
-        public static string AddNewAddressToEmployee(SoftUniContext context)
-        {
-            var newAddress = new Address();
-            newAddress.AddressText = "Vitoshka 15";
-            newAddress.TownId = 4;
 
-            context.Addresses.Add(newAddress);
-            context.SaveChanges();
-
-            var employeeId = context.Employees
-                .Where(e => e.LastName == "Nakov")
-                .Select(e => e.EmployeeId)
-                .FirstOrDefault();
-
-            var employee = context.Employees.Find(employeeId);
-
-            employee.AddressId = newAddress.AddressId;
-
-            context.SaveChanges();
-
-
-            var addressTexts = context.Employees
-                .OrderByDescending(e => e.AddressId)
-                .Take(10)
-                .Select(e => e.Address.AddressText)
-                .ToList();
-
-            return string.Join(Environment.NewLine, addressTexts);
-            
-        }
-        public static string GetEmployeesFromResearchAndDevelopment(SoftUniContext context)
-        {
-            var employees = context.Employees
-                .Where(e => e.Department.Name == "Research and Development")
-                .OrderBy(e => e.Salary)
-                .ThenByDescending(e => e.FirstName)
-                .Select(e => new
-                {
-                    e.FirstName,
-                    e.LastName,
-                    DepartmentName = e.Department.Name,
-                    Salary = e.Salary.ToString("F2")
-                })
-                .ToList();
-
-            var result = employees.Select(e => $"{e.FirstName} {e.LastName} from {e.DepartmentName} - ${e.Salary}");
-
-            return string.Join(Environment.NewLine, result);
-        }
-        public static string GetEmployeesWithSalaryOver50000(SoftUniContext context)
-        {
-            var employees = context.Employees
-                .Where(e => e.Salary > 50000) 
-                .Select(e => new
-                {
-                    e.FirstName,
-                    Salary = e.Salary.ToString("F2") 
-                })
-                .OrderBy(e => e.FirstName)
-                .ToList();
-
-            var result = employees.Select(e => $"{e.FirstName} - {e.Salary}");
-
-            return string.Join(Environment.NewLine, result);
-        }
-        public static string GetEmployeesFullInformation(SoftUniContext context)
-        {
-            var employees = context.Employees
-                .Select(e => new
-                {
-                    e.FirstName,
-                    e.LastName,
-                    e.MiddleName,
-                    e.JobTitle,
-                    e.Salary,
-                    e.EmployeeId
-                })
-                .OrderBy(e => e.EmployeeId)
-                .Select(e => new
-                {
-                    e.FirstName,
-                    e.LastName,
-                    e.MiddleName,
-                    e.JobTitle,
-                    Salary = e.Salary.ToString("F2")
-                });
-
-            var result = employees.Select(e => $"{e.FirstName} {e.LastName} {e.MiddleName} {e.JobTitle} {e.Salary}");
-
-            return string.Join(Environment.NewLine, result);
-        }
         public static void Main(string[] args)
         {
 
@@ -106,7 +16,7 @@ namespace SoftUni
 
             //using (var context = new SoftUniContext())
             //{
-            //    string employeeInfo = GetEmployeesFullInformation(context);
+            //    string employeeInfo = SoftUniContext.GetEmployeesFullInformation(context);
 
             //    Console.WriteLine(employeeInfo);
             //}
@@ -114,7 +24,7 @@ namespace SoftUni
             /* EXERCISE 4  */
             //using (var context = new SoftUniContext())
             //{
-            //    string info = GetEmployeesWithSalaryOver50000(context);
+            //    string info = SoftUniContext.GetEmployeesWithSalaryOver50000(context);
 
             //    Console.WriteLine(info);
             //}
@@ -124,18 +34,62 @@ namespace SoftUni
 
             //using (var context = new SoftUniContext())
             //{
-            //    string info = GetEmployeesFromResearchAndDevelopment(context);
+            //    string info = SoftUniContext.GetEmployeesFromResearchAndDevelopment(context);
 
             //    Console.WriteLine(info);
             //}
 
 
-            /* EXERCISE 6  */
+            /* EXERCISE 6
+             
+             6.	Adding a New Address and Updating Employee
+               NOTE: You will need method public static string AddNewAddressToEmployee(SoftUniContext context) and public StartUp class. 
+               Create a new address with the text "Vitoshka 15" and TownId = 4. Set that address to the employee with last the name "Nakov".
+               Then order by descending all the employees by their Address' Id, take 10 rows and from them, take the AddressText. Return the results each on a new line:
+               Example
+               Output
+
+               Vitoshka 15
+               163 Nishava Str, ent A, apt. 1
+               …
+
+               After this restore your database for the tasks ahead!
+            
+            */
 
             using (var context = new SoftUniContext())
             {
-                Console.WriteLine(AddNewAddressToEmployee(context));
+                Console.WriteLine(SoftUniContext.AddNewAddressToEmployee(context));
             }
+
+            /*
+             7.	Employees and Projects
+
+                NOTE: You will need method public static string GetEmployeesInPeriod(SoftUniContext context) and public StartUp class. 
+                Find the first 10 employees and print each employee's first name, last name, manager's first name and last name. 
+                If they have projects started in the period 2001 - 2003 (inclusive), print them with information about their name, start and end date.
+                Then return all of their projects in the format "--<ProjectName> - <StartDate> - <EndDate>", each on a new row.
+                If a project has no end date, print "not finished" instead.
+
+               Constraints
+
+               Use date format: "M/d/yyyy h:mm:ss tt".
+               Example
+               Output
+
+               Guy Gilbert - Manager: Jo Brown
+
+               --Half-Finger Gloves - 6/1/2002 12:00:00 AM - 6/1/2003 12:00:00 AM
+               --Women's Tights - 6/1/2002 12:00:00 AM - 6/1/2003 12:00:00 AM
+
+               Kevin Brown - Manager: David Bradley
+               Roberto Tamburello – Manager: Teeri Duffy
+
+               --Classic Vest – 6.1.2003 12:00:00 - not finished
+             
+             */
+
+
 
         }
     }

@@ -166,7 +166,7 @@ namespace SoftUni
 
             using (context)
             {
-                Console.WriteLine(GetDepartmentsWithMoreThan5Employees(context));
+                Console.WriteLine(GetLatestProjects(context));
             }
 
 
@@ -409,6 +409,35 @@ namespace SoftUni
                     }
                 }
             }
+
+            return sb.ToString().TrimEnd();
+        }
+
+                                                /* EXERCISE 11  */
+
+        public static string GetLatestProjects(SoftUniContext context)
+        {
+            var projects = context.Projects
+                .OrderByDescending(p => p.StartDate)
+                .Take(10)
+                .Select(p => new
+                {
+                    p.Name,
+                    p.Description,
+                    p.StartDate,
+                })
+                .OrderBy(p => p.Name)
+                .ToList();
+
+            var sb = new StringBuilder();
+
+            foreach (var project in projects)
+            {
+                sb.AppendLine($"{project.Name}");
+                sb.AppendLine($"{project.Description}");
+                sb.AppendLine($"{project.StartDate:M/d/yyyy h:mm:ss tt}");
+            }
+
 
             return sb.ToString().TrimEnd();
         }

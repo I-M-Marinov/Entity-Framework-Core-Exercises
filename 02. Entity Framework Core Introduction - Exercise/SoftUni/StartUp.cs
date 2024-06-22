@@ -114,10 +114,10 @@ namespace SoftUni
 
              */
 
-            using (context)
-            {
-                Console.WriteLine(GetEmployee147(context));
-            }
+            //using (context)
+            //{
+            //    Console.WriteLine(GetAddressesByTown(context));
+            //}
 
 
             /* EXERCISE 9
@@ -135,6 +135,40 @@ namespace SoftUni
                …
                
              */
+
+            //using (context)
+            //{
+            //    Console.WriteLine(GetEmployee147(context));
+            //}
+
+            /* EXERCISE 10
+
+             10.	Departments with More Than 5 Employees
+               NOTE: You will need method public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context) and public StartUp class. 
+               Find all departments with more than 5 employees. Order them by employee count (ascending), then by department name (alphabetically). 
+            For each department, print the department name and the manager's first and last name on the first row. 
+            Then print the first name, the last name and the job title of every employee on a new row. 
+            Order the employees by first name (ascending), then by last name (ascending).
+               Format of the output: 
+            For each department print it in the format "<DepartmentName> - <ManagerFirstName>  <ManagerLastName>" and for each employee print it in the format 
+            "<EmployeeFirstName> <EmployeeLastName> - <JobTitle>".
+
+               Example
+               Output
+
+               Engineering – Terri Duffy
+               Gail Erickson - Design Engineer
+               Jossef Goldberg - Design Engineer
+               …
+               
+             */
+
+
+            using (context)
+            {
+                Console.WriteLine(GetDepartmentsWithMoreThan5Employees(context));
+            }
+
 
         }
                                                 /* EXERCISE 3  */
@@ -328,6 +362,51 @@ namespace SoftUni
                 foreach (var project in employee.Projects)
                 {
                     sb.AppendLine($"{project.Name}");
+                }
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+                                                /* EXERCISE 10  */
+
+        public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context)
+        {
+            var departments = context.Departments
+                .Where(d => d.Employees.Count > 5)
+                .Select(d => new
+                {
+                    DepartmentName = d.Name,
+                    ManagerFullName = $"{d.Manager.FirstName} {d.Manager.LastName}",
+                    EmployeeCount = d.Employees.Count,
+                })
+                .OrderBy(e => e.EmployeeCount)
+                .ThenBy(d => d.DepartmentName)
+                .ToList();
+
+            var employees = context.Employees
+                .OrderBy(e => e.FirstName)
+                .ThenBy(e => e.LastName)
+                .Select(e => new
+                {
+                    FullName = $"{e.FirstName} {e.LastName}",
+                    e.JobTitle,
+                    e.Department
+                    })
+                .ToList();
+
+           var sb = new StringBuilder();
+
+            foreach (var department  in departments)
+            {
+                sb.AppendLine($"{department.DepartmentName} - {department.ManagerFullName}");
+
+                foreach (var employee in employees)
+                {
+                    if (employee.Department.Name == department.DepartmentName)
+                    {
+                        sb.AppendLine($"{employee.FullName} - {employee.JobTitle}");
+                    }
                 }
             }
 

@@ -9,45 +9,10 @@ namespace SoftUni
     public class StartUp
 
     {
-
-        public static string GetEmployeesInPeriod(SoftUniContext context)
-        {
-            var result = context.Employees
-                .Take(10)
-                .Select(e => new
-                {
-                    EmployeeNames = $"{e.FirstName} {e.LastName}",
-                    ManagerNames = $"{e.Manager.FirstName} {e.Manager.LastName}",
-                    Projects = e.EmployeesProjects
-                        .Where(ep => ep.Project.StartDate.Year >= 2001 &&
-                                     ep.Project.StartDate.Year <= 2003)
-                        .Select(ep => new
-                        {
-                            ProjectName = ep.Project.Name,
-                            ep.Project.StartDate,
-                            EndDate = ep.Project.EndDate.HasValue ? ep.Project.EndDate.Value.ToString("M/d/yyyy h:mm:ss tt") : "not finished"
-                        })
-                });
-
-            var sb = new StringBuilder();
-
-            foreach (var e in result)
-            {
-                sb.AppendLine($"{e.EmployeeNames} - Manager: {e.ManagerNames}");
-                if (e.Projects.Any())
-                {
-                    foreach (var p in e.Projects)
-                    {
-                        sb.AppendLine($"--{p.ProjectName} - {p.StartDate:M/d/yyyy h:mm:ss tt} - {p.EndDate}");
-                    }
-                }
-            }
-
-            return sb.ToString().TrimEnd();
-        }
-
         public static void Main(string[] args)
         {
+
+            var context = new SoftUniContext();
 
             /* EXERCISE 3  */
 
@@ -59,6 +24,8 @@ namespace SoftUni
             //}
 
             /* EXERCISE 4  */
+
+
             //using (var context = new SoftUniContext())
             //{
             //    string info = SoftUniContext.GetEmployeesWithSalaryOver50000(context);
@@ -126,13 +93,199 @@ namespace SoftUni
              
              */
 
-            using (var context = new SoftUniContext())
+            //using (var context = new SoftUniContext())
+            //{
+            //    Console.WriteLine(SoftUniContext.GetEmployeesInPeriod(context));
+            //}
+
+
+            /*
+                8.	Addresses by Town
+               NOTE: You will need method public static string GetAddressesByTown(SoftUniContext context) and public StartUp class. 
+               Find all addresses, ordered by the number of employees who live there (descending), 
+            then by town name (ascending) and finally by address text (ascending). 
+            Take only the first 10 addresses. For each address return it in the format "<AddressText>, <TownName> - <EmployeeCount> employees"
+               Example
+
+               Output
+
+               7726 Driftwood Drive, Monroe - 2 employees
+               163 Nishava Str, ent A, apt. 1, Sofia - 2 employees
+
+             */
+
+            using (context)
             {
-                Console.WriteLine(GetEmployeesInPeriod(context));
+                Console.WriteLine(GetAddressesByTown(context));
             }
 
 
+        }
+                                                /* EXERCISE 3  */
+        public static string GetEmployeesFullInformation(SoftUniContext context)
+        {
+            var employees = context.Employees
+                .Select(e => new
+                {
+                    e.FirstName,
+                    e.LastName,
+                    e.MiddleName,
+                    e.JobTitle,
+                    e.Salary,
+                    e.EmployeeId
+                })
+                .OrderBy(e => e.EmployeeId)
+                .Select(e => new
+                {
+                    e.FirstName,
+                    e.LastName,
+                    e.MiddleName,
+                    e.JobTitle,
+                    Salary = e.Salary.ToString("F2")
+                });
+
+            var result = employees.Select(e => $"{e.FirstName} {e.LastName} {e.MiddleName} {e.JobTitle} {e.Salary}");
+
+            return string.Join(Environment.NewLine, result);
+        }
+
+                                                /* EXERCISE 4  */
+        public static string GetEmployeesWithSalaryOver50000(SoftUniContext context)
+        {
+            var employees = context.Employees
+                .Where(e => e.Salary > 50000)
+                .Select(e => new
+                {
+                    e.FirstName,
+                    Salary = e.Salary.ToString("F2")
+                })
+                .OrderBy(e => e.FirstName)
+                .ToList();
+
+            var result = employees.Select(e => $"{e.FirstName} - {e.Salary}");
+
+            return string.Join(Environment.NewLine, result);
+        }
+
+                                                /* EXERCISE 5  */
+        public static string GetEmployeesFromResearchAndDevelopment(SoftUniContext context)
+        {
+            var employees = context.Employees
+                .Where(e => e.Department.Name == "Research and Development")
+                .OrderBy(e => e.Salary)
+                .ThenByDescending(e => e.FirstName)
+                .Select(e => new
+                {
+                    e.FirstName,
+                    e.LastName,
+                    DepartmentName = e.Department.Name,
+                    Salary = e.Salary.ToString("F2")
+                })
+                .ToList();
+
+            var result = employees.Select(e => $"{e.FirstName} {e.LastName} from {e.DepartmentName} - ${e.Salary}");
+
+            return string.Join(Environment.NewLine, result);
+        }
+
+                                                /* EXERCISE 6  */
+        public static string AddNewAddressToEmployee(SoftUniContext context)
+        {
+            var newAddress = new Address();
+            newAddress.AddressText = "Vitoshka 15";
+            newAddress.TownId = 4;
+
+            context.Addresses.Add(newAddress);
+            context.SaveChanges();
+
+            var employeeId = context.Employees
+                .Where(e => e.LastName == "Nakov")
+                .Select(e => e.EmployeeId)
+                .FirstOrDefault();
+
+            var employee = context.Employees.Find(employeeId);
+
+            employee.AddressId = newAddress.AddressId;
+
+            context.SaveChanges();
+
+
+            var addressTexts = context.Employees
+                .OrderByDescending(e => e.AddressId)
+                .Take(10)
+                .Select(e => e.Address.AddressText)
+                .ToList();
+
+            return string.Join(Environment.NewLine, addressTexts);
 
         }
+            
+                                                /* EXERCISE 7  */
+        public static string GetEmployeesInPeriod(SoftUniContext context)
+        {
+            var result = context.Employees
+                .Take(10)
+                .Select(e => new
+                {
+                    EmployeeNames = $"{e.FirstName} {e.LastName}",
+                    ManagerNames = $"{e.Manager.FirstName} {e.Manager.LastName}",
+                    Projects = e.EmployeesProjects
+                        .Where(ep => ep.Project.StartDate.Year >= 2001 &&
+                                     ep.Project.StartDate.Year <= 2003)
+                        .Select(ep => new
+                        {
+                            ProjectName = ep.Project.Name,
+                            ep.Project.StartDate,
+                            EndDate = ep.Project.EndDate.HasValue ? ep.Project.EndDate.Value.ToString("M/d/yyyy h:mm:ss tt") : "not finished"
+                        })
+                });
+
+            var sb = new StringBuilder();
+
+            foreach (var e in result)
+            {
+                sb.AppendLine($"{e.EmployeeNames} - Manager: {e.ManagerNames}");
+                if (e.Projects.Any())
+                {
+                    foreach (var p in e.Projects)
+                    {
+                        sb.AppendLine($"--{p.ProjectName} - {p.StartDate:M/d/yyyy h:mm:ss tt} - {p.EndDate}");
+                    }
+                }
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+                                                /* EXERCISE 8  */
+        public static string GetAddressesByTown(SoftUniContext context)
+        {
+            var result = context.Addresses
+                .Select(addr => new
+                {
+                    addr.AddressText,
+                    TownName = addr.Town.Name,
+                    EmployeeCount = addr.Employees.Count
+                })
+                .OrderByDescending(addr => addr.EmployeeCount)
+                .ThenBy(addr => addr.TownName)
+                .ThenBy(addr => addr.AddressText)
+                .Take(10)
+                .ToList();
+
+            var sb = new StringBuilder();
+
+            foreach (var e in result)
+            {
+                sb.AppendLine($"{e.AddressText}, {e.TownName} - {e.EmployeeCount} employees");
+
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+                                                /* EXERCISE 9  */
+
+
     }
 }

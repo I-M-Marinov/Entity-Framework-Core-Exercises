@@ -66,7 +66,7 @@ namespace SoftUni
             //    Console.WriteLine(SoftUniContext.AddNewAddressToEmployee(context));
             //}
 
-            /*
+            /* EXERCISE 7
              7.	Employees and Projects
 
                 NOTE: You will need method public static string GetEmployeesInPeriod(SoftUniContext context) and public StartUp class. 
@@ -99,7 +99,7 @@ namespace SoftUni
             //}
 
 
-            /*
+            /* EXERCISE 8
                 8.	Addresses by Town
                NOTE: You will need method public static string GetAddressesByTown(SoftUniContext context) and public StartUp class. 
                Find all addresses, ordered by the number of employees who live there (descending), 
@@ -116,9 +116,25 @@ namespace SoftUni
 
             using (context)
             {
-                Console.WriteLine(GetAddressesByTown(context));
+                Console.WriteLine(GetEmployee147(context));
             }
 
+
+            /* EXERCISE 9
+
+             9.	Employee 147
+               NOTE: You will need method public static string GetEmployee147(SoftUniContext context) and public StartUp class. 
+
+               Get the employee with id 147. Return only his/her first name, last name, job title and projects (print only their names). 
+                The projects should be ordered by name (ascending). Format of the output.
+               Example
+               Output
+
+               Linda Randall - Production Technician
+               HL Touring Handlebars
+               …
+               
+             */
 
         }
                                                 /* EXERCISE 3  */
@@ -285,7 +301,37 @@ namespace SoftUni
         }
 
                                                 /* EXERCISE 9  */
+        public static string GetEmployee147(SoftUniContext context)
+        {
+            var employee = context.Employees
+                .Where(e => e.EmployeeId == 147)
+                .Select(e => new
+                {
+                    FullName = $"{e.FirstName} {e.LastName}",
+                    e.JobTitle,
+                    Projects = e.EmployeesProjects
+                        .OrderBy(p => p.Project.Name)
+                        .Select(p => new
+                        {
+                            p.Project.Name
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
 
+            var sb = new StringBuilder();
 
+            sb.AppendLine($"{employee.FullName} - {employee.JobTitle}");
+
+            if (employee.Projects.Any())
+            {
+                foreach (var project in employee.Projects)
+                {
+                    sb.AppendLine($"{project.Name}");
+                }
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
 }

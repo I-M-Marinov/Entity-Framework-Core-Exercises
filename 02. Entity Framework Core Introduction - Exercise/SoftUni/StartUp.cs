@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Text;
+using Microsoft.EntityFrameworkCore;
 using SoftUni.Data;
 using SoftUni.Models;
 
@@ -8,6 +9,42 @@ namespace SoftUni
     public class StartUp
 
     {
+
+        public static string GetEmployeesInPeriod(SoftUniContext context)
+        {
+            var result = context.Employees
+                .Take(10)
+                .Select(e => new
+                {
+                    EmployeeNames = $"{e.FirstName} {e.LastName}",
+                    ManagerNames = $"{e.Manager.FirstName} {e.Manager.LastName}",
+                    Projects = e.EmployeesProjects
+                        .Where(ep => ep.Project.StartDate.Year >= 2001 &&
+                                     ep.Project.StartDate.Year <= 2003)
+                        .Select(ep => new
+                        {
+                            ProjectName = ep.Project.Name,
+                            ep.Project.StartDate,
+                            EndDate = ep.Project.EndDate.HasValue ? ep.Project.EndDate.Value.ToString("M/d/yyyy h:mm:ss tt") : "not finished"
+                        })
+                });
+
+            var sb = new StringBuilder();
+
+            foreach (var e in result)
+            {
+                sb.AppendLine($"{e.EmployeeNames} - Manager: {e.ManagerNames}");
+                if (e.Projects.Any())
+                {
+                    foreach (var p in e.Projects)
+                    {
+                        sb.AppendLine($"--{p.ProjectName} - {p.StartDate:M/d/yyyy h:mm:ss tt} - {p.EndDate}");
+                    }
+                }
+            }
+
+            return sb.ToString().TrimEnd();
+        }
 
         public static void Main(string[] args)
         {
@@ -57,10 +94,10 @@ namespace SoftUni
             
             */
 
-            using (var context = new SoftUniContext())
-            {
-                Console.WriteLine(SoftUniContext.AddNewAddressToEmployee(context));
-            }
+            //using (var context = new SoftUniContext())
+            //{
+            //    Console.WriteLine(SoftUniContext.AddNewAddressToEmployee(context));
+            //}
 
             /*
              7.	Employees and Projects
@@ -88,6 +125,11 @@ namespace SoftUni
                --Classic Vest – 6.1.2003 12:00:00 - not finished
              
              */
+
+            using (var context = new SoftUniContext())
+            {
+                Console.WriteLine(GetEmployeesInPeriod(context));
+            }
 
 
 

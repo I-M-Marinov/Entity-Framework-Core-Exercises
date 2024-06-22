@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using SoftUni.Models;
@@ -22,7 +23,7 @@ namespace SoftUni.Data
         public virtual DbSet<Employee> Employees { get; set; } = null!;
         public virtual DbSet<Project> Projects { get; set; } = null!;
         public virtual DbSet<Town> Towns { get; set; } = null!;
-        public virtual DbSet<EmployeeProject> EmployeeProjects { get; set; } = null!;
+        public virtual DbSet<EmployeeProject> EmployeesProjects { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -261,11 +262,6 @@ namespace SoftUni.Data
 
         /* EXERCISE 7  */
 
-        public static string GetEmployeesInPeriod(SoftUniContext context)
-        {
-            //TODO: Tomorrow is another day ! 
-
-            return "This is not finished yet... Obviously";
-        }
+     
     }
 }

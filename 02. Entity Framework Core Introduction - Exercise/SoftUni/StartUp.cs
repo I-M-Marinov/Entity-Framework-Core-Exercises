@@ -264,9 +264,32 @@ namespace SoftUni
 
              */
 
+            //using (context)
+            //{
+            //    Console.WriteLine(DeleteProjectById(context));
+            //}
+
+            /*
+             15.	Remove Town
+               NOTE: You will need method public static string RemoveTown(SoftUniContext context) and public StartUp class.
+            
+            Write a program that deletes a town with name "Seattle". Also, delete all addresses that are in those towns. 
+            Return the number of addresses that were deleted in format "{count} addresses in Seattle were deleted". 
+            There will be employees living at those addresses, which will be a problem when trying to delete the addresses. 
+            So, start by setting the AddressId of each employee for the given address to null. 
+            After all of them are set to null, you may safely remove all the addresses from the context and finally remove the given town.
+
+               Example
+
+               Output
+
+               44 addresses in Seattle were deleted
+               
+             */
+
             using (context)
             {
-                Console.WriteLine(DeleteProjectById(context));
+                Console.WriteLine(RemoveTown(context));
             }
 
         }
@@ -622,6 +645,31 @@ namespace SoftUni
 
             return sb.ToString().TrimEnd();
         }
+
+                                                /* EXERCISE 15  */
+        public static string RemoveTown(SoftUniContext context)
+        {
+            var townIdToDelete = context.Towns.Where(t => t.Name == "Seattle").Select(t => t.TownId).FirstOrDefault();
+            var townToDelete = context.Towns.Find(townIdToDelete);
+
+            var townAddressReferences = context.Addresses.Where(addr => addr.TownId == townIdToDelete).ToList();
+            var countOfAddressesInSeattle = townAddressReferences.Count;
+            var employeeTownAddressRef = context.Employees.Where(e => townAddressReferences.Contains(e.Address)).ToList();
+
+            foreach (var employee in employeeTownAddressRef)
+            {
+                employee.Address = null;
+            }
+
+
+            context.Addresses.RemoveRange(townAddressReferences);
+            context.Towns.Remove(townToDelete);
+
+            context.SaveChanges();
+
+            return $"{countOfAddressesInSeattle} addresses in Seattle were deleted";
+        }
+
     }
 
 

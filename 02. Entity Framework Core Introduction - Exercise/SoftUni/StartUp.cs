@@ -164,14 +164,71 @@ namespace SoftUni
              */
 
 
+            //using (context)
+            //{
+            //    Console.WriteLine(GetDepartmentsWithMoreThan5Employees(context));
+            //}
+
+
+            /* EXERCISE 11
+
+            11.	Find Latest 10 Projects
+               NOTE: You will need method public static string GetLatestProjects(SoftUniContext context) and public StartUp class. 
+
+               Write a program that returns information about the last 10 started projects.
+                Sort them by name lexicographically and return their name, description and start date, each on a new row. 
+               Constraints
+               Use date format: "M/d/yyyy h:mm:ss tt".
+
+               Example
+               Output
+
+                All-Purpose Bike Stand
+                Research, design and development of All-Purpose Bike Stand. 
+                Perfect all-purpose bike stand for working on your bike at home. 
+                Quick-adjusting clamps and steel construction.
+               9/1/2005 12:00:00 AM
+               …
+               
+
+             */
+
+
+            //using (context)
+            //{
+            //    Console.WriteLine(GetLatestProjects(context));
+            //}
+
+            /* EXERCISE 12
+
+            12.	Increase Salaries
+                NOTE: You will need method public static string IncreaseSalaries(SoftUniContext context) and public StartUp class. 
+
+                Write a program that increases salaries of all employees that are in the Engineering, Tool Design, Marketing, 
+                or Information Services department by 12%. Then return first name, last name and salary (2 symbols after the decimal separator) for those employees, 
+                whose salary was increased. Order them by first name (ascending), then by last name (ascending). 
+                Format of the output.
+
+               Example
+
+               Output
+               Ashvini Sharma ($36400.00)
+               Dan Bacon ($30688.00)
+               ..................................
+               
+
+             */
+
             using (context)
             {
-                Console.WriteLine(GetLatestProjects(context));
+                Console.WriteLine(IncreaseSalaries(context));
             }
 
 
+
+
         }
-                                                /* EXERCISE 3  */
+        /* EXERCISE 3  */
         public static string GetEmployeesFullInformation(SoftUniContext context)
         {
             var employees = context.Employees
@@ -369,7 +426,6 @@ namespace SoftUni
         }
 
                                                 /* EXERCISE 10  */
-
         public static string GetDepartmentsWithMoreThan5Employees(SoftUniContext context)
         {
             var departments = context.Departments
@@ -414,7 +470,6 @@ namespace SoftUni
         }
 
                                                 /* EXERCISE 11  */
-
         public static string GetLatestProjects(SoftUniContext context)
         {
             var projects = context.Projects
@@ -440,6 +495,36 @@ namespace SoftUni
 
 
             return sb.ToString().TrimEnd();
+        }
+
+                                                /* EXERCISE 12  */
+        public static string IncreaseSalaries(SoftUniContext context)
+        {
+            string[] validDepartments = {"Engineering", "Tool Design", "Marketing", "Information Services" };
+
+            var employees = context.Employees
+                .Where(e => validDepartments.Contains(e.Department.Name)).ToList();
+
+            var employeesToPrint = employees
+            .Select(e => new
+            {
+                e.FirstName,
+                e.LastName,
+                e.Salary 
+            }).OrderBy(e => e.FirstName)
+                .ThenBy(e => e.LastName);
+
+            var sb = new StringBuilder();
+
+            foreach (var employee in employeesToPrint)
+            {
+                sb.AppendLine($"{employee.FirstName} {employee.LastName} (${(employee.Salary * 1.12m):F2})");
+            }
+
+            context.SaveChanges();
+
+            return sb.ToString().TrimEnd();
+
         }
     }
 }

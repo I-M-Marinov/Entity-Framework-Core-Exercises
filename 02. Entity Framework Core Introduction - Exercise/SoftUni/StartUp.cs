@@ -219,16 +219,38 @@ namespace SoftUni
 
              */
 
+            //using (context)
+            //{
+            //    Console.WriteLine(IncreaseSalaries(context));
+            //}
+
+
+            /*
+             13.	Find Employees by First Name Starting with "Sa"
+               NOTE: You will need method public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context) and public StartUp class. 
+
+            Write a program that finds all employees whose first name starts with "Sa". 
+            Return their first, last name, their job title and salary rounded to 2 symbols after the decimal separator in the format given in the example below.
+            Order them by the first name, then by last name (ascending).
+               Constraints
+
+               Find a way to make your query case-insensitive.	
+               Example
+               Output
+
+               Sairaj Uddin - Scheduling Assistant - ($16000.00)
+               Samantha Smith - Production Technician - ($14000.00)
+               ......................................
+               
+             */
+
             using (context)
             {
-                Console.WriteLine(IncreaseSalaries(context));
+                Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(context));
             }
 
-
-
-
         }
-        /* EXERCISE 3  */
+                                                /* EXERCISE 3  */
         public static string GetEmployeesFullInformation(SoftUniContext context)
         {
             var employees = context.Employees
@@ -522,6 +544,32 @@ namespace SoftUni
             }
 
             context.SaveChanges();
+
+            return sb.ToString().TrimEnd();
+
+        }
+
+                                                /* EXERCISE 13  */
+        public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
+        {
+
+            var employees = context.Employees
+                .Where(e => e.FirstName.StartsWith("Sa"))
+                .Select(e => new
+                {
+                    e.FirstName,
+                    e.LastName,
+                    e.JobTitle,
+                    e.Salary
+                }).OrderBy(e => e.FirstName)
+                .ThenBy(e => e.LastName);
+
+            var sb = new StringBuilder();
+
+            foreach (var e in employees)
+            {
+                sb.AppendLine($"{e.FirstName} {e.LastName} - {e.JobTitle} - (${e.Salary:F2})");
+            }
 
             return sb.ToString().TrimEnd();
 

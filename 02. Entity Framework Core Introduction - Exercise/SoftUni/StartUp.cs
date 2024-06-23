@@ -244,9 +244,29 @@ namespace SoftUni
                
              */
 
+            //using (context)
+            // {
+            //    Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(context));
+            // }
+
+            /*
+             14.	Delete Project by Id
+               NOTE: You will need method public static string DeleteProjectById(SoftUniContext context) and public StartUp class. 
+
+            Let's delete the project with id 2. Then, take 10 projects and return their names, each on a new line. 
+            Remember to restore your database after this task.
+               Example
+               Output
+
+               Classic Vest
+               Full-Finger Gloves
+               ...................
+
+             */
+
             using (context)
             {
-                Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(context));
+                Console.WriteLine(DeleteProjectById(context));
             }
 
         }
@@ -574,5 +594,35 @@ namespace SoftUni
             return sb.ToString().TrimEnd();
 
         }
+
+                                                /* EXERCISE 14  */
+        public static string DeleteProjectById(SoftUniContext context)
+        {
+            var project = context.Projects.Find(2);
+
+            var projectReferences = context.EmployeesProjects.Where(ep => ep.ProjectId == 2);
+
+            context.EmployeesProjects.RemoveRange(projectReferences);
+            context.Projects.Remove(project);
+
+            context.SaveChanges();
+
+            var projects = context.Projects.Take(10).Select(p => new
+            {
+                p.Name
+            }).ToList();
+
+
+            var sb = new StringBuilder();
+
+            foreach (var p in projects)
+            {
+                sb.AppendLine($"{p.Name}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
+
+
 }

@@ -42,6 +42,14 @@ namespace BlogDemo
                 .HasColumnType("NVARCHAR")
                 .HasMaxLength(500);
 
+            modelBuilder.Entity<Blog>()
+                .Property(b => b.Created)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Blog>()
+                .Property(b => b.LastUpdated)
+                .ValueGeneratedOnUpdate();
+
             base.OnModelCreating(modelBuilder);
         }
 

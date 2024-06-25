@@ -63,8 +63,8 @@ namespace BlogDemo
                     optionsBuilder.UseSqlServer(connectionString);
 
             }
-
-
         }
+
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

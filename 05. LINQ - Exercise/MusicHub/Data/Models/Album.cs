@@ -22,7 +22,8 @@ namespace MusicHub.Data.Models
         [Required]
         public DateTime ReleaseDate { get; set; }
 
-        [NotMapped] // do not map properties that are calculated due to performance issues and/or achieve better normalization
+        // [NotMapped] // do not map properties that are calculated due to performance issues and/or achieve better normalization
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public decimal Price
         {
             get

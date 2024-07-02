@@ -14,8 +14,12 @@ namespace BookShop
             using var db = new BookShopContext();
             DbInitializer.ResetDatabase(db);
 
-            var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
-            Console.WriteLine(resultMinor);
+            //var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
+            //Console.WriteLine(resultMinor);
+
+            var result = GetGoldenBooks(db);
+            Console.WriteLine(result);
+
         }
 
         // 2. Age Restriction -- 
@@ -48,6 +52,27 @@ namespace BookShop
                 .ToList();
 
             return string.Join(Environment.NewLine, bookTitles);
+        }
+
+
+        /*
+         3.	Golden Books
+         Return in a single string the titles of the golden edition books that have less than 5000 copies, each on a new line. 
+        Order them by BookId ascending.
+        Call the GetGoldenBooks(BookShopContext context) method in your Main() and print the returned string to the console.
+
+         */
+
+         public static string GetGoldenBooks(BookShopContext context)
+        {
+            var goldenEditionBooks = context.Books
+                .Where(b => b.EditionType == EditionType.Gold && b.Copies < 5000)
+                .OrderBy(b => b.BookId)
+                .Select(b => b.Title)
+                .ToList();
+
+            return string.Join(Environment.NewLine, goldenEditionBooks);
+
         }
 
     }

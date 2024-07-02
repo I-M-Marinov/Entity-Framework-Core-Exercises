@@ -14,10 +14,16 @@ namespace BookShop
             using var db = new BookShopContext();
             DbInitializer.ResetDatabase(db);
 
+            // 2. Age Restriction -- 
             //var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
             //Console.WriteLine(resultMinor);
 
-            var result = GetGoldenBooks(db);
+            // 3.Golden Books
+            //var result = GetGoldenBooks(db);
+            //Console.WriteLine(result);
+
+            // 4. Get Books By Price
+            var result = GetBooksByPrice(db);
             Console.WriteLine(result);
 
         }
@@ -64,9 +70,11 @@ namespace BookShop
          */
 
          public static string GetGoldenBooks(BookShopContext context)
-        {
+         {
+             var copies = 5000;
+
             var goldenEditionBooks = context.Books
-                .Where(b => b.EditionType == EditionType.Gold && b.Copies < 5000)
+                .Where(b => b.EditionType == EditionType.Gold && b.Copies < copies)
                 .OrderBy(b => b.BookId)
                 .Select(b => b.Title)
                 .ToList();
@@ -75,6 +83,32 @@ namespace BookShop
 
         }
 
+        /*
+         4.	Books by Price
+         Return in a single string all titles and prices of books with a price higher than 40, 
+        each on a new row in the format given below. Order them by price descending.
+         */
+
+
+        public static string GetBooksByPrice(BookShopContext context)
+        {
+            decimal price = 40;
+
+            var booksByPrice = context.Books
+                .Where(b => b.Price > price)
+                .OrderByDescending(b => b.Price)
+                .Select(b => new { b.Title, b.Price})
+                .ToList();
+
+            var sb = new StringBuilder();
+
+            foreach (var book in booksByPrice)
+            {
+                sb.AppendLine($"{book.Title} - ${book.Price:F2}");
+            }
+
+            return sb.ToString().Trim();
+        }
     }
 }
 

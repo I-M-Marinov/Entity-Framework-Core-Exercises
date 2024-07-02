@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text;
 using BookShop.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,8 +24,13 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 4. Get Books By Price
-            var result = GetBooksByPrice(db);
+            //var result = GetBooksByPrice(db);
+            //Console.WriteLine(result);
+
+            // 5. Not Released In
+            var result = GetBooksNotReleasedIn(db, 2000);
             Console.WriteLine(result);
+            Console.WriteLine(result.Length);
 
         }
 
@@ -108,6 +114,45 @@ namespace BookShop
             }
 
             return sb.ToString().Trim();
+        }
+
+        /*
+         5.	Not Released In
+        Return in a single string with all titles of books that are NOT released in a given year. Order them by bookId 
+         */
+
+        [SuppressMessage("ReSharper.DPA", "DPA0007: Large number of DB records")]
+        public static string GetBooksNotReleasedIn(BookShopContext context, int year)
+        {
+            var sqlQueryRaw = "SELECT * FROM Books WHERE YEAR(ReleaseDate) != {0}";
+
+            var booksNotReleasedIn = context.Books
+                .FromSqlRaw(sqlQueryRaw, year)
+                .OrderBy(b => b.BookId)
+                .Select(b => b.Title)
+                .ToList();
+
+
+            var sb = new StringBuilder();
+
+            foreach (var bookTitle in booksNotReleasedIn)
+            {
+                sb.AppendLine($"{bookTitle}");
+            }
+
+            return sb.ToString().Trim();
+
+            // Solution that works for SoftUni Judge, but the solution above works as well 
+
+            //var booksNotReleasedIn = context.Books
+            //    .Where(b => b.ReleaseDate.Value.Year != year)
+            //    .Select(b => new { b.Title, b.BookId })
+            //    .OrderBy(b => b.BookId)
+            //    .ToList();
+
+
+            //return string.Join(Environment.NewLine, booksNotReleasedIn.Select(b => b.Title));
+
         }
     }
 }

@@ -71,9 +71,12 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 14. Most Recent Books
-            var result = GetMostRecentBooks(db);
-            Console.WriteLine(result);
+            //var result = GetMostRecentBooks(db);
+            //Console.WriteLine(result);
 
+            // 15. Increase Prices
+
+            IncreasePrices(db);
 
         }
 
@@ -510,6 +513,26 @@ namespace BookShop
             }
 
             return sb.ToString().Trim();
+        }
+
+        /*
+          15. Increase Prices
+            Increase the prices of all books released before 2010 by 5.
+        */
+
+        public static void IncreasePrices(BookShopContext context)
+        {
+            var booksToUpdate = context.Books
+                .Where(b => b.ReleaseDate.Value.Year < 2010)
+                .ToList();
+
+            foreach (var book in booksToUpdate)
+            {
+                book.Price += 5;
+            }
+
+            context.SaveChanges();
+
         }
 
     }

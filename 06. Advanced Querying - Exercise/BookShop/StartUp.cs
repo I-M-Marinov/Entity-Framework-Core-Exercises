@@ -47,10 +47,13 @@ namespace BookShop
             //var result = GetAuthorNamesEndingIn(db, "dy");
             //Console.WriteLine(result);
 
-            // 8. Author Search
-            var result = GetBookTitlesContaining(db, "sK");
-            Console.WriteLine(result);
+            // 9. Book Search
+            //var result = GetBookTitlesContaining(db, "sK");
+            //Console.WriteLine(result);
 
+            // 10. Book Search By Author
+            var result = GetBooksByAuthor(db, "R");
+            Console.WriteLine(result);
         }
 
         // 2. Age Restriction -- 
@@ -281,6 +284,31 @@ namespace BookShop
 
             return string.Join(Environment.NewLine, books);
 
+        }
+
+        /*
+          10. Book Search by Author
+            Return all titles of books and their authors' names for books, 
+            which are written by authors whose last names start with the given string.
+            Return a single string with each title on a new row. Ignore casing. Order by BookId ascending.
+         */
+
+        public static string GetBooksByAuthor(BookShopContext context, string input)
+        {
+            var result = context.Books
+                .Where(b => EF.Functions.Like(b.Author.LastName,  input.ToLower() + "%"))
+                .OrderBy(b => b.BookId)
+                .Select(b => new {b.Title, b.Author.FirstName, b.Author.LastName})
+                .ToList();
+
+           var sb = new StringBuilder();
+
+           foreach (var property in result)
+           {
+               sb.AppendLine($"{property.Title} ({property.FirstName} {property.LastName})");
+           }
+
+           return sb.ToString().Trim();
         }
     }
 }

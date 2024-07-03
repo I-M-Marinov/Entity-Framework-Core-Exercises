@@ -40,8 +40,13 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 7. Released Before Date
-            var result = GetBooksReleasedBefore(db, "12-04-1992");
+            //var result = GetBooksReleasedBefore(db, "12-04-1992");
+            //Console.WriteLine(result);
+
+            // 8. Author Search
+            var result = GetAuthorNamesEndingIn(db, "dy");
             Console.WriteLine(result);
+
 
         }
 
@@ -210,6 +215,48 @@ namespace BookShop
             foreach (var book in books)
             {
                 sb.AppendLine($"{book.Title} - {book.EditionType} - ${book.Price:F2}");
+            }
+
+            return sb.ToString().Trim();
+        }
+
+        /*
+         8. Author Search 
+            Return the full names of authors, whose first name ends with a given string.
+            Return all names in a single string, each on a new row, ordered alphabetically.
+         */
+
+        public static string GetAuthorNamesEndingIn(BookShopContext context, string input)
+        {
+            //string sqlQuery = "SELECT TOP 1000 FirstName, LastName FROM Authors WHERE FirstName LIKE {0} ORDER BY FirstName, LastName";
+            //string likePattern = "%" + input;
+
+            //var authors = context.Authors
+            //    .FromSqlRaw(sqlQuery, likePattern)
+            //    .Select(a => new { a.FirstName, a.LastName})
+            //    .ToList();
+
+            //var sb = new StringBuilder();
+
+            //foreach (var author in authors)
+            //{
+            //    sb.AppendLine($"{author.FirstName} {author.LastName}");
+            //}
+
+            //return sb.ToString().Trim();
+
+            var authors = context.Authors
+                .Where(a => EF.Functions.Like(a.FirstName, "%" + input))
+                .OrderBy(a => a.FirstName)
+                .ThenBy(a => a.LastName)
+                .Select(a => new { a.FirstName, a.LastName })
+                .ToList();
+
+            var sb = new StringBuilder();
+
+            foreach (var author in authors)
+            {
+                sb.AppendLine($"{author.FirstName} {author.LastName}");
             }
 
             return sb.ToString().Trim();

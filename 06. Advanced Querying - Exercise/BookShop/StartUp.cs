@@ -10,6 +10,7 @@ namespace BookShop
     using Data;
     using Initializer;
     using System.Diagnostics;
+    using System.Globalization;
 
     public class StartUp
     {
@@ -39,6 +40,8 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 7. Released Before Date
+            var result = GetBooksReleasedBefore(db, "12-04-1992");
+            Console.WriteLine(result);
 
         }
 
@@ -193,7 +196,23 @@ namespace BookShop
 
         public static string GetBooksReleasedBefore(BookShopContext context, string date)
         {
+            string format = "dd-MM-yyyy";
+            DateTime dateFormatted = DateTime.ParseExact(date, format, CultureInfo.InvariantCulture);
+            
+            var books = context.Books
+                .Where(b => b.ReleaseDate < dateFormatted)
+                .Select(b => new{b.Title, b.EditionType, b.Price, b.ReleaseDate})
+                .OrderByDescending(b => b.ReleaseDate)
+                .ToList();
 
+            var sb = new StringBuilder();
+
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book.Title} - {book.EditionType} - ${book.Price:F2}");
+            }
+
+            return sb.ToString().Trim();
         }
     }
 }

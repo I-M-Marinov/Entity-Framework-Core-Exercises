@@ -43,10 +43,13 @@ namespace BookShop
             //var result = GetBooksReleasedBefore(db, "12-04-1992");
             //Console.WriteLine(result);
 
-            // 8. Author Search
-            var result = GetAuthorNamesEndingIn(db, "dy");
-            Console.WriteLine(result);
+            //// 8. Author Search
+            //var result = GetAuthorNamesEndingIn(db, "dy");
+            //Console.WriteLine(result);
 
+            // 8. Author Search
+            var result = GetBookTitlesContaining(db, "sK");
+            Console.WriteLine(result);
 
         }
 
@@ -260,6 +263,24 @@ namespace BookShop
             }
 
             return sb.ToString().Trim();
+        }
+
+        /*
+         9. Book Search 
+            Return the titles of the book, which contain a given string. Ignore casing.
+            Return all titles in a single string, each on a new row, ordered alphabetically.
+        */
+
+        public static string GetBookTitlesContaining(BookShopContext context, string input)
+        {
+            var books = context.Books
+                .Where(b => EF.Functions.Like(b.Title, "%" + input.ToLower() + "%"))
+                .OrderBy(b => b.Title)
+                .Select(b => b.Title)
+                .ToList();
+
+            return string.Join(Environment.NewLine, books);
+
         }
     }
 }

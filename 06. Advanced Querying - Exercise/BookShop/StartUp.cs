@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
 using System.Text;
 using BookShop.Models.Enums;
 using Microsoft.EntityFrameworkCore;
@@ -52,15 +53,20 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 10. Book Search By Author
-            var result = GetBooksByAuthor(db, "R");
+            //var result = GetBooksByAuthor(db, "R");
+            //Console.WriteLine(result);
+            
+            // 11. Count Books
+
+            var result = CountBooks(db, 40);
             Console.WriteLine(result);
         }
 
-        // 2. Age Restriction -- 
-        /*  Return in a single string all book titles, each on a new line, that have an age restriction, equal to the given command.
-            Order the titles alphabetically.
-            Read input from the console in your main method and call your method with the necessary arguments. 
-             Print the returned string to the console. Ignore the casing of the input. */
+        /* 2. Age Restriction
+         Return in a single string all book titles, each on a new line, that have an age restriction, equal to the given command.
+         Order the titles alphabetically.
+         Read input from the console in your main method and call your method with the necessary arguments. 
+         Print the returned string to the console. Ignore the casing of the input. */
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)
         {
             command = command.ToLower();
@@ -309,6 +315,19 @@ namespace BookShop
            }
 
            return sb.ToString().Trim();
+        }
+
+        /*
+          11. Count Books
+            Return the number of books, which have a title longer than the number given as an input.
+         */
+
+        public static int CountBooks(BookShopContext context, int lengthCheck)
+        {
+            int count = context.Books
+                .Count(b => b.Title.Length > lengthCheck);
+
+            return count;
         }
     }
 }

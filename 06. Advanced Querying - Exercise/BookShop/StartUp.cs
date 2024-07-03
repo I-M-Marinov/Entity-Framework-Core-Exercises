@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace BookShop
 {
+    using BookShop.Models;
     using Data;
     using Initializer;
     using System.Diagnostics;
@@ -15,6 +16,7 @@ namespace BookShop
 
     public class StartUp
     {
+        [SuppressMessage("ReSharper.DPA", "DPA0000: DPA issues")]
         public static void Main()
         {
             using var db = new BookShopContext();
@@ -61,8 +63,13 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 12. Total Book Copies
-            var result = CountCopiesByAuthor(db);
+            //var result = CountCopiesByAuthor(db);
+            //Console.WriteLine(result);
+
+            // 13. Profit By Category
+            var result = GetTotalProfitByCategory(db);
             Console.WriteLine(result);
+
 
         }
 
@@ -419,6 +426,47 @@ namespace BookShop
                  authorsCopies.Select(ac => $"{ac.FirstName} {ac.LastName} - {ac.Copies}"));
         }
 
+
+        /*
+          13. Total Book Copies
+            Return the total profit of all books by category. 
+            Profit for a book can be calculated by multiplying its number of copies by the price per single book. 
+            Order the results by descending by total profit for a category and ascending by category name. 
+            Print the total profit formatted to the second digit.
+        */
+
+        public static string GetTotalProfitByCategory(BookShopContext context)
+        {
+            //var categoryProfits = context.BooksCategories
+            //    .Include(bc => bc.Category)
+            //    .Include(bc => bc.Book)
+            //    .GroupBy(bc => bc.Category.Name)
+            //    .Select(g => new
+            //    {
+            //        CategoryName = g.Key,
+            //        TotalProfit = g.Sum(bc => bc.Book.Price * bc.Book.Copies)
+            //    })
+            //    .OrderByDescending(g => g.TotalProfit)
+            //    .ThenBy(g => g.CategoryName)
+            //    .ToList();
+
+            // return string.Join(Environment.NewLine,
+            //    categoryProfits.Select(cp => $"{cp.CategoryName} ${cp.TotalProfit:F2}"));
+
+            var categoriesByProfits = context.Categories
+                .Select(c => new
+                {
+                    c.Name,
+                    TotalProfit = c.CategoryBooks.Sum(cb => cb.Book.Price * cb.Book.Copies)
+                })
+                .OrderByDescending(c => c.TotalProfit)
+                .ThenBy(c => c.Name)
+                .ToList();
+
+
+            return string.Join(Environment.NewLine,
+                categoriesByProfits.Select(cbp => $"{cbp.Name} ${cbp.TotalProfit:F2}"));
+        }
     }
 }
 

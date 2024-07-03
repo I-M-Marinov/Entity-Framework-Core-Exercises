@@ -20,7 +20,7 @@ namespace BookShop
         public static void Main()
         {
             using var db = new BookShopContext();
-           //  DbInitializer.ResetDatabase(db); ----- UNCOMMENT IF YOU WANT TO RESET THE DATABASE ( ensuring it will always be in it's original state ) 
+            //  DbInitializer.ResetDatabase(db); ----- UNCOMMENT IF YOU WANT TO RESET THE DATABASE ( ensuring it will always be in it's original state ) 
 
             // 2. Age Restriction -- 
             //var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
@@ -67,7 +67,11 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 13. Profit By Category
-            var result = GetTotalProfitByCategory(db);
+            //var result = GetTotalProfitByCategory(db);
+            //Console.WriteLine(result);
+
+            // 14. Most Recent Books
+            var result = GetMostRecentBooks(db);
             Console.WriteLine(result);
 
 
@@ -229,7 +233,7 @@ namespace BookShop
             
             var books = context.Books
                 .Where(b => b.ReleaseDate < dateFormatted)
-                .Select(b => new{b.Title, b.EditionType, b.Price, b.ReleaseDate})
+                .Select(b => new {b.Title, b.EditionType, b.Price, b.ReleaseDate})
                 .OrderByDescending(b => b.ReleaseDate)
                 .ToList();
 
@@ -467,6 +471,47 @@ namespace BookShop
             return string.Join(Environment.NewLine,
                 categoriesByProfits.Select(cbp => $"{cbp.Name} ${cbp.TotalProfit:F2}"));
         }
+
+        /*
+          14. Most Recent Books
+            Get the most recent books by categories. 
+            The categories should be ordered by name alphabetically. 
+            Only take the top 3 most recent books from each category – ordered by release date (descending). 
+            Select and print the category name and for each book – its title and release year.
+        */
+
+        public static string GetMostRecentBooks(BookShopContext context)
+        {
+            
+            var categoriesWithThreeLatestBooks = context.Categories
+                .Select(c => new
+                {
+                    c.Name,
+                    MostRecentBooks = c.CategoryBooks
+                        .OrderByDescending(b => b.Book.ReleaseDate)
+                        .Take(3)
+                        .Select(b => $"{b.Book.Title} ({b.Book.ReleaseDate.Value.Year})")
+                        .ToList()
+                        
+                }).OrderBy(c => c.Name)
+                .ToList();
+
+
+            var sb = new StringBuilder();
+
+            foreach (var category in categoriesWithThreeLatestBooks)
+            {
+                sb.AppendLine($"--{category.Name}");
+
+                foreach (var book in category.MostRecentBooks)
+                {
+                    sb.AppendLine(book);
+                }
+            }
+
+            return sb.ToString().Trim();
+        }
+
     }
 }
 

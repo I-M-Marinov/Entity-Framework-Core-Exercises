@@ -1,3 +1,8 @@
+C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.csproj.AssemblyReference.cache
+C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.AssemblyInfoInputs.cache
+C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.AssemblyInfo.cs
+C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.csproj.CoreCompileInputs.cache
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.exe
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.deps.json
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.runtimeconfig.json
@@ -51,11 +56,6 @@ C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.Data.pdb
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.Initializer.pdb
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\bin\Debug\net6.0\BookShop.Models.pdb
-C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.csproj.AssemblyReference.cache
-C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.AssemblyInfoInputs.cache
-C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.AssemblyInfo.cs
-C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.csproj.CoreCompileInputs.cache
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.csproj.Up2Date
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\BookShop.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\05.Advanced-Querying-Exercises-BookShop-6.0\BookShop\obj\Debug\net6.0\refint\BookShop.dll

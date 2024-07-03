@@ -55,11 +55,15 @@ namespace BookShop
             // 10. Book Search By Author
             //var result = GetBooksByAuthor(db, "R");
             //Console.WriteLine(result);
-            
-            // 11. Count Books
 
-            var result = CountBooks(db, 40);
+            // 11. Count Books
+            //var result = CountBooks(db, 40);
+            //Console.WriteLine(result);
+
+            // 12. Total Book Copies
+            var result = CountCopiesByAuthor(db);
             Console.WriteLine(result);
+
         }
 
         /* 2. Age Restriction
@@ -328,6 +332,35 @@ namespace BookShop
                 .Count(b => b.Title.Length > lengthCheck);
 
             return count;
+        }
+
+        /*
+          12. Total Book Copies
+            Return the total number of book copies for each author. Order the results descending by total book copies.
+            Return all results in a single string, each on a new line.
+        */
+
+        public static string CountCopiesByAuthor(BookShopContext context)
+        {
+            var groupedBooks = context.Books
+                .GroupBy(b => new { b.Author.FirstName, b.Author.LastName })
+                .OrderByDescending(g => g.Sum(b => b.Copies))
+                .Select(g => new
+                {
+                    FirstName = g.Key.FirstName,
+                    LastName = g.Key.LastName,
+                    TotalCopies = g.Sum(b => b.Copies)
+                })
+                .ToList();
+
+            var sb = new StringBuilder();
+
+            foreach (var group in groupedBooks)
+            {
+                sb.AppendLine($"{group.FirstName} {group.LastName} - {group.TotalCopies}");
+            }
+
+            return sb.ToString().Trim();
         }
     }
 }

@@ -2,11 +2,14 @@
 using System.Text;
 using BookShop.Models.Enums;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
+
 
 namespace BookShop
 {
     using Data;
     using Initializer;
+    using System.Diagnostics;
 
     public class StartUp
     {
@@ -28,9 +31,14 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 5. Not Released In
-            var result = GetBooksNotReleasedIn(db, 2000);
-            Console.WriteLine(result);
-            Console.WriteLine(result.Length);
+            //var result = GetBooksNotReleasedIn(db, 2000);
+            //Console.WriteLine(result);
+
+            // 6. Book Titles by Category
+            //var result = GetBooksByCategory(db, "horror mystery drama");
+            //Console.WriteLine(result);
+
+            // 7. Released Before Date
 
         }
 
@@ -121,7 +129,6 @@ namespace BookShop
         Return in a single string with all titles of books that are NOT released in a given year. Order them by bookId 
          */
 
-        [SuppressMessage("ReSharper.DPA", "DPA0007: Large number of DB records")]
         public static string GetBooksNotReleasedIn(BookShopContext context, int year)
         {
             var sqlQueryRaw = "SELECT * FROM Books WHERE YEAR(ReleaseDate) != {0}";
@@ -152,6 +159,40 @@ namespace BookShop
 
 
             //return string.Join(Environment.NewLine, booksNotReleasedIn.Select(b => b.Title));
+
+        }
+
+        /* 6. Book Titles by Category
+         Return in a single string the titles of books by a given list of categories. 
+        The list of categories will be given in a single line separated by one or more spaces. 
+        Ignore casing. Order by title alphabetically.
+         */
+
+        public static string GetBooksByCategory(BookShopContext context, string input)
+        {
+            var categories = Regex.Split(input.Trim(), @"\s+")
+                .Select(c => c.ToLower())  
+                .ToList();
+
+            var books = context.Books
+                .Where(b => b.BookCategories
+                    .Any(bc => categories.Contains(bc.Category.Name.ToLower())))
+                .OrderBy(b => b.Title)  
+                .Select(b => b.Title)
+                .ToList();
+
+            return string.Join(Environment.NewLine, books);
+        }
+
+        /*
+          7. Released Before Date
+            Return the title, edition type and price of all books that are released before a given date. 
+            The date will be a string in the format "dd-MM-yyyy".
+            Return all of the rows in a single string, ordered by release date (descending).
+         */
+
+        public static string GetBooksReleasedBefore(BookShopContext context, string date)
+        {
 
         }
     }

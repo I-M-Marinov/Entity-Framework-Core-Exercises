@@ -18,7 +18,7 @@ namespace BookShop
         public static void Main()
         {
             using var db = new BookShopContext();
-            DbInitializer.ResetDatabase(db);
+           //  DbInitializer.ResetDatabase(db); ----- UNCOMMENT IF YOU WANT TO RESET THE DATABASE ( ensuring it will always be in it's original state ) 
 
             // 2. Age Restriction -- 
             //var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
@@ -342,26 +342,83 @@ namespace BookShop
 
         public static string CountCopiesByAuthor(BookShopContext context)
         {
-            var groupedBooks = context.Books
-                .GroupBy(b => new { b.Author.FirstName, b.Author.LastName })
-                .OrderByDescending(g => g.Sum(b => b.Copies))
-                .Select(g => new
-                {
-                    FirstName = g.Key.FirstName,
-                    LastName = g.Key.LastName,
-                    TotalCopies = g.Sum(b => b.Copies)
-                })
-                .ToList();
 
-            var sb = new StringBuilder();
+                                                        /* FIRST SOLUTION OF THIS ISSUE ( Judge does not like it ) */
 
-            foreach (var group in groupedBooks)
-            {
-                sb.AppendLine($"{group.FirstName} {group.LastName} - {group.TotalCopies}");
-            }
+            //    var groupedBooks = context.Books
+            //        .GroupBy(b => new { b.Author.FirstName, b.Author.LastName })
+            //        .OrderByDescending(g => g.Sum(b => b.Copies))
+            //        .Select(g => new
+            //        {
+            //            AuthorFirstName = g.Key.FirstName,
+            //            AuthorLastName = g.Key.LastName,
+            //            TotalCopies = g.Sum(b => b.Copies)
+            //        })
+            //        .ToList();
 
-            return sb.ToString().Trim();
+            //    var sb = new StringBuilder();
+
+            //    foreach (var group in groupedBooks)
+            //    {
+            //        sb.AppendLine($"{group.AuthorFirstName} {group.AuthorLastName} - {group.TotalCopies}");
+            //    }
+
+            //    return sb.ToString().Trim();
+            //
+
+                                                    /*SECOND SOLUTION OF THIS ISSUE ( Judge does not like it AS WELL ) */
+
+            //var totalBookCopies = context.Books
+            //    .GroupBy(b => new { b.Author.FirstName, b.Author.LastName })
+            //    .OrderByDescending(g => g.Sum(b => b.Copies))
+            //    .Select(g => $"{g.Key.FirstName} {g.Key.LastName} - {g.Sum(b => b.Copies)}")
+            //    .ToList();
+
+            //var sb = new StringBuilder();
+
+            //foreach (var result in totalBookCopies)
+            //{
+            //    sb.AppendLine(result);
+            //}
+
+            //return sb.ToString().Trim();
+
+                                                                    /* THIRD SOLUTION ... */
+
+            //var booksWithAuthors = context.Books
+            //    .Include(b => b.Author)
+            //    .ToList();
+
+            //var groupedBooks = booksWithAuthors
+            //    .GroupBy(b => new { b.Author.FirstName, b.Author.LastName })
+            //    .OrderByDescending(g => g.Sum(b => b.Copies))
+            //    .ToList();
+
+            //var sb = new StringBuilder();
+            //foreach (var group in groupedBooks)
+            //{
+            //    var totalCopies = group.Sum(b => b.Copies);
+            //    sb.AppendLine($"{group.Key.FirstName} {group.Key.LastName} - {totalCopies}");
+            //}
+
+            //return sb.ToString().Trim();
+
+/* FOURTH SOLUTION ... FINALLY JUDGE gives us the points ... */
+
+             var authorsCopies = context.Authors
+                 .Select(a => new
+                 {
+                     a.FirstName,
+                     a.LastName,
+                     Copies = a.Books.Sum(b => b.Copies)
+                 })
+                 .OrderByDescending(a => a.Copies)
+                 .ToList();
+
+             return string.Join(Environment.NewLine,
+                 authorsCopies.Select(ac => $"{ac.FirstName} {ac.LastName} - {ac.Copies}"));
         }
+
     }
 }
 

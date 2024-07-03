@@ -20,7 +20,7 @@ namespace BookShop
         public static void Main()
         {
             using var db = new BookShopContext();
-            //  DbInitializer.ResetDatabase(db); ----- UNCOMMENT IF YOU WANT TO RESET THE DATABASE ( ensuring it will always be in it's original state ) 
+            DbInitializer.ResetDatabase(db); // ----- UNCOMMENT IF YOU WANT TO RESET THE DATABASE ( ensuring it will always be in it's original state ) 
 
             // 2. Age Restriction -- 
             //var resultMinor = GetBooksByAgeRestriction(db, "MiNoR");
@@ -75,8 +75,10 @@ namespace BookShop
             //Console.WriteLine(result);
 
             // 15. Increase Prices
+            // IncreasePrices(db);
 
-            IncreasePrices(db);
+            // 16. Remove Books
+            Console.WriteLine(RemoveBooks(db));
 
         }
 
@@ -533,6 +535,30 @@ namespace BookShop
 
             context.SaveChanges();
 
+        }
+
+        /*
+          16. Remove Books
+            Remove all books, which have less than 4200 copies. Return an int - the number of books that were deleted from the database.
+        */
+
+        public static int RemoveBooks(BookShopContext context)
+        {
+            var booksToDelete = context.Books
+                .Where(b => b.Copies < 4200)
+                .ToList();
+
+            var counter = 0;
+            foreach (var book in booksToDelete)
+            {
+                context.Books.Remove(book);
+                counter++;
+
+            }
+
+            context.SaveChanges();
+
+            return counter;
         }
 
     }

@@ -40,23 +40,16 @@ namespace ProductShop.Data
 
             modelBuilder.Entity<User>(entity =>
             {
-                modelBuilder.Entity<CategoryProduct>()
-                    .HasKey(cp => new { cp.CategoryId, cp.ProductId });
+                entity.HasMany(x => x.ProductsBought)
+                      .WithOne(x => x.Buyer)
+                      .HasForeignKey(x => x.BuyerId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<User>(entity =>
-                {
-                    entity.HasMany(u => u.ProductsBought)
-                        .WithOne(p => p.Buyer)
-                        .HasForeignKey(p => p.BuyerId)
-                        .OnDelete(DeleteBehavior.Restrict); // or DeleteBehavior.SetNull
-
-                    entity.HasMany(u => u.ProductsSold)
-                        .WithOne(p => p.Seller)
-                        .HasForeignKey(p => p.SellerId)
-                        .OnDelete(DeleteBehavior.Restrict); // or DeleteBehavior.SetNull
-                });
+                entity.HasMany(x => x.ProductsSold)
+                      .WithOne(x => x.Seller)
+                      .HasForeignKey(x => x.SellerId)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
-
         }
     }
 }

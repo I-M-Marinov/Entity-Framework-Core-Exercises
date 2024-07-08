@@ -21,16 +21,22 @@ namespace ProductShop
             string filePathProducts =
                 "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\products.json";
 
+            string filePathCategoriesProducts = 
+                "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\categories-products.json";
+
             string jsonData = File.ReadAllText(filePath);
             string jsonDataCategories = File.ReadAllText(filePathCategories);
             string jsonDataProducts = File.ReadAllText(filePathProducts);
+            string jsonDataCategoriesProducts = File.ReadAllText(filePathCategoriesProducts);
 
 
             // ImportUsers(db, jsonData);
 
-            //Console.WriteLine(ImportCategories(db, jsonDataCategories));
+            // Console.WriteLine(ImportCategories(db, jsonDataCategories));
 
-            Console.WriteLine(ImportProducts(db, jsonDataProducts));
+            // Console.WriteLine(ImportProducts(db, jsonDataProducts));
+
+            // Console.WriteLine(ImportCategoryProducts(db, jsonDataCategoriesProducts));
         }
 
 
@@ -51,19 +57,37 @@ namespace ProductShop
             context.Categories.AddRange(validCategories);
             context.SaveChanges();
 
-            return $"Successfully imported {validCategories.Count} categories";
+            return $"Successfully imported {validCategories.Count}";
         }
         public static string ImportProducts(ProductShopContext context, string inputJson)
         {
             var products = JsonConvert.DeserializeObject<List<Product>>(inputJson);
 
-            var validProducts = products.Where(p => p.BuyerId != null).ToList();
+            //var validProducts = products.Where(p => p.BuyerId != null).ToList();
 
-            context.Products.AddRange(validProducts);
+            context.Products.AddRange(products);
             context.SaveChanges();
 
-            return $"Successfully imported {products.Count} products";
+            return $"Successfully imported {products.Count}";
         }
+        public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
+        {
+            var categoriesProducts = JsonConvert.DeserializeObject<List<CategoryProduct>>(inputJson);
+
+            //var existingCategoryIds = context.Categories.Select(c => c.Id).ToHashSet();
+            //var existingProductIds = context.Products.Select(p => p.Id).ToHashSet();
+
+            //var validCategoriesProducts = categoriesProducts
+            //    .Where(cp => existingCategoryIds.Contains(cp.CategoryId) && existingProductIds.Contains(cp.ProductId))
+            //    .ToList();
+
+            context.CategoriesProducts.AddRange(categoriesProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {categoriesProducts.Count}";
+        }
+
+
 
         public static string GetProductsInRange(ProductShopContext context)
         {

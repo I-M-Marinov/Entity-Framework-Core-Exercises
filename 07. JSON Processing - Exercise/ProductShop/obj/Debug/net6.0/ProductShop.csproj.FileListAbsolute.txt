@@ -5,9 +5,11 @@ C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\ProductShop.pdb
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -52,7 +54,7 @@ C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.AssemblyInfoInputs.cache
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.AssemblyInfo.cs
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.csproj.CoreCompileInputs.cache
-C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.csproj.CopyComplete
+C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductS.9D45F41D.Up2Date
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\refint\ProductShop.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-ProductShop-6.0\ProductShop\obj\Debug\net6.0\ProductShop.pdb

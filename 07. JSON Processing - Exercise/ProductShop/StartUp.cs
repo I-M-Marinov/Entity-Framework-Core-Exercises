@@ -18,11 +18,19 @@ namespace ProductShop
             string filePathCategories =
                 "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\categories.json";
 
+            string filePathProducts =
+                "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\products.json";
+
             string jsonData = File.ReadAllText(filePath);
             string jsonDataCategories = File.ReadAllText(filePathCategories);
+            string jsonDataProducts = File.ReadAllText(filePathProducts);
+
+
             // ImportUsers(db, jsonData);
 
-            Console.WriteLine(ImportCategories(db, jsonDataCategories));
+            //Console.WriteLine(ImportCategories(db, jsonDataCategories));
+
+            Console.WriteLine(ImportProducts(db, jsonDataProducts));
         }
 
 
@@ -32,9 +40,8 @@ namespace ProductShop
             context.Users.AddRange(users);
             context.SaveChanges();
 
-            return $"Successfully imported {users.Count}";
+            return $"Successfully imported {users.Count} users";
         }
-
         public static string ImportCategories(ProductShopContext context, string inputJson)
         {
             var categories = JsonConvert.DeserializeObject<List<Category>>(inputJson);
@@ -44,7 +51,18 @@ namespace ProductShop
             context.Categories.AddRange(validCategories);
             context.SaveChanges();
 
-            return $"Successfully imported {validCategories.Count}";
+            return $"Successfully imported {validCategories.Count} categories";
+        }
+        public static string ImportProducts(ProductShopContext context, string inputJson)
+        {
+            var products = JsonConvert.DeserializeObject<List<Product>>(inputJson);
+
+            var validProducts = products.Where(p => p.BuyerId != null).ToList();
+
+            context.Products.AddRange(validProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {products.Count} products";
         }
 
         public static string GetProductsInRange(ProductShopContext context)

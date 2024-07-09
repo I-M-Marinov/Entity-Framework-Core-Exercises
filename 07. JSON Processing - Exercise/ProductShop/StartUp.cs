@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using ProductShop.Data;
 using ProductShop.Models;
 using System.Text.Json;
+using System.Threading.Channels;
 
 namespace ProductShop
 {
@@ -40,7 +42,9 @@ namespace ProductShop
             
             //Console.WriteLine(ImportCategoryProducts(db, jsonDataCategoriesProducts));
 
-            Console.WriteLine(GetProductsInRange(db));
+            // Console.WriteLine(GetProductsInRange(db));
+
+            // Console.WriteLine(GetSoldProducts(db));
         }
 
 
@@ -111,6 +115,47 @@ namespace ProductShop
 
             // Write to file
             File.WriteAllText("products-in-range.json", json);
+
+            return json;
+        }
+        [SuppressMessage("ReSharper.DPA", "DPA0007: Large number of DB records", MessageId = "count: 180")]
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+
+            var usersWithSoldProducts = context.Users
+                .Where(u => u.ProductsSold.Any(ps => ps.BuyerId != null))
+                .OrderBy(u => u.LastName)
+                .ThenBy(u => u.FirstName)
+                .Select(u => new
+                {
+                    u.FirstName,
+                    u.LastName,
+                    SoldProducts = u.ProductsSold
+                        .Where(ps => ps.BuyerId != null)
+                        .Select(ps => new
+                        {
+                            ps.Name,
+                            ps.Price,
+                            BuyerFirstName = ps.Buyer.FirstName,
+                            BuyerLastName = ps.Buyer.LastName
+                        })
+                        .ToList()
+                })
+                .ToList();
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                }
+            };
+
+            var json = JsonConvert.SerializeObject(usersWithSoldProducts, serializerSettings);
+
+            File.WriteAllText("users-sold-products.json", json);
+
 
             return json;
         }

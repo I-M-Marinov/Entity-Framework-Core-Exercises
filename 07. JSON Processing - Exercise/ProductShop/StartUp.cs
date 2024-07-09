@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using ProductShop.Data;
 using ProductShop.Models;
+using System.Text.Json;
 
 namespace ProductShop
 {
@@ -30,13 +32,15 @@ namespace ProductShop
             string jsonDataCategoriesProducts = File.ReadAllText(filePathCategoriesProducts);
 
 
-            Console.WriteLine(ImportUsers(db, jsonData));
+            //Console.WriteLine(ImportUsers(db, jsonData));
 
-            Console.WriteLine(ImportCategories(db, jsonDataCategories));
+            //Console.WriteLine(ImportCategories(db, jsonDataCategories));
 
-            Console.WriteLine(ImportProducts(db, jsonDataProducts));
+            //Console.WriteLine(ImportProducts(db, jsonDataProducts));
             
-            Console.WriteLine(ImportCategoryProducts(db, jsonDataCategoriesProducts));
+            //Console.WriteLine(ImportCategoryProducts(db, jsonDataCategoriesProducts));
+
+            Console.WriteLine(GetProductsInRange(db));
         }
 
 
@@ -84,10 +88,31 @@ namespace ProductShop
         public static string GetProductsInRange(ProductShopContext context)
         {
 
+            var products = context.Products
+                .Where(p => p.Price >= 500 && p.Price <= 1000)
+                .OrderBy(p => p.Price)
+                .Select(p => new
+                {
+                    p.Name,
+                    p.Price,
+                    Seller = (p.Seller.FirstName + " " + p.Seller.LastName)
+                });
 
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy() 
+                }
+            };
 
+            var json = JsonConvert.SerializeObject(products, serializerSettings);
 
-            return null;
+            // Write to file
+            File.WriteAllText("products-in-range.json", json);
+
+            return json;
         }
     }
 }

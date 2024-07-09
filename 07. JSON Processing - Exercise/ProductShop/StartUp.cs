@@ -6,6 +6,7 @@ using ProductShop.Data;
 using ProductShop.Models;
 using System.Text.Json;
 using System.Threading.Channels;
+using System.Globalization;
 
 namespace ProductShop
 {
@@ -45,6 +46,8 @@ namespace ProductShop
             // Console.WriteLine(GetProductsInRange(db));
 
             // Console.WriteLine(GetSoldProducts(db));
+
+            // Console.WriteLine(GetCategoriesByProductsCount(db));
         }
 
 
@@ -156,6 +159,43 @@ namespace ProductShop
 
             File.WriteAllText("users-sold-products.json", json);
 
+
+            return json;
+        }
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+
+
+            var categories = context.Categories
+                .Select(c => new
+                {
+                    Category = c.Name,
+                    ProductsCount = c.CategoriesProducts.Count,
+                    AveragePrice = c.CategoriesProducts.Average(cp => cp.Product.Price),
+                    TotalRevenue = c.CategoriesProducts.Sum(cp => cp.Product.Price)
+                })
+                .OrderByDescending(c => c.ProductsCount)
+                .ToList()
+                .Select(c => new
+                {
+                    c.Category,
+                    c.ProductsCount,
+                    AveragePrice = c.AveragePrice.ToString("F2"),
+                    TotalRevenue = c.TotalRevenue.ToString("F2")
+                })
+                .ToList();
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                }
+            };
+
+            var json = JsonConvert.SerializeObject(categories, serializerSettings);
+            File.WriteAllText("categories-by-products.json", json);
 
             return json;
         }

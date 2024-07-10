@@ -1,4 +1,5 @@
 ﻿using CarDealer.Data;
+using CarDealer.DTOs;
 using CarDealer.Models;
 using Newtonsoft.Json;
 
@@ -66,14 +67,34 @@ namespace CarDealer
 
         public static string ImportCars(CarDealerContext context, string inputJson)
         {
+            CarInputDto[] cars = JsonConvert.DeserializeObject<CarInputDto[]>(inputJson);
+            ICollection<Car> carsToAdd = new List<Car>();
+            foreach (CarInputDto car in cars)
+            {
+                Car currentCar = new Car()
+                {
+                    Make = car.Make,
+                    Model = car.Model,
+                    TraveledDistance = car.TraveledDistance
+                };
+                foreach (int partId in car.PartsId.Distinct())
+                {
+                    List<int> validIds = context.Parts.Select(p => p.Id).ToList();
 
-            var cars = JsonConvert.DeserializeObject<List<Car>>(inputJson);
-
-            context.Cars.AddRange(cars);
+                    if (validIds.Contains(partId))
+                    {
+                        currentCar.PartsCars.Add(new PartCar { PartId = partId });
+                    }
+                }
+                carsToAdd.Add(currentCar);
+            }
+            context.Cars.AddRange(carsToAdd);
             context.SaveChanges();
 
-            return $"Successfully imported {cars.Count}.";
+            return $"Successfully imported {carsToAdd.Count}.";
         }
+
+        
 
     }
 }

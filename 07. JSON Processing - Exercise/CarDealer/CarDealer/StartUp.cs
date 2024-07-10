@@ -25,11 +25,15 @@ namespace CarDealer
             string customersFilePath =
                 "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\customers.json";
 
+            string salesFilePath =
+                "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\sales.json";
+
 
             string jsonDataSuppliers = File.ReadAllText(suppliersFilePath);
             string jsonDataParts = File.ReadAllText(partsFilePath);
             string jsonDataCars = File.ReadAllText(carsFilePath);
             string jsonDataCustomers = File.ReadAllText(customersFilePath);
+            string jsonDataSales = File.ReadAllText(salesFilePath);
 
 
             //   Console.WriteLine(ImportSuppliers(db, jsonDataSuppliers));
@@ -40,7 +44,9 @@ namespace CarDealer
 
             //   Console.WriteLine(ImportCars(db, jsonDataCustomers));
 
-            Console.WriteLine(ImportCustomers(db, jsonDataCustomers));
+            //   Console.WriteLine(ImportCustomers(db, jsonDataCustomers));
+
+            Console.WriteLine(ImportSales(db, jsonDataSales));
 
 
         }
@@ -114,6 +120,20 @@ namespace CarDealer
 
 
             return string.Format($"Successfully imported {customers.Count}.");
+
+        }
+
+        // Query 13. Import Sales 
+
+        public static string ImportSales(CarDealerContext context, string inputJson)
+        {
+            var sales = JsonConvert.DeserializeObject<List<Sale>>(inputJson);
+
+            context.Sales.AddRange(sales);
+            context.SaveChanges();
+
+
+            return string.Format($"Successfully imported {sales.Count}.");
 
         }
 

@@ -1,4 +1,5 @@
-﻿using CarDealer.Data;
+﻿using AutoMapper;
+using CarDealer.Data;
 using CarDealer.DTOs;
 using CarDealer.Models;
 using Newtonsoft.Json;
@@ -21,17 +22,25 @@ namespace CarDealer
             string carsFilePath =
                 "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\cars.json";
 
+            string customersFilePath =
+                "C:\\Users\\Ivan Marinov\\Desktop\\Exercise\\07.JSON-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\customers.json";
+
 
             string jsonDataSuppliers = File.ReadAllText(suppliersFilePath);
             string jsonDataParts = File.ReadAllText(partsFilePath);
             string jsonDataCars = File.ReadAllText(carsFilePath);
+            string jsonDataCustomers = File.ReadAllText(customersFilePath);
 
 
-         //   Console.WriteLine(ImportSuppliers(db, jsonDataSuppliers));
+            //   Console.WriteLine(ImportSuppliers(db, jsonDataSuppliers));
 
-         //   Console.WriteLine(ImportParts(db, jsonDataParts));
+            //   Console.WriteLine(ImportParts(db, jsonDataParts));
 
-            Console.WriteLine(ImportCars(db, jsonDataCars));
+            //   Console.WriteLine(ImportCars(db, jsonDataCars));
+
+            //   Console.WriteLine(ImportCars(db, jsonDataCustomers));
+
+            Console.WriteLine(ImportCustomers(db, jsonDataCustomers));
 
 
         }
@@ -94,7 +103,19 @@ namespace CarDealer
             return $"Successfully imported {carsToAdd.Count}.";
         }
 
-        
+        // Query 12. Import Customers
+
+        public static string ImportCustomers(CarDealerContext context, string inputJson)
+        {
+            var customers = JsonConvert.DeserializeObject<List<Customer>> (inputJson);
+
+            context.Customers.AddRange(customers);
+            context.SaveChanges();
+
+
+            return string.Format($"Successfully imported {customers.Count}.");
+
+        }
 
     }
 }

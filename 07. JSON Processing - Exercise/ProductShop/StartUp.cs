@@ -48,9 +48,9 @@ namespace ProductShop
             // Console.WriteLine(GetSoldProducts(db));
 
             // Console.WriteLine(GetCategoriesByProductsCount(db));
+
+            Console.WriteLine(GetUsersWithProducts(db));
         }
-
-
         public static string ImportUsers(ProductShopContext context, string inputJson)
         {
             var users = JsonConvert.DeserializeObject<List<User>>(inputJson);
@@ -89,9 +89,6 @@ namespace ProductShop
 
             return $"Successfully imported {categoriesProducts.Count}";
         }
-
-
-
         public static string GetProductsInRange(ProductShopContext context)
         {
 
@@ -121,7 +118,6 @@ namespace ProductShop
 
             return json;
         }
-        [SuppressMessage("ReSharper.DPA", "DPA0007: Large number of DB records", MessageId = "count: 180")]
         public static string GetSoldProducts(ProductShopContext context)
         {
 
@@ -198,6 +194,65 @@ namespace ProductShop
             File.WriteAllText("categories-by-products.json", json);
 
             return json;
+        }
+
+        [SuppressMessage("ReSharper.DPA", "DPA0007: Large number of DB records")]
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                },
+            };
+
+            var users = context.Users
+                .Where(u => u.ProductsSold.Any(p => p.BuyerId != null))
+                .Select(u => new
+                {
+                    firstName = u.FirstName,
+                    lastName = u.LastName,
+                    age = u.Age,
+                    soldProducts = u.ProductsSold
+                        .Where(p => p.BuyerId != null)
+                        .OrderBy(p => p.Id)
+                        .Select(p => new
+                        {
+                            name = p.Name,
+                            price = p.Price
+                        })
+                        .ToList()
+                })
+                .OrderByDescending(u => u.soldProducts.Count())
+                .ToList();
+
+
+            var output = new
+            {
+                usersCount = users.Count(),
+                users = users.Select(u => new
+                {
+                    u.firstName,
+                    u.lastName,
+                    u.age,
+                    soldProducts = new
+                    {
+                        count = u.soldProducts.Count(),
+                        products = u.soldProducts
+                    }
+                })
+            };
+
+            string jsonOutput = JsonConvert.SerializeObject(output, new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            });
+
+            return jsonOutput;
         }
     }
 }

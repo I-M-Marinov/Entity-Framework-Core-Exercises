@@ -3,6 +3,7 @@ using CarDealer.Data;
 using CarDealer.DTOs;
 using CarDealer.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace CarDealer
 {
@@ -42,17 +43,15 @@ namespace CarDealer
 
             //   Console.WriteLine(ImportCars(db, jsonDataCars));
 
-            //   Console.WriteLine(ImportCars(db, jsonDataCustomers));
-
             //   Console.WriteLine(ImportCustomers(db, jsonDataCustomers));
 
-            Console.WriteLine(ImportSales(db, jsonDataSales));
+            //   Console.WriteLine(ImportSales(db, jsonDataSales));
 
+            //   Console.WriteLine(GetOrderedCustomers(db));
 
         }
 
         // Query 9. Import Suppliers 
-
         public static string ImportSuppliers(CarDealerContext context, string inputJson)
         {
             var suppliers = JsonConvert.DeserializeObject<List<Supplier>>(inputJson);
@@ -63,7 +62,6 @@ namespace CarDealer
         }
 
         // Query 10. Import Parts 
-
         public static string ImportParts(CarDealerContext context, string inputJson)
         {
             var parts = JsonConvert.DeserializeObject<List<Part>>(inputJson);
@@ -79,7 +77,6 @@ namespace CarDealer
         }
 
         // Query 11. Import Cars
-
         public static string ImportCars(CarDealerContext context, string inputJson)
         {
             CarInputDto[] cars = JsonConvert.DeserializeObject<CarInputDto[]>(inputJson);
@@ -110,7 +107,6 @@ namespace CarDealer
         }
 
         // Query 12. Import Customers
-
         public static string ImportCustomers(CarDealerContext context, string inputJson)
         {
             var customers = JsonConvert.DeserializeObject<List<Customer>> (inputJson);
@@ -124,7 +120,6 @@ namespace CarDealer
         }
 
         // Query 13. Import Sales 
-
         public static string ImportSales(CarDealerContext context, string inputJson)
         {
             var sales = JsonConvert.DeserializeObject<List<Sale>>(inputJson);
@@ -135,6 +130,32 @@ namespace CarDealer
 
             return string.Format($"Successfully imported {sales.Count}.");
 
+        }
+
+        // Query 14. Export Ordered Customers
+        public static string GetOrderedCustomers(CarDealerContext context)
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings()
+            {
+                DateFormatString = "dd/MM/yyyy",
+            };
+
+            var customers = context.Customers
+                .OrderBy(c => c.BirthDate)
+                .ThenBy(c => c.IsYoungDriver)
+                .Select(p => new
+                {
+                    p.Name,
+                     p.BirthDate,
+                    p.IsYoungDriver
+                }).ToList();
+
+
+            var json = JsonConvert.SerializeObject(customers, Formatting.Indented, settings);
+
+            File.WriteAllText("ordered-customers.json", json);
+
+            return json;
         }
 
     }

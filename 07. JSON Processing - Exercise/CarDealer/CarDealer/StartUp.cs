@@ -3,6 +3,7 @@ using CarDealer.Data;
 using CarDealer.DTOs;
 using CarDealer.Models;
 using Castle.Core.Resource;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -54,7 +55,9 @@ namespace CarDealer
 
             //   Console.WriteLine(GetLocalSuppliers(db));
 
-            Console.WriteLine(GetCarsWithTheirListOfParts(db));
+            //   Console.WriteLine(GetCarsWithTheirListOfParts(db));
+
+            Console.WriteLine(GetTotalSalesByCustomer(db));
         }
 
         // Query 9. Import Suppliers 
@@ -235,6 +238,65 @@ namespace CarDealer
 
 
             return json;
+        }
+
+        // Query 18. Export Total Sales by Customer 
+        public static string GetTotalSalesByCustomer(CarDealerContext context)
+        {
+
+            var settings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                }
+            };
+
+            var customersWithACarBought = context.Customers
+                .Where(c => c.Sales.Any())
+                .Select(c => new
+                {
+                    FullName = c.Name,
+                    BoughtCars = c.Sales.Count(),
+                    SpentMoney = c.Sales
+                        .SelectMany(s => s.Car.PartsCars)
+                        .Sum(pc => pc.Part.Price)
+                })
+                .ToList()
+                .OrderByDescending(c => c.SpentMoney)
+                .ThenByDescending(c => c.BoughtCars)
+                .ToList();
+
+
+
+
+            var json = JsonConvert.SerializeObject(customersWithACarBought, settings);
+
+            File.WriteAllText("customers-total-sales", json);
+
+
+            return json;
+
+            //public static string GetTotalSalesByCustomer(CarDealerContext context)
+            //{
+            //    var customersWithSales = context.Customers
+            //        .Where(c => c.Sales.Any())
+            //        .Select(c => new CustomerSalesDto
+            //        {
+            //            FullName = c.Name,
+            //            BoughtCars = c.Sales.Count,
+            //            SpentMoney = c.Sales
+            //                .SelectMany(s => s.Car.PartsCars.Select(pc => pc.Part.Price))
+            //                .Sum()
+            //        })
+            //        .ToList()
+            //        .OrderByDescending(c => c.SpentMoney)
+            //        .ThenByDescending(c => c.BoughtCars)
+            //        .ToList();
+            //    var jsonResult = JsonConvert.SerializeObject(customersWithSales, Formatting.Indented);
+            //    return jsonResult;
+            //}
         }
     }
 }

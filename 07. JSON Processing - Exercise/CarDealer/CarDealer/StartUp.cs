@@ -2,6 +2,7 @@
 using CarDealer.Data;
 using CarDealer.DTOs;
 using CarDealer.Models;
+using Castle.Core.Resource;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -48,6 +49,8 @@ namespace CarDealer
             //   Console.WriteLine(ImportSales(db, jsonDataSales));
 
             //   Console.WriteLine(GetOrderedCustomers(db));
+
+            Console.WriteLine(GetCarsFromMakeToyota(db));
 
         }
 
@@ -144,9 +147,9 @@ namespace CarDealer
                 .OrderBy(c => c.BirthDate)
                 .ThenBy(c => c.IsYoungDriver)
                 .Select(p => new
-                {
+                { 
                     p.Name,
-                     p.BirthDate,
+                    p.BirthDate,
                     p.IsYoungDriver
                 }).ToList();
 
@@ -158,5 +161,28 @@ namespace CarDealer
             return json;
         }
 
+        // Query 15. Export Cars from Make Toyota
+
+        public static string GetCarsFromMakeToyota(CarDealerContext context)
+        {
+            var toyotaCars = context.Cars
+                .Where(c => c.Make == "Toyota")
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Make,
+                    c.Model,
+                    c.TraveledDistance
+                })
+                .OrderBy(c => c.Model)
+                .ThenByDescending(c => c.TraveledDistance)
+                .ToList();
+
+            var json = JsonConvert.SerializeObject(toyotaCars, Formatting.Indented);
+
+            File.WriteAllText("toyota-cars.json", json);
+
+            return json;
+        }
     }
 }

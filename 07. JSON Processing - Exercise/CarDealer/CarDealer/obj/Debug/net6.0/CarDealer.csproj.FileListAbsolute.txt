@@ -54,9 +54,9 @@ C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfoInputs.cache
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfo.cs
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.csproj.Up2Date
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\refint\CarDealer.dll
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.pdb
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.genruntimeconfig.cache
 C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\ref\CarDealer.dll
-C:\Users\Ivan Marinov\Desktop\Exercise\07.JSON-Processing-Exercises-CarDealer-6.0\CarDealer\obj\Debug\net6.0\CarDealer.csproj.Up2Date

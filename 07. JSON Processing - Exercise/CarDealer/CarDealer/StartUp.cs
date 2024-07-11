@@ -6,6 +6,8 @@ using Castle.Core.Resource;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System.Diagnostics;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace CarDealer
 {
@@ -57,7 +59,9 @@ namespace CarDealer
 
             //   Console.WriteLine(GetCarsWithTheirListOfParts(db));
 
-            Console.WriteLine(GetTotalSalesByCustomer(db));
+            //   Console.WriteLine(GetTotalSalesByCustomer(db));
+
+            Console.WriteLine(GetSalesWithAppliedDiscount(db));
         }
 
         // Query 9. Import Suppliers 
@@ -273,7 +277,7 @@ namespace CarDealer
 
             var json = JsonConvert.SerializeObject(customersWithACarBought, settings);
 
-            File.WriteAllText("customers-total-sales", json);
+            File.WriteAllText("customers-total-sales.json", json);
 
 
             return json;
@@ -298,5 +302,33 @@ namespace CarDealer
             //    return jsonResult;
             //}
         }
+
+        // Query 19. Export Sales with Applied Discount
+        public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+        {
+            var sales = context.Sales
+                .Take(10)
+                .Select(s => new
+                {
+                    car = new
+                    {
+                        Make = s.Car.Make,
+                        Model = s.Car.Model,
+                        TraveledDistance = s.Car.TraveledDistance
+                    },
+                    customerName = s.Customer.Name,
+                    discount = s.Discount.ToString("F2"),
+                    price = s.Car.PartsCars.Sum(pc => pc.Part.Price).ToString("F2"),
+                    priceWithDiscount = (s.Car.PartsCars.Sum(pc => pc.Part.Price) - (s.Car.PartsCars.Sum(pc => pc.Part.Price) * (s.Discount / 100))).ToString("F2")
+                })
+                .ToList();
+
+            var json = JsonConvert.SerializeObject(sales, Formatting.Indented);
+
+            File.WriteAllText("sales-discounts.json", json);
+
+            return json;
+        }
+
     }
 }

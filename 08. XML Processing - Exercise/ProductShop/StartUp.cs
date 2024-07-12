@@ -15,9 +15,13 @@ namespace ProductShop
             var xmlUsersFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\users.xml";
             string inputXmlUsers = File.ReadAllText(xmlUsersFilePath);
 
+            var xmlProductsFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\products.xml";
+            string inputXmlProducts = File.ReadAllText(xmlProductsFilePath);
 
 
-            Console.WriteLine(ImportUsers(db, inputXmlUsers));
+           Console.WriteLine(ImportUsers(db, inputXmlUsers));
+
+           Console.WriteLine(ImportProducts(db, inputXmlProducts));
         }
 
         // Query 1. Import Users
@@ -43,7 +47,33 @@ namespace ProductShop
             context.Users.AddRange(usersToAdd);
             context.SaveChanges();
 
-            return $"Successfully imported {usersToAdd.Count}.";
+            return $"Successfully imported {usersToAdd.Count}";
+        }
+
+        // Query 2. Import Products
+        public static string ImportProducts(ProductShopContext context, string inputXml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(ProductsDTO[]),
+                new XmlRootAttribute("Products"));
+
+            using StringReader stringReader = new StringReader(inputXml);
+
+            ProductsDTO[] products = (ProductsDTO[])serializer.Deserialize(stringReader);
+
+          var productsToAdd = products
+                .Select(p => new Product()
+                {
+                    Name = p.Name,
+                    Price = p.Price,
+                    SellerId = p.SellerId,
+                    BuyerId = p.BuyerId.HasValue ? p.BuyerId.Value : 0
+                })
+                .ToList();
+
+            context.Products.AddRange(productsToAdd);
+            context.SaveChanges();
+
+            return $"Successfully imported {productsToAdd.Count}";
         }
     }
 }

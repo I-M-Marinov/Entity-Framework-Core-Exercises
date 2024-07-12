@@ -32,7 +32,7 @@ namespace ProductShop
 
             //Console.WriteLine(ImportCategories(db, inputXmlCategories));
 
-            Console.WriteLine(ImportCategories(db, inputXmlCategoryProduct));
+            Console.WriteLine(ImportCategoryProducts(db, inputXmlCategoryProduct));
         }
 
         // Query 1. Import Users
@@ -110,6 +110,53 @@ namespace ProductShop
             return $"Successfully imported {categoriesToAdd.Count}";
         }
 
+        // Query 4. Import Categories and Products
 
+        public static string ImportCategoryProducts(ProductShopContext context, string inputXml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(CategoryProductDTO[]),
+                new XmlRootAttribute("CategoryProducts"));
+
+            List<CategoryProduct> validCategoryProducts = new List<CategoryProduct>();
+
+            using StringReader stringReader = new StringReader(inputXml);
+
+            CategoryProductDTO[] categoriesProducts = (CategoryProductDTO[])serializer.Deserialize(stringReader);
+
+            foreach (CategoryProductDTO categoryProductDTO in categoriesProducts)
+            {
+
+                if (!DoesProductAndCAtegoryIdExist(context, categoryProductDTO))
+                {
+                    continue;
+                }
+
+                CategoryProduct validCategoryProduct = new CategoryProduct()
+                {
+                    CategoryId = categoryProductDTO.CategoryId,
+                    ProductId = categoryProductDTO.ProductId
+                };
+
+                validCategoryProducts.Add(validCategoryProduct);
+            }
+
+            context.CategoryProducts.AddRange(validCategoryProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {validCategoryProducts.Count}";
+
+
+        }
+
+        private static bool DoesProductAndCAtegoryIdExist(ProductShopContext context, CategoryProductDTO categoryProductDTO)
+        {
+            if (!context.Products.Any(p => p.Id == categoryProductDTO.ProductId) ||
+                !context.Categories.Any(p => p.Id == categoryProductDTO.CategoryId))
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

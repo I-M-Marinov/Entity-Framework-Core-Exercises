@@ -40,12 +40,12 @@
                 entity.HasMany(x => x.ProductsBought)
                       .WithOne(x => x.Buyer)
                       .HasForeignKey(x => x.BuyerId)
-                      .OnDelete(DeleteBehavior.NoAction);
+                      .OnDelete(DeleteBehavior.Restrict);
 
                 entity.HasMany(x => x.ProductsSold)
                       .WithOne(x => x.Seller)
                       .HasForeignKey(x => x.SellerId)
-                      .OnDelete(DeleteBehavior.NoAction);
+                      .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }

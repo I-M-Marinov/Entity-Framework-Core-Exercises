@@ -18,10 +18,21 @@ namespace ProductShop
             var xmlProductsFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\products.xml";
             string inputXmlProducts = File.ReadAllText(xmlProductsFilePath);
 
+            var xmlCategoriesFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\categories.xml";
+            string inputXmlCategories = File.ReadAllText(xmlCategoriesFilePath);
 
-           Console.WriteLine(ImportUsers(db, inputXmlUsers));
+            var xmlCategoryProductFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-ProductShop-6.0\\ProductShop\\Datasets\\categories-products.xml";
+            string inputXmlCategoryProduct = File.ReadAllText(xmlCategoryProductFilePath);
 
-           Console.WriteLine(ImportProducts(db, inputXmlProducts));
+
+
+            //Console.WriteLine(ImportUsers(db, inputXmlUsers));
+
+            //Console.WriteLine(ImportProducts(db, inputXmlProducts));
+
+            //Console.WriteLine(ImportCategories(db, inputXmlCategories));
+
+            Console.WriteLine(ImportCategories(db, inputXmlCategoryProduct));
         }
 
         // Query 1. Import Users
@@ -66,7 +77,7 @@ namespace ProductShop
                     Name = p.Name,
                     Price = p.Price,
                     SellerId = p.SellerId,
-                    BuyerId = p.BuyerId.HasValue ? p.BuyerId.Value : 0
+                    BuyerId = p.BuyerId
                 })
                 .ToList();
 
@@ -75,5 +86,30 @@ namespace ProductShop
 
             return $"Successfully imported {productsToAdd.Count}";
         }
+
+        // Query 3. Import Categories
+        public static string ImportCategories(ProductShopContext context, string inputXml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(CategoriesDTO[]),
+                new XmlRootAttribute("Categories"));
+
+            using StringReader stringReader = new StringReader(inputXml);
+
+            CategoriesDTO[] categories = (CategoriesDTO[])serializer.Deserialize(stringReader);
+
+            var categoriesToAdd = categories
+                .Select(p => new Category()
+                {
+                    Name = p.Name
+                })
+                .ToList();
+
+            context.Categories.AddRange(categoriesToAdd);
+            context.SaveChanges();
+
+            return $"Successfully imported {categoriesToAdd.Count}";
+        }
+
+
     }
 }

@@ -24,11 +24,16 @@ namespace CarDealer
             var xmlCarsFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\cars.xml";
             string inputXmlCars = File.ReadAllText(xmlCarsFilePath);
 
+            var xmlCustomersFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\customers.xml";
+            string inputXmlCustomers = File.ReadAllText(xmlCustomersFilePath);
+
             // Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
 
             // Console.WriteLine(ImportParts(db, inputXmlParts));
 
-            Console.WriteLine(ImportCars(db, inputXmlCars));
+            //  Console.WriteLine(ImportCars(db, inputXmlCars));
+
+            Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
         }
 
         // Query 9. Import Suppliers
@@ -90,7 +95,6 @@ namespace CarDealer
         }
 
         // Query 11. Import Cars
-
         public static string ImportCars(CarDealerContext context, string inputXml)
         {
             XmlRootAttribute root = new XmlRootAttribute("Cars");
@@ -132,6 +136,32 @@ namespace CarDealer
             context.SaveChanges();
 
             return $"Successfully imported {carsToAdd.Count}";
+        }
+
+        // Query 12. Import Customers
+        public static string ImportCustomers(CarDealerContext context, string inputXml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(CustomersDto[]),
+                new XmlRootAttribute("Customers"));
+
+            using StringReader stringReader = new StringReader(inputXml);
+
+            CustomersDto[] customers = (CustomersDto[])serializer.Deserialize(stringReader);
+
+            List<Customer> customersToAdd = customers
+                .Select(c => new Customer()
+                {
+                    Name = c.Name,
+                    BirthDate = c.BirthDate,
+                    IsYoungDriver = c.IsYoungDriver
+                })
+                .ToList();
+
+            context.Customers.AddRange(customersToAdd);
+            context.SaveChanges();
+
+
+            return $"Successfully imported {customersToAdd.Count}";
         }
     }
 }

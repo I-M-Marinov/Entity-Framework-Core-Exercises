@@ -43,7 +43,9 @@ namespace CarDealer
 
             // Console.WriteLine(ImportSales(db, inputXmlSales));
 
-            Console.WriteLine(GetCarsWithDistance(db));
+            // Console.WriteLine(GetCarsWithDistance(db));
+
+            Console.WriteLine(GetCarsFromMakeBmw(db));
         }
 
         // Query 9. Import Suppliers
@@ -239,6 +241,35 @@ namespace CarDealer
             serializer.Serialize(xmlWriter, aboutToBreakdownCars, emptyNamespaces);
 
             return writer.ToString().TrimEnd();
+        }
+
+        // Query 15. Export Cars from Make BMW
+
+        public static string GetCarsFromMakeBmw(CarDealerContext context)
+        {
+           List<CarExportAttributeDto> beamerCars = context.Cars
+                .Where(c => c.Make == "BMW")
+                .OrderBy(c => c.Model)
+                .ThenByDescending(c => c.TraveledDistance)
+                .Select(c => new CarExportAttributeDto
+                {
+                    Id = c.Id,
+                    Model = c.Model,
+                    TraveledDistance = c.TraveledDistance
+                }).ToList();
+
+           XmlSerializer serializer = new XmlSerializer(typeof(List<CarExportAttributeDto>), new XmlRootAttribute("cars"));
+
+           using StringWriter writer = new StringWriter();
+
+           using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+           XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+           emptyNamespaces.Add(string.Empty, string.Empty);
+
+           serializer.Serialize(xmlWriter, beamerCars, emptyNamespaces);
+
+            return writer.ToString();
         }
     }
 }

@@ -5,6 +5,9 @@ using CarDealer.DTOs.Import;
 using System.IO;
 using System.Diagnostics;
 using System.Reflection.PortableExecutable;
+using System.Text;
+using CarDealer.DTOs.Export;
+using System.Xml;
 
 namespace CarDealer
 {
@@ -34,11 +37,13 @@ namespace CarDealer
 
             // Console.WriteLine(ImportParts(db, inputXmlParts));
 
-            //  Console.WriteLine(ImportCars(db, inputXmlCars));
+            // Console.WriteLine(ImportCars(db, inputXmlCars));
 
             // Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
 
-            Console.WriteLine(ImportSales(db, inputXmlSales));
+            // Console.WriteLine(ImportSales(db, inputXmlSales));
+
+            Console.WriteLine(GetCarsWithDistance(db));
         }
 
         // Query 9. Import Suppliers
@@ -203,6 +208,37 @@ namespace CarDealer
             context.SaveChanges();
 
             return $"Successfully imported {salesToAdd.Count}";
+        }
+
+        // Query 14. Export Cars With Distance ( they are about to breakdown... 2 million kilometers distance :) 
+        public static string GetCarsWithDistance(CarDealerContext context)
+        {
+            List<CarExportDto> aboutToBreakdownCars = context.Cars
+                .Where(c => c.TraveledDistance > 2000000)
+                .OrderBy(c => c.Make)
+                .ThenBy(c => c.Model)
+                .Take(10)
+                .Select(c => new CarExportDto
+                {
+                    Make = c.Make,
+                    Model = c.Model,
+                    TraveledDistance = c.TraveledDistance,
+                })
+                .ToList();
+
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<CarExportDto>), new XmlRootAttribute("cars"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, aboutToBreakdownCars, emptyNamespaces);
+
+            return writer.ToString().TrimEnd();
         }
     }
 }

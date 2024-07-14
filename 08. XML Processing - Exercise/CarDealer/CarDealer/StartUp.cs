@@ -8,6 +8,7 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using CarDealer.DTOs.Export;
 using System.Xml;
+using Newtonsoft.Json;
 
 namespace CarDealer
 {
@@ -47,7 +48,9 @@ namespace CarDealer
 
             // Console.WriteLine(GetCarsFromMakeBmw(db));
 
-            Console.WriteLine(GetLocalSuppliers(db));
+            // Console.WriteLine(GetLocalSuppliers(db));
+
+            Console.WriteLine(GetCarsWithTheirListOfParts(db));
         }
 
         // Query 9. Import Suppliers
@@ -274,7 +277,6 @@ namespace CarDealer
         }
 
         // Query 16. Export Local Suppliers
-
         public static string GetLocalSuppliers(CarDealerContext context)
         {
             List<SuppliersExportDto> suppliers = context.Suppliers
@@ -298,6 +300,44 @@ namespace CarDealer
             serializer.Serialize(xmlWriter, suppliers, emptyNamespaces);
 
             return writer.ToString();
+        }
+
+        // Query 17. Export Cars with Their List of Parts
+        public static string GetCarsWithTheirListOfParts(CarDealerContext context)
+        {
+            List<CarsWithPartsAttributeDto> carsWithParts = context.Cars
+                .OrderByDescending(c => c.TraveledDistance)
+                .ThenBy(c => c.Model)
+                .Take(5)
+                .Select(c => new CarsWithPartsAttributeDto
+                {
+                    Make = c.Make,
+                    Model = c.Model,
+                    TraveledDistance = c.TraveledDistance,
+                    Parts = c.PartsCars.Select(pc => new  PartsAttributeDto()
+                        {
+                            Name = pc.Part.Name,
+                            Price = pc.Part.Price
+                        })
+                        .OrderByDescending(p => p.Price)
+                        .ToList()
+                }).ToList();
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<CarsWithPartsAttributeDto>), new XmlRootAttribute("cars"));
+
+
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, carsWithParts, emptyNamespaces);
+
+            return writer.ToString();
+
         }
     }
 }

@@ -21,5 +21,7 @@ namespace CarDealer.DTOs.Import
         [XmlElement("discount")]
         public decimal Discount { get; set; }
 
+
+
     }
 }

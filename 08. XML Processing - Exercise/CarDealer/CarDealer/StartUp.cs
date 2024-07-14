@@ -27,13 +27,18 @@ namespace CarDealer
             var xmlCustomersFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\customers.xml";
             string inputXmlCustomers = File.ReadAllText(xmlCustomersFilePath);
 
+            var xmlSalesFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\sales.xml";
+            string inputXmlSales = File.ReadAllText(xmlSalesFilePath);
+
             // Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
 
             // Console.WriteLine(ImportParts(db, inputXmlParts));
 
             //  Console.WriteLine(ImportCars(db, inputXmlCars));
 
-            Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
+            // Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
+
+            Console.WriteLine(ImportSales(db, inputXmlSales));
         }
 
         // Query 9. Import Suppliers
@@ -162,6 +167,42 @@ namespace CarDealer
 
 
             return $"Successfully imported {customersToAdd.Count}";
+        }
+
+        // Query 13. Import Sales
+        public static string ImportSales(CarDealerContext context, string inputXml)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(SalesDto[]),
+                new XmlRootAttribute("Sales"));
+
+            using StringReader reader = new StringReader(inputXml);
+
+            SalesDto[] sales = (SalesDto[])serializer.Deserialize(reader);
+
+            ICollection<Sale> salesToAdd = new List<Sale>();
+
+            foreach (SalesDto saleDto in sales)
+            {
+                bool carExists = context.Cars.Any(c => c.Id == saleDto.CarId);
+
+                if (!carExists)
+                {
+                    continue;
+                }
+
+                Sale sale = new Sale()
+                {
+                    CarId = saleDto.CarId,
+                    CustomerId = saleDto.CustomerId,
+                    Discount = saleDto.Discount
+                };
+
+                salesToAdd.Add(sale);
+            }
+            context.Sales.AddRange(salesToAdd);
+            context.SaveChanges();
+
+            return $"Successfully imported {salesToAdd.Count}";
         }
     }
 }

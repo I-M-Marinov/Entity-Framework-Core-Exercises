@@ -45,7 +45,9 @@ namespace CarDealer
 
             // Console.WriteLine(GetCarsWithDistance(db));
 
-            Console.WriteLine(GetCarsFromMakeBmw(db));
+            // Console.WriteLine(GetCarsFromMakeBmw(db));
+
+            Console.WriteLine(GetLocalSuppliers(db));
         }
 
         // Query 9. Import Suppliers
@@ -78,7 +80,7 @@ namespace CarDealer
         public static string ImportParts(CarDealerContext context, string inputXml)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(PartsDto[]),
-                new XmlRootAttribute("Parts")); // Adjust the root element name as needed
+                new XmlRootAttribute("Parts")); 
 
             using StringReader stringReader = new StringReader(inputXml);
 
@@ -244,7 +246,6 @@ namespace CarDealer
         }
 
         // Query 15. Export Cars from Make BMW
-
         public static string GetCarsFromMakeBmw(CarDealerContext context)
         {
            List<CarExportAttributeDto> beamerCars = context.Cars
@@ -268,6 +269,33 @@ namespace CarDealer
            emptyNamespaces.Add(string.Empty, string.Empty);
 
            serializer.Serialize(xmlWriter, beamerCars, emptyNamespaces);
+
+            return writer.ToString();
+        }
+
+        // Query 16. Export Local Suppliers
+
+        public static string GetLocalSuppliers(CarDealerContext context)
+        {
+            List<SuppliersExportDto> suppliers = context.Suppliers
+                .Where(s => s.IsImporter == false)
+                .Select(s => new SuppliersExportDto
+                {
+                  Id = s.Id,
+                  Name = s.Name,
+                  Parts = s.Parts.Count
+                }).ToList();
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<SuppliersExportDto>), new XmlRootAttribute("suppliers"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, suppliers, emptyNamespaces);
 
             return writer.ToString();
         }

@@ -9,6 +9,7 @@ using System.Text;
 using CarDealer.DTOs.Export;
 using System.Xml;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace CarDealer
 {
@@ -34,15 +35,15 @@ namespace CarDealer
             var xmlSalesFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\sales.xml";
             string inputXmlSales = File.ReadAllText(xmlSalesFilePath);
 
-            // Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
+            //Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
 
-            // Console.WriteLine(ImportParts(db, inputXmlParts));
+            //Console.WriteLine(ImportParts(db, inputXmlParts));
 
             // Console.WriteLine(ImportCars(db, inputXmlCars));
 
-            // Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
+            //Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
 
-            // Console.WriteLine(ImportSales(db, inputXmlSales));
+            //Console.WriteLine(ImportSales(db, inputXmlSales));
 
             // Console.WriteLine(GetCarsWithDistance(db));
 
@@ -50,7 +51,9 @@ namespace CarDealer
 
             // Console.WriteLine(GetLocalSuppliers(db));
 
-            Console.WriteLine(GetCarsWithTheirListOfParts(db));
+            // Console.WriteLine(GetCarsWithTheirListOfParts(db));
+
+             Console.WriteLine(GetTotalSalesByCustomer(db));
         }
 
         // Query 9. Import Suppliers
@@ -325,8 +328,6 @@ namespace CarDealer
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<CarsWithPartsAttributeDto>), new XmlRootAttribute("cars"));
 
-
-
             using StringWriter writer = new StringWriter();
 
             using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
@@ -338,6 +339,54 @@ namespace CarDealer
 
             return writer.ToString();
 
+        }
+
+        // Query 18. Export Sales with Applied Discount 
+        public static string GetTotalSalesByCustomer(CarDealerContext context)
+        {
+
+            var totalSales = context.Customers
+                .Where(c => c.Sales.Any())
+                .Select(c => new CustomerExportDto()
+                {
+                    FullName = c.Name,
+                    BoughtCars = c.Sales.Count,
+                    SpentMoney = c.Sales.Sum(s =>
+                        s.Car.PartsCars.Sum(pc =>
+                            Math.Round(c.IsYoungDriver ? pc.Part.Price * 0.95m : pc.Part.Price, 2)
+                        )
+                    )
+                })
+                .OrderByDescending(s => s.SpentMoney)
+                .ToArray();
+
+            return SerializeToXml<CustomerExportDto[]>(totalSales, "customers");
+        }
+
+        private static string SerializeToXml<T>(T dto, string xmlRootAttribute)
+        {
+            XmlSerializer xmlSerializer =
+                new XmlSerializer(typeof(T), new XmlRootAttribute(xmlRootAttribute));
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            using (StringWriter stringWriter = new StringWriter(stringBuilder, CultureInfo.InvariantCulture))
+            {
+                XmlSerializerNamespaces xmlSerializerNamespaces = new XmlSerializerNamespaces();
+                xmlSerializerNamespaces.Add(string.Empty, string.Empty);
+
+                try
+                {
+                    xmlSerializer.Serialize(stringWriter, dto, xmlSerializerNamespaces);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+
+            return stringBuilder.ToString();
         }
     }
 }

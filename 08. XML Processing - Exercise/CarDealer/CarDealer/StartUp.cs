@@ -35,15 +35,15 @@ namespace CarDealer
             var xmlSalesFilePath = "C:\\Users\\Ivan Marinov\\Desktop\\XML Exercise\\08.XML-Processing-Exercises-CarDealer-6.0\\CarDealer\\Datasets\\sales.xml";
             string inputXmlSales = File.ReadAllText(xmlSalesFilePath);
 
-            //Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
+            // Console.WriteLine(ImportSuppliers(db, inputXmlSuppliers));
 
-            //Console.WriteLine(ImportParts(db, inputXmlParts));
+            // Console.WriteLine(ImportParts(db, inputXmlParts));
 
             // Console.WriteLine(ImportCars(db, inputXmlCars));
 
-            //Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
+            // Console.WriteLine(ImportCustomers(db, inputXmlCustomers));
 
-            //Console.WriteLine(ImportSales(db, inputXmlSales));
+            // Console.WriteLine(ImportSales(db, inputXmlSales));
 
             // Console.WriteLine(GetCarsWithDistance(db));
 
@@ -53,7 +53,9 @@ namespace CarDealer
 
             // Console.WriteLine(GetCarsWithTheirListOfParts(db));
 
-             Console.WriteLine(GetTotalSalesByCustomer(db));
+            // Console.WriteLine(GetTotalSalesByCustomer(db));
+
+             Console.WriteLine(GetSalesWithAppliedDiscount(db));
         }
 
         // Query 9. Import Suppliers
@@ -341,7 +343,7 @@ namespace CarDealer
 
         }
 
-        // Query 18. Export Sales with Applied Discount 
+        // Query 18. Export Total Sales by Customer
         public static string GetTotalSalesByCustomer(CarDealerContext context)
         {
 
@@ -361,6 +363,45 @@ namespace CarDealer
                 .ToArray();
 
             return SerializeToXml<CustomerExportDto[]>(totalSales, "customers");
+        }
+
+        // Query 19. Export Sales with Applied Discount
+
+        public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+        {
+            List<SaleWithDiscountExportDto> salesWithDiscount = context.Sales
+                .Select(s => new SaleWithDiscountExportDto()
+                {
+                    Car = new CarWithAttrExportDTO()
+                    {
+                        Make = s.Car.Make,
+                        Model = s.Car.Model,
+                        TraveledDistance = s.Car.TraveledDistance
+                    },
+
+                    Discount = (int)s.Discount,
+                    CustomerName = s.Customer.Name,
+                    Price = s.Car.PartsCars.Sum(p => p.Part.Price),
+                    PriceWithDiscount =
+                        Math.Round((double)(s.Car.PartsCars
+                            .Sum(p => p.Part.Price) * (1 - (s.Discount / 100))),4)
+                })
+                .ToList();
+
+            
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<SaleWithDiscountExportDto>), new XmlRootAttribute("sales"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, salesWithDiscount, emptyNamespaces);
+
+            return writer.ToString();
         }
 
         private static string SerializeToXml<T>(T dto, string xmlRootAttribute)
@@ -388,5 +429,7 @@ namespace CarDealer
 
             return stringBuilder.ToString();
         }
+
+
     }
 }

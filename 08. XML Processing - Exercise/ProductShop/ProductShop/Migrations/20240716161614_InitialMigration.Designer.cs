@@ -12,7 +12,7 @@ using ProductShop.Data;
 namespace ProductShop.Migrations
 {
     [DbContext(typeof(ProductShopContext))]
-    [Migration("20240712193032_InitialMigration")]
+    [Migration("20240716161614_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,7 +65,6 @@ namespace ProductShop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("BuyerId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -99,7 +98,6 @@ namespace ProductShop.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
@@ -135,8 +133,7 @@ namespace ProductShop.Migrations
                     b.HasOne("ProductShop.Models.User", "Buyer")
                         .WithMany("ProductsBought")
                         .HasForeignKey("BuyerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("ProductShop.Models.User", "Seller")
                         .WithMany("ProductsSold")

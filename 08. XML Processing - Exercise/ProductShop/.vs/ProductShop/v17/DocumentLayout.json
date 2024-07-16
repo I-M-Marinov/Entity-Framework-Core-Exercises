@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\dtos\\export\\productinrangeexportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\dtos\\export\\productinrangeexportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\datasets\\categories-products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\datasets\\categories-products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\datasets\\users.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\datasets\\users.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\datasets\\products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\datasets\\products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\dtos\\import\\categoryproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\dtos\\import\\categoryproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Migrations\\20240716161614_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProductShop\\Migrations\\20240716161614_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\models\\categoryproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\models\\categoryproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\dtos\\import\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\dtos\\import\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|d:\\lcfr\\developer\\entity framework core exercises\\08. xml processing - exercise\\productshop\\productshop\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18488EE8-C545-489E-A587-DD442B107B10}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\StartUp.cs",
+              "RelativeDocumentMoniker": "ProductShop\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\StartUp.cs*",
+              "RelativeToolTip": "ProductShop\\StartUp.cs*",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwK4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T14:52:30.75Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "categories-products.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\categories-products.xml",
+              "RelativeDocumentMoniker": "ProductShop\\Datasets\\categories-products.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\categories-products.xml",
+              "RelativeToolTip": "ProductShop\\Datasets\\categories-products.xml",
+              "ViewState": "AQIAAAADAAAAAAAAAAAmwCIDAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-16T16:28:58.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "users.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\users.xml",
+              "RelativeDocumentMoniker": "ProductShop\\Datasets\\users.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\users.xml",
+              "RelativeToolTip": "ProductShop\\Datasets\\users.xml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-16T16:27:38.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "products.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\products.xml",
+              "RelativeDocumentMoniker": "ProductShop\\Datasets\\products.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Datasets\\products.xml",
+              "RelativeToolTip": "ProductShop\\Datasets\\products.xml",
+              "ViewState": "AQIAAC4CAAAAAAAAAAAmwEQCAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-16T16:25:32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryProductDTO.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Import\\CategoryProductDTO.cs",
+              "RelativeDocumentMoniker": "ProductShop\\DTOs\\Import\\CategoryProductDTO.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Import\\CategoryProductDTO.cs",
+              "RelativeToolTip": "ProductShop\\DTOs\\Import\\CategoryProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:24:51.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240716161614_InitialMigration.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Migrations\\20240716161614_InitialMigration.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Migrations\\20240716161614_InitialMigration.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Migrations\\20240716161614_InitialMigration.cs",
+              "RelativeToolTip": "ProductShop\\Migrations\\20240716161614_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:16:15.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Models\\Category.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\Category.cs",
+              "RelativeToolTip": "ProductShop\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:15:33.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryProduct.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\CategoryProduct.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Models\\CategoryProduct.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\CategoryProduct.cs",
+              "RelativeToolTip": "ProductShop\\Models\\CategoryProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:15:25.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Models\\Product.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\Product.cs",
+              "RelativeToolTip": "ProductShop\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:40:10.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductInRangeExportDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Export\\ProductInRangeExportDto.cs",
+              "RelativeDocumentMoniker": "ProductShop\\DTOs\\Export\\ProductInRangeExportDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Export\\ProductInRangeExportDto.cs",
+              "RelativeToolTip": "ProductShop\\DTOs\\Export\\ProductInRangeExportDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:35:43.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Models\\User.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Models\\User.cs",
+              "RelativeToolTip": "ProductShop\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:42:39.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsersDTO.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Import\\UsersDTO.cs",
+              "RelativeDocumentMoniker": "ProductShop\\DTOs\\Import\\UsersDTO.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\DTOs\\Import\\UsersDTO.cs",
+              "RelativeToolTip": "ProductShop\\DTOs\\Import\\UsersDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:41:37.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Data\\Configuration.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Data\\Configuration.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\08. XML Processing - Exercise\\ProductShop\\ProductShop\\Data\\Configuration.cs",
+              "RelativeToolTip": "ProductShop\\Data\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T14:53:22.209Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

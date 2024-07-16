@@ -16,11 +16,11 @@ namespace ProductShop.DTOs.Export
         [XmlElement("lastName")]
         public string LastName { get; set; }
 
-        [XmlIgnore]
+
         [XmlElement("age")] 
         public int? Age { get; set; }
 
-       // [XmlIgnore] 
+       [XmlIgnore] 
         [XmlArray("soldProducts")]
         public ProductInRangeExportDto[] SoldProducts { get; set; }
 

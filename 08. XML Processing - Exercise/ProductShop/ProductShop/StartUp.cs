@@ -40,7 +40,11 @@ namespace ProductShop
 
             //Console.WriteLine(GetProductsInRange(db
             
-            Console.WriteLine(GetSoldProducts(db));
+            //Console.WriteLine(GetSoldProducts(db));
+
+            //Console.WriteLine(GetCategoriesByProductsCount(db));
+
+            Console.WriteLine(GetUsersWithProducts(db));
         }
 
         // Query 1. Import Users
@@ -197,7 +201,6 @@ namespace ProductShop
         }
 
         // Query 6. Export Sold Products
-
         public static string GetSoldProducts(ProductShopContext context)
         {
             UserExportDto[] usersToExport = context.Users
@@ -227,6 +230,81 @@ namespace ProductShop
             emptyNamespaces.Add(string.Empty, string.Empty);
 
             serializer.Serialize(xmlWriter, usersToExport, emptyNamespaces);
+
+            return writer.ToString().Trim();
+        }
+
+        // Query 7. Export Categories By Products Count
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            List<CategoryExportDto> categoriesAndProducts = context.Categories
+                .Select(c => new CategoryExportDto
+                {
+                    Name = c.Name,
+                    Count = c.CategoryProducts.Count,
+                    AveragePrice = c.CategoryProducts.Count > 0 ? c.CategoryProducts.Average(c => c.Product.Price) : 0,
+                    TotalRevenue = c.CategoryProducts.Sum(p => p.Product.Price)
+                })
+                .OrderByDescending(p => p.Count)
+                .ThenBy(p => p.TotalRevenue)
+                .ToList();
+
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<CategoryExportDto>), new XmlRootAttribute("Categories"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, categoriesAndProducts, emptyNamespaces);
+
+            return writer.ToString().Trim();
+        }
+
+        // Query 8. Export Users and Products
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            UsersAndProductsExportDto usersAndProducts = new UsersAndProductsExportDto()
+            {
+                Count = context.Users
+                    .Where(u => u.ProductsSold.Count > 0).Count(),
+                Users = context.Users
+                    .Where(u => u.ProductsSold.Count > 0)
+                    .OrderByDescending(u => u.ProductsSold.Count)
+                    .Select(u => new UserExportDto()
+                    {
+                        FirstName = u.FirstName,
+                        LastName = u.LastName,
+                        Age = u.Age,
+                        Products = new SoldProductsExportDto()
+                        {
+                            Count = u.ProductsSold.Count,
+                            Producst = u.ProductsSold.OrderByDescending(p => p.Price)
+                                .Select(p => new ProductInRangeExportDto()
+                                {
+                                    Name = p.Name,
+                                    Price = p.Price
+                                }).ToArray()
+
+                        }
+                    })
+                    .Take(10)
+                    .ToArray()
+            };
+
+            XmlSerializer serializer = new XmlSerializer(typeof(UsersAndProductsExportDto), new XmlRootAttribute("Users"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, usersAndProducts, emptyNamespaces);
 
             return writer.ToString().Trim();
         }

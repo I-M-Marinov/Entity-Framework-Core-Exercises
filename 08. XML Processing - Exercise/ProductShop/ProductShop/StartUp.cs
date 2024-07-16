@@ -38,7 +38,9 @@ namespace ProductShop
 
             //Console.WriteLine(ImportCategoryProducts(db, inputXmlCategoryProduct));
 
-            Console.WriteLine(GetProductsInRange(db));
+            //Console.WriteLine(GetProductsInRange(db
+            
+            Console.WriteLine(GetSoldProducts(db));
         }
 
         // Query 1. Import Users
@@ -190,6 +192,41 @@ namespace ProductShop
             emptyNamespaces.Add(string.Empty, string.Empty);
 
             serializer.Serialize(xmlWriter, productsInRangeExportDtos, emptyNamespaces);
+
+            return writer.ToString().Trim();
+        }
+
+        // Query 6. Export Sold Products
+
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+            UserExportDto[] usersToExport = context.Users
+                .Where(u => u.ProductsSold.Count > 0)
+                .OrderBy(u => u.LastName)
+                .ThenBy(u => u.FirstName)
+                .Take(5)
+                .Select(u => new UserExportDto()
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    SoldProducts = u.ProductsSold.Select(p => new ProductInRangeExportDto()
+                    {
+                        Name = p.Name,
+                        Price = p.Price
+                    }).ToArray()
+                }).ToArray();
+
+
+            XmlSerializer serializer = new XmlSerializer(typeof(UserExportDto[]), new XmlRootAttribute("Users"));
+
+            using StringWriter writer = new StringWriter();
+
+            using XmlWriter xmlWriter = XmlWriter.Create(writer, new XmlWriterSettings { Indent = true });
+
+            XmlSerializerNamespaces emptyNamespaces = new XmlSerializerNamespaces();
+            emptyNamespaces.Add(string.Empty, string.Empty);
+
+            serializer.Serialize(xmlWriter, usersToExport, emptyNamespaces);
 
             return writer.ToString().Trim();
         }

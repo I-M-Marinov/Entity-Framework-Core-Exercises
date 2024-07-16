@@ -249,7 +249,6 @@ namespace ProductShop
                 .ThenBy(p => p.TotalRevenue)
                 .ToList();
 
-
             XmlSerializer serializer = new XmlSerializer(typeof(List<CategoryExportDto>), new XmlRootAttribute("Categories"));
 
             using StringWriter writer = new StringWriter();

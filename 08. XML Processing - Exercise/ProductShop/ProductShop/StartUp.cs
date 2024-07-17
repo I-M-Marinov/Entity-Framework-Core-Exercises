@@ -38,13 +38,13 @@ namespace ProductShop
 
             //Console.WriteLine(ImportCategoryProducts(db, inputXmlCategoryProduct));
 
-            //Console.WriteLine(GetProductsInRange(db
-            
+            Console.WriteLine(GetProductsInRange(db));
+
             //Console.WriteLine(GetSoldProducts(db));
 
             //Console.WriteLine(GetCategoriesByProductsCount(db));
 
-            Console.WriteLine(GetUsersWithProducts(db));
+            //Console.WriteLine(GetUsersWithProducts(db));
         }
 
         // Query 1. Import Users
@@ -182,7 +182,9 @@ namespace ProductShop
                 {
                     Name = p.Name,
                     Price = p.Price,
-                    Buyer = p.Buyer != null ? string.Join(" ", p.Buyer.FirstName, p.Buyer.LastName) : null
+                    Buyer = p.BuyerId.HasValue
+                        ? $"{p.Buyer.FirstName} {p.Buyer.LastName}"
+                        : null
                 })
                 .ToArray();
 

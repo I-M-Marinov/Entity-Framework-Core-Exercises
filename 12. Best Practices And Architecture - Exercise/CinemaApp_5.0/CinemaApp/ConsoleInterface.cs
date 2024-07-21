@@ -22,6 +22,7 @@ public static class ConsoleInterface
             Console.WriteLine("1. List all movies");
             Console.WriteLine("2. List all cinemas");
             Console.WriteLine("3. List all animation movies");
+            Console.WriteLine("3. List all action movies");
 
             string? input = Console.ReadLine();
 

@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "Arena",
+    "address": "Sofia, The Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 2,
+    "name": "Arena",
+    "address": "Sofia, Mega Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 3,
+    "name": "Arena",
+    "address": "Varna, Grand Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 4,
+    "name": "Arena",
+    "address": "Plovdiv, Markovo Tepe",
+    "cinemaHalls": []
+  },
+  {
+    "id": 5,
+    "name": "Arena",
+    "address": "Kardzhali, Arena",
+    "cinemaHalls": []
+  },
+  {
+    "id": 6,
+    "name": "Arena",
+    "address": "Smolyan, Arena",
+    "cinemaHalls": []
+  },
+  {
+    "id": 7,
+    "name": "Cinema City",
+    "address": "Sofia, Mall Sofia",
+    "cinemaHalls": []
+  },
+  {
+    "id": 8,
+    "name": "Cinema City",
+    "address": "Sofia, Paradise Center",
+    "cinemaHalls": []
+  },
+  {
+    "id": 9,
+    "name": "Cinema City",
+    "address": "Stara Zagora, Mall Galleria",
+    "cinemaHalls": []
+  },
+  {
+    "id": 10,
+    "name": "Cinema City",
+    "address": "Burgas, Mall Galeria",
+    "cinemaHalls": []
+  },
+  {
+    "id": 11,
+    "name": "Cinema City",
+    "address": "Plovdiv, Mall Plovdiv",
+    "cinemaHalls": []
+  },
+  {
+    "id": 12,
+    "name": "Cinema City",
+    "address": "Rousse, Mall Rousse",
+    "cinemaHalls": []
+  },
+  {
+    "id": 13,
+    "name": "Cine Grand",
+    "address": "Sofia, Park Center",
+    "cinemaHalls": []
+  },
+  {
+    "id": 14,
+    "name": "Cine Grand",
+    "address": "Sofia, Ring Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 15,
+    "name": "Cineland",
+    "address": "Sofia, Bulgaria Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 16,
+    "name": "Cineland",
+    "address": "Pernik, Mall Pernik",
+    "cinemaHalls": []
+  },
+  {
+    "id": 17,
+    "name": "Cineland",
+    "address": "Veliko Tarnovo, Iskra",
+    "cinemaHalls": []
+  },
+  {
+    "id": 18,
+    "name": "Cineland",
+    "address": "Pleven, Central Mall",
+    "cinemaHalls": []
+  },
+  {
+    "id": 19,
+    "name": "Cineland",
+    "address": "Targovishte, Cinemagic",
+    "cinemaHalls": []
+  }
+]

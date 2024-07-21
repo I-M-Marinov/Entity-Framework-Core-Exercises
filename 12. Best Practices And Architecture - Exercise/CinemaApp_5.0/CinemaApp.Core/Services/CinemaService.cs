@@ -37,7 +37,22 @@ namespace CinemaApp.Core.Services
 
         public List<Cinema> GetAllCinemas()
         {
-            throw new NotImplementedException();
+            var cinemas = repo.All<Cinema>().ToList();
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                }
+            };
+
+            var json = JsonConvert.SerializeObject(cinemas, serializerSettings);
+
+            File.WriteAllText("listOfCinemas.json", json);
+
+            return cinemas;
         }
 
         public async Task InsertAdditionalMovies(List<Movie> movies)

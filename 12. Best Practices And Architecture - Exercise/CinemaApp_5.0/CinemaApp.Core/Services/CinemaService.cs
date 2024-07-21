@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using CinemaApp.Core.Contracts;
 using CinemaApp.Core.Models;
+using CinemaApp.Core.Models.DTOs;
 using CinemaApp.Infrastructure.Data.Common;
 using CinemaApp.Infrastructure.Data.Models;
 using Newtonsoft.Json;
@@ -53,6 +54,18 @@ namespace CinemaApp.Core.Services
             File.WriteAllText("listOfCinemas.json", json);
 
             return cinemas;
+        }
+        public List<CinemaHallsExportDto> GetAllCinemasByCityName(string cityName)
+        {
+            return repo.All<Cinema>()
+                .Select(c => new CinemaHallsExportDto
+                {
+                    Name = c.Name,
+                    Address = c.Address,
+                    NumberOfHalls = c.CinemaHalls.Count
+                })
+                .Where(c => c.Address.StartsWith(cityName) )
+                .ToList();
         }
 
         public async Task InsertAdditionalMovies(List<Movie> movies)

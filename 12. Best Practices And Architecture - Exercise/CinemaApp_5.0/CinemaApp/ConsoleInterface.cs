@@ -18,11 +18,13 @@ public static class ConsoleInterface
         while (true)
         {
             Console.WriteLine("Select an option:");
+            Console.WriteLine("x => EXIT");
             Console.WriteLine("0. Insert additional movies from JSON");
             Console.WriteLine("1. List all movies");
             Console.WriteLine("2. List all cinemas");
             Console.WriteLine("3. List all animation movies");
             Console.WriteLine("4. List all action movies");
+            Console.WriteLine("5. List all cinemas in a certain city");
 
             string? input = Console.ReadLine();
 
@@ -37,6 +39,11 @@ public static class ConsoleInterface
 
                 cinemaService.InsertAdditionalMovies(extractedMovies);
                 Console.WriteLine($"{extractedMovies.Count} movies have been inserted successfully.");
+            }
+            else if (input == "x")
+            {
+                Console.WriteLine("Goodbye !");
+                Environment.Exit(1500);
             }
             else if (input == "1")
             {
@@ -120,7 +127,6 @@ public static class ConsoleInterface
                 Console.WriteLine(sb);
 
             }
-
             else if (input == "4")
             {
                 var actionMovies = movieService.GetAllMovies().Where(m => m.Genre == Enum.Parse<Genre>("Action")).ToList();
@@ -147,6 +153,29 @@ public static class ConsoleInterface
                 Console.WriteLine(sb);
 
             }
+            else if (input == "5")
+            {
+                Console.WriteLine("Please enter the city name you are looking for ?");
+                var city = Console.ReadLine();
+
+                var cinemas = cinemaService.GetAllCinemasByCityName(city);
+
+                if (cinemas.Count == 0)
+                {
+                    Console.WriteLine("There are no cinemas in this city!");
+                    continue;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine($"There are {cinemas.Count} cinemas in the city of {city}");
+                Console.WriteLine();
+
+                foreach (var cinema in cinemas)
+                {
+                    Console.WriteLine($"-- {cinema.Name} is located in {cinema.Address} and has {cinema.NumberOfHalls} halls.");
+                }
+            }
+
             else
             {
                 Console.WriteLine("Invalid option chosen! Try again...");
@@ -207,7 +236,6 @@ public static class ConsoleInterface
             return null;
         }
     }
-
     private static bool IsValid(object dto)
     {
         var validationContext = new ValidationContext(dto);

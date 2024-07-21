@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PayDISExdlc=",
+  "dgSpecHash": "AvYsMVkA3BA=",
   "success": true,
-  "projectFilePath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj",
+  "projectFilePath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marinov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marinov\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

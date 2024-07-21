@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", true)
-    .AddUserSecrets(typeof(Program).Assembly)
+    .AddUserSecrets("0399c10c-006d-4e9b-b929-282f109084d9") // typeof(Program).Assembly
     .Build();
 
 var serviceProvider = new ServiceCollection()
@@ -23,7 +23,7 @@ var serviceProvider = new ServiceCollection()
 using var scope = serviceProvider.CreateScope();
 var dbContext = scope.ServiceProvider.GetRequiredService<CinemaDbContext>();
 
-ResetDatabase(dbContext);
+// ResetDatabase(dbContext);
 
 ICinemaService? service = scope.ServiceProvider.GetService<ICinemaService>();
 

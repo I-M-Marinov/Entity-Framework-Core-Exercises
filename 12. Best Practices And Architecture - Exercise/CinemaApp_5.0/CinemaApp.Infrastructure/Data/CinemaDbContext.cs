@@ -22,7 +22,7 @@ namespace CinemaApp.Infrastructure.Data
         {
             IConfiguration configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true)
-                .AddUserSecrets("69c38dfb-32b9-44a6-82ac-cd4f0b38e8fc")
+                .AddUserSecrets("0399c10c-006d-4e9b-b929-282f109084d9")
                 .Build();
 
             if (optionsBuilder.IsConfigured == false)

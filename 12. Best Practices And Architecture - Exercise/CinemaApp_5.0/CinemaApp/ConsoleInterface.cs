@@ -10,7 +10,7 @@ using System.Text.Json;
 
 public static class ConsoleInterface
 {
-    public static void Run(ICinemaService service)
+    public static void Run(ICinemaService cinemaService)
     {
         Console.WriteLine("Welcome to CinemaApp!");
         Console.WriteLine();
@@ -33,12 +33,12 @@ public static class ConsoleInterface
                     continue;
                 }
 
-                service.InsertAdditionalMovies(extractedMovies);
+                cinemaService.InsertAdditionalMovies(extractedMovies);
                 Console.WriteLine($"{extractedMovies.Count} movies have been inserted successfully.");
             }
             else if (input == "1")
             {
-                List<Movie> movies = service.GetAllMovies();
+                List<Movie> movies = cinemaService.GetAllMovies();
 
                 if (movies.Count == 0)
                 {
@@ -70,7 +70,7 @@ public static class ConsoleInterface
             }
             else if(input == "2")
             {
-                List<Cinema> cinemas = service.GetAllCinemas();
+                List<Cinema> cinemas = cinemaService.GetAllCinemas();
 
                 if (cinemas.Count == 0)
                 {
@@ -101,7 +101,7 @@ public static class ConsoleInterface
 
     private static List<Movie> ExtractAdditionalMoviesFromJson()
     {
-        string jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Datasets", "additionalMovies.json");
+        string jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "Datasets", "additionalMovies.json");
 
         if (File.Exists(jsonFilePath))
         {
@@ -117,6 +117,13 @@ public static class ConsoleInterface
                     if (!IsValid(movieModel))
                     {
                         Console.WriteLine("Invalid movie.");
+                        continue;
+                    }
+
+                    Genre genre;
+                    if (!Enum.TryParse(movieModel.Genre, out genre))
+                    {
+                        Console.WriteLine("Invalid movie. Not an existing genre!");
                         continue;
                     }
 

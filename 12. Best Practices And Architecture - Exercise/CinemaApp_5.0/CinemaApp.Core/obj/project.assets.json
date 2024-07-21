@@ -2423,11 +2423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Core\\CinemaApp.Core.csproj",
+      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\CinemaApp.Core.csproj",
       "projectName": "CinemaApp.Core",
-      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Core\\CinemaApp.Core.csproj",
+      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\CinemaApp.Core.csproj",
       "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
-      "outputPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Core\\obj\\",
+      "outputPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2449,8 +2449,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj": {
-              "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_4.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj"
+            "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj": {
+              "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj"
             }
           }
         }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CinemaApp
-build_property.ProjectDir = E:\VisualStudio\EFCore\CinemaApp_4.0\CinemaApp\
+build_property.ProjectDir = D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\12. Best Practices And Architecture - Exercise\CinemaApp_5.0\CinemaApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("0399c10c-006d-4e9b-b929-282f109084d9")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5689d654-a1bc-43bc-abe1-8f29d5ce8312")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CinemaApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e210e7d4e825d693e395b886b9c7375a5f2eb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8449ff8c1205e096afd35590aed59996395a849")]
 [assembly: System.Reflection.AssemblyProductAttribute("CinemaApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CinemaApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

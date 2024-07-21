@@ -40,30 +40,11 @@ namespace CinemaApp.Core.Services
             throw new NotImplementedException();
         }
 
-        public List<Movie> GetAllMovies()
-        {
-            var movies =  repo.All<Movie>().ToList();
-
-            var serializerSettings = new JsonSerializerSettings
-            {
-                Formatting = Newtonsoft.Json.Formatting.Indented,
-                ContractResolver = new DefaultContractResolver
-                {
-                    NamingStrategy = new CamelCaseNamingStrategy()
-                }
-            };
-
-            var json = JsonConvert.SerializeObject(movies, serializerSettings);
-
-            File.WriteAllText("listOfMovies.json", json);
-
-            return movies;
-        }
-
         public async Task InsertAdditionalMovies(List<Movie> movies)
         {
             await repo.AddAsync(movies);
             await repo.SaveChangesAsync();
         }
+
     }
 }

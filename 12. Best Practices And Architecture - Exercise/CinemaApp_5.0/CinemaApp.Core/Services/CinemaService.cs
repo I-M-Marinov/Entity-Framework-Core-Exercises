@@ -1,7 +1,11 @@
-﻿using CinemaApp.Core.Contracts;
+﻿using System.Text.Json;
+using CinemaApp.Core.Contracts;
 using CinemaApp.Core.Models;
 using CinemaApp.Infrastructure.Data.Common;
 using CinemaApp.Infrastructure.Data.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Formatting = System.Xml.Formatting;
 
 namespace CinemaApp.Core.Services
 {
@@ -38,7 +42,22 @@ namespace CinemaApp.Core.Services
 
         public List<Movie> GetAllMovies()
         {
-            throw new NotImplementedException();
+            var movies =  repo.All<Movie>().ToList();
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                ContractResolver = new DefaultContractResolver
+                {
+                    NamingStrategy = new CamelCaseNamingStrategy()
+                }
+            };
+
+            var json = JsonConvert.SerializeObject(movies, serializerSettings);
+
+            File.WriteAllText("listOfMovies.json", json);
+
+            return movies;
         }
 
         public async Task InsertAdditionalMovies(List<Movie> movies)

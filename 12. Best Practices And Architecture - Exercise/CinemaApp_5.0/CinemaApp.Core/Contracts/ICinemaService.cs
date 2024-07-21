@@ -7,7 +7,7 @@ namespace CinemaApp.Core.Contracts
     {
         Task AddCinemaAsync(CinemaModel model);
         List<Cinema> GetAllCinemas();
-        List<Movie> GetAllMovies();
+
         Task InsertAdditionalMovies(List<Movie> movies);
     }
 }

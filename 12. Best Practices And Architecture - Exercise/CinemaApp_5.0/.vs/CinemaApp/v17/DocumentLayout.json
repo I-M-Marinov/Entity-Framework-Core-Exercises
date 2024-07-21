@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.core\\services\\cinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|solutionrelative:cinemaapp.core\\services\\cinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp\\consoleinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|solutionrelative:cinemaapp\\consoleinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|solutionrelative:cinemaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.core\\contracts\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|solutionrelative:cinemaapp.core\\contracts\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.core\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|solutionrelative:cinemaapp.core\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.core\\services\\cinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|solutionrelative:cinemaapp.core\\services\\cinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CB5A05A-3DD3-4945-ADE8-BB239296EE78}|CinemaApp.Core\\CinemaApp.Core.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.core\\contracts\\icinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{13C09A2A-C5E3-4508-9D1D-D6124E320005}|CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.infrastructure\\data\\datasets\\additionalmovies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{13C09A2A-C5E3-4508-9D1D-D6124E320005}|CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj|solutionrelative:cinemaapp.infrastructure\\data\\datasets\\additionalmovies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC50EB7D-92E7-4744-8DDA-86EFFA306EC4}|CinemaApp\\CinemaApp.csproj|solutionrelative:cinemaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13C09A2A-C5E3-4508-9D1D-D6124E320005}|CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj|d:\\lcfr\\developer\\entity framework core exercises\\12. best practices and architecture - exercise\\cinemaapp_5.0\\cinemaapp.infrastructure\\cinemaapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ConsoleInterface.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp\\ConsoleInterface.cs",
               "RelativeDocumentMoniker": "CinemaApp\\ConsoleInterface.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp\\ConsoleInterface.cs",
-              "RelativeToolTip": "CinemaApp\\ConsoleInterface.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCgAAAA/AAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp\\ConsoleInterface.cs*",
+              "RelativeToolTip": "CinemaApp\\ConsoleInterface.cs*",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwHIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T13:02:37.875Z",
               "IsPinned": true,
@@ -52,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp\\Program.cs",
               "RelativeDocumentMoniker": "CinemaApp\\Program.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp\\Program.cs",
               "RelativeToolTip": "CinemaApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T12:33:25.14Z",
               "IsPinned": true,
@@ -99,19 +107,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "IMovieService.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Contracts\\IMovieService.cs",
+              "RelativeDocumentMoniker": "CinemaApp.Core\\Contracts\\IMovieService.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Contracts\\IMovieService.cs",
+              "RelativeToolTip": "CinemaApp.Core\\Contracts\\IMovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T14:21:36.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "CinemaApp.Core\\Services\\MovieService.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Services\\MovieService.cs",
+              "RelativeToolTip": "CinemaApp.Core\\Services\\MovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T14:20:51.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ICinemaService.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Contracts\\ICinemaService.cs",
               "RelativeDocumentMoniker": "CinemaApp.Core\\Contracts\\ICinemaService.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Contracts\\ICinemaService.cs",
               "RelativeToolTip": "CinemaApp.Core\\Contracts\\ICinemaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T13:46:03.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "additionalMovies.json",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Infrastructure\\Data\\Datasets\\additionalMovies.json",
               "RelativeDocumentMoniker": "CinemaApp.Infrastructure\\Data\\Datasets\\additionalMovies.json",
@@ -124,20 +158,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CinemaService.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Services\\CinemaService.cs",
               "RelativeDocumentMoniker": "CinemaApp.Core\\Services\\CinemaService.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Core\\Services\\CinemaService.cs",
               "RelativeToolTip": "CinemaApp.Core\\Services\\CinemaService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCYAAAAJAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowDIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T13:07:23.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CinemaApp.Infrastructure.csproj",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\12. Best Practices And Architecture - Exercise\\CinemaApp_5.0\\CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj",
               "RelativeDocumentMoniker": "CinemaApp.Infrastructure\\CinemaApp.Infrastructure.csproj",

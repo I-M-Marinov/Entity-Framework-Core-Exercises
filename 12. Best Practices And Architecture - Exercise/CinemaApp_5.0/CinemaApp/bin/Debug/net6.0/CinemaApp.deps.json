@@ -660,7 +660,8 @@
       },
       "CinemaApp.Core/1.0.0": {
         "dependencies": {
-          "CinemaApp.Infrastructure": "1.0.0"
+          "CinemaApp.Infrastructure": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "CinemaApp.Core.dll": {}

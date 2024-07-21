@@ -10,7 +10,7 @@ using System.Text.Json;
 
 public static class ConsoleInterface
 {
-    public static void Run(ICinemaService cinemaService)
+    public static void Run(ICinemaService cinemaService, IMovieService movieService)
     {
         Console.WriteLine("Welcome to CinemaApp!");
         Console.WriteLine();
@@ -21,6 +21,7 @@ public static class ConsoleInterface
             Console.WriteLine("0. Insert additional movies from JSON");
             Console.WriteLine("1. List all movies");
             Console.WriteLine("2. List all cinemas");
+            Console.WriteLine("3. List all animation movies");
 
             string? input = Console.ReadLine();
 
@@ -38,7 +39,7 @@ public static class ConsoleInterface
             }
             else if (input == "1")
             {
-                List<Movie> movies = cinemaService.GetAllMovies();
+                List<Movie> movies = movieService.GetAllMovies();
 
                 if (movies.Count == 0)
                 {
@@ -68,7 +69,7 @@ public static class ConsoleInterface
                     Console.WriteLine(stringBuilder.ToString().Trim());
                 }
             }
-            else if(input == "2")
+            else if (input == "2")
             {
                 List<Cinema> cinemas = cinemaService.GetAllCinemas();
 
@@ -88,15 +89,42 @@ public static class ConsoleInterface
                         stringBuilder.AppendLine($"Address: {cinema.Address}");
                         stringBuilder.AppendLine();
                     }
+
                     Console.WriteLine(stringBuilder.ToString().Trim());
                 }
+            }
+            else if (input == "3")
+            {
+                var animationMovies = movieService.GetAllMovies().Where(m => m.Genre == Enum.Parse<Genre>("Animation")).ToList();
+
+                if (animationMovies.Count == 0)
+                {
+                    Console.WriteLine("No animation movies available.");
+                    continue;
+                }
+
+                StringBuilder sb = new();
+
+                sb.AppendLine($"Animation Movies available:");
+                sb.AppendLine();
+
+                foreach (var movie in animationMovies)
+                {
+                    sb.AppendLine($"{movie.Title}");
+                    sb.AppendLine($"--{movie.Genre}");
+                    sb.AppendLine($"---{movie.Description}");
+                    sb.AppendLine();
+                }
+
+                Console.WriteLine(sb);
+
             }
             else
             {
                 Console.WriteLine("Invalid option chosen! Try again...");
                 continue;
             }
-        }
+        } 
     }
 
     private static List<Movie> ExtractAdditionalMoviesFromJson()

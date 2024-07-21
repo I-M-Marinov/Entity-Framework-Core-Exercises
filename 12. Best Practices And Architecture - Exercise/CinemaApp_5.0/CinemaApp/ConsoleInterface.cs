@@ -22,7 +22,7 @@ public static class ConsoleInterface
             Console.WriteLine("1. List all movies");
             Console.WriteLine("2. List all cinemas");
             Console.WriteLine("3. List all animation movies");
-            Console.WriteLine("3. List all action movies");
+            Console.WriteLine("4. List all action movies");
 
             string? input = Console.ReadLine();
 
@@ -110,6 +110,33 @@ public static class ConsoleInterface
                 sb.AppendLine();
 
                 foreach (var movie in animationMovies)
+                {
+                    sb.AppendLine($"{movie.Title}");
+                    sb.AppendLine($"--{movie.Genre}");
+                    sb.AppendLine($"---{movie.Description}");
+                    sb.AppendLine();
+                }
+
+                Console.WriteLine(sb);
+
+            }
+
+            else if (input == "4")
+            {
+                var actionMovies = movieService.GetAllMovies().Where(m => m.Genre == Enum.Parse<Genre>("Action")).ToList();
+
+                if (actionMovies.Count == 0)
+                {
+                    Console.WriteLine("No animation movies available.");
+                    continue;
+                }
+
+                StringBuilder sb = new();
+
+                sb.AppendLine($"Action Movies available:");
+                sb.AppendLine();
+
+                foreach (var movie in actionMovies)
                 {
                     sb.AppendLine($"{movie.Title}");
                     sb.AppendLine($"--{movie.Genre}");

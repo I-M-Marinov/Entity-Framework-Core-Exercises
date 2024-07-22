@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 public static class ConsoleInterface
 {
@@ -25,6 +26,7 @@ public static class ConsoleInterface
             Console.WriteLine("3. List all animation movies");
             Console.WriteLine("4. List all action movies");
             Console.WriteLine("5. List all cinemas in a certain city");
+            Console.WriteLine("6. List all movies in a certain genre");
 
             string? input = Console.ReadLine();
 
@@ -173,6 +175,47 @@ public static class ConsoleInterface
                 foreach (var cinema in cinemas)
                 {
                     Console.WriteLine($"-- {cinema.Name} is located in {cinema.Address} and has {cinema.NumberOfHalls} halls.");
+                }
+            }
+            else if (input == "6")
+            {
+                Console.WriteLine("Please enter the genre name you are looking for ?");
+                var genre = Console.ReadLine();
+
+                
+                var validGenres = Enum.GetValues(typeof(Genre)).Cast<Genre>().ToList(); // get a list of all the valid Genres 
+
+                try
+                {
+                    if (!validGenres.Contains(Enum.Parse<Genre>(genre)))
+                    {
+                        continue;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"{genre} is not a valid genre name!");
+                    continue;
+                }
+
+                var movies = movieService.GetAllMoviesFromGenre(genre);
+
+                if (movies.Count == 0)
+                {
+                    Console.WriteLine($"There are no movies from the {genre} genre!");
+                    continue;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine($"There are {movies.Count} movies from the {genre} genre.");
+                Console.WriteLine();
+
+                foreach (var movie in movies)
+                {
+                    Console.WriteLine($"- Title: {movie.Title}");
+                    Console.WriteLine($"--");
+                    Console.WriteLine($"--- Description: {movie.Description}");
+                    Console.WriteLine();
                 }
             }
 

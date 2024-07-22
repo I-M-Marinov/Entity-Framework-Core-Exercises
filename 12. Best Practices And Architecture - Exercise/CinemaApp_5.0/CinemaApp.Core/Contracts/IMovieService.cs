@@ -10,5 +10,6 @@ namespace CinemaApp.Core.Contracts
     public interface IMovieService
     {
         List<Movie> GetAllMovies();
+        List<Movie> GetAllMoviesFromGenre(string genre);
     }
 }

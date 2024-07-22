@@ -13,21 +13,13 @@ public static class ConsoleInterface
 {
     public static void Run(ICinemaService cinemaService, IMovieService movieService)
     {
-        Console.WriteLine("Welcome to CinemaApp!");
-        Console.WriteLine();
+        Console.WriteLine("--------------------------------------------");
+        Console.WriteLine("-----------Welcome to CinemaApp!------------");
+        Console.WriteLine("--------------------------------------------");
 
         while (true)
         {
-            Console.WriteLine("Select an option:");
-            Console.WriteLine("x => EXIT");
-            Console.WriteLine("0. Insert additional movies from JSON");
-            Console.WriteLine("1. List all movies");
-            Console.WriteLine("2. List all cinemas");
-            Console.WriteLine("3. List all animation movies");
-            Console.WriteLine("4. List all action movies");
-            Console.WriteLine("5. List all cinemas in a certain city");
-            Console.WriteLine("6. List all movies in a certain genre");
-
+            PrintSelectionOptions();
             string? input = Console.ReadLine();
 
             if (input == "0")
@@ -45,7 +37,7 @@ public static class ConsoleInterface
             else if (input == "x")
             {
                 Console.WriteLine("Goodbye !");
-                Environment.Exit(1500);
+                return;
             }
             else if (input == "1")
             {
@@ -169,13 +161,22 @@ public static class ConsoleInterface
                 }
 
                 Console.WriteLine();
-                Console.WriteLine($"There are {cinemas.Count} cinemas in the city of {city}");
+                if (cinemas.Count == 1)
+                {
+                    Console.WriteLine($"There is {cinemas.Count} cinema in the city of {city}");
+                }
+                else
+                {
+                    Console.WriteLine($"There are {cinemas.Count} cinemas in the city of {city}");
+                }
                 Console.WriteLine();
 
                 foreach (var cinema in cinemas)
                 {
                     Console.WriteLine($"-- {cinema.Name} is located in {cinema.Address} and has {cinema.NumberOfHalls} halls.");
+                    
                 }
+                Console.WriteLine();
             }
             else if (input == "6")
             {
@@ -212,8 +213,7 @@ public static class ConsoleInterface
 
                 foreach (var movie in movies)
                 {
-                    Console.WriteLine($"- Title: {movie.Title}");
-                    Console.WriteLine($"--");
+                    Console.WriteLine($"-Title: {movie.Title}");
                     Console.WriteLine($"--- Description: {movie.Description}");
                     Console.WriteLine();
                 }
@@ -285,5 +285,21 @@ public static class ConsoleInterface
         var validationResult = new List<ValidationResult>();
 
         return Validator.TryValidateObject(dto, validationContext, validationResult, true);
+    }
+    private static void PrintSelectionOptions()
+    {
+        StringBuilder sb = new StringBuilder();
+
+        sb.AppendLine("Select an option:");
+        sb.AppendLine("x => EXIT");
+        sb.AppendLine("0. Insert additional movies from JSON");
+        sb.AppendLine("1. List all movies");
+        sb.AppendLine("2. List all cinemas");
+        sb.AppendLine("3. List all animation movies");
+        sb.AppendLine("4. List all action movies");
+        sb.AppendLine("5. List all cinemas in a certain city");
+        sb.AppendLine("6. List all movies in a certain genre");
+
+        Console.WriteLine(sb.ToString().Trim());
     }
 }

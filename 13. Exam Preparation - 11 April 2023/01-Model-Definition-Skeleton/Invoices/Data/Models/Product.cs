@@ -17,16 +17,16 @@ namespace Invoices.Data.Models
         public string Name { get; set; } = null!;
 
         [Required]
-         // [Range(typeof(decimal),ProductPriceMinValue,ProductPriceMaxValue)]
+        // [Range(typeof(decimal),ProductPriceMinValue,ProductPriceMaxValue)] to be used in the DTO for validation not here  
+
         public decimal Price { get; set; }
 
         [Required]
         public CategoryType CategoryType { get; set; }
 
-        //[Required] 
-        //public List<ProductClient> ProductClients { get; set; }
 
-        // TODO: Add navigation property
+        public virtual ICollection<ProductClient> ProductsClients { get; set; } = new HashSet<ProductClient>();
+
 
     }
 }

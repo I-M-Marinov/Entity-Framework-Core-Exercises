@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 using Invoices.Data.Models.Enums;
+using static Invoices.Data.Models.DataConstraints;
 
 namespace Invoices.Data.Models
 {
@@ -14,6 +12,7 @@ namespace Invoices.Data.Models
         public int Id { get; set; }
 
         [Required]
+        [MaxLength(InvoiceNumberMaxValue)]
         public int Number { get; set; }
 
         [Required]
@@ -27,7 +26,12 @@ namespace Invoices.Data.Models
         [Required]
         public CurrencyType CurrencyType { get; set; }
 
-        // TODO: Add navigation property
+        [Required]
+        [ForeignKey(nameof(Client))]
+        public int ClientId { get; set; }
+
+        [Required]
+        public virtual Client Client { get; set; } = null!;
 
     }
 }

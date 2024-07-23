@@ -16,6 +16,10 @@ namespace Invoices.Data.Models
         [MaxLength(ClientNumberVatMaxLength)]
         public string NumberVat { get; set; } = null!;
 
-        // TODO: Add navigation property
+        public virtual ICollection<ProductClient> ProductsClients { get; set; } = new HashSet<ProductClient>();
+
+        public virtual ICollection<Address> Addresses { get; set; } = new HashSet<Address>();
+
+        public virtual ICollection<Invoice> Invoices { get; set; } = new HashSet<Invoice>();
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Invoices.Data.Models.Enums;
 
 namespace Invoices.Data.Models
 {
@@ -34,5 +35,8 @@ namespace Invoices.Data.Models
 
         public const byte ClientNumberVatMinLength = 10;
         public const byte ClientNumberVatMaxLength = 15;
+
+        public const int InvoiceCurrencyTypeMinValue = (int)CurrencyType.BGN;
+        public const int InvoiceCurrencyTypeMaxValue = (int)CurrencyType.USD;
     }
 }

@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\dataprocessor\\importdto\\importinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\dataprocessor\\importdto\\importinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\dataprocessor\\importdto\\importclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\dataprocessor\\importdto\\importclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\dataprocessor\\importdto\\importaddressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\dataprocessor\\importdto\\importaddressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\invoicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +25,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\enums\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\enums\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\importresults\\actual result - importclients.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\importresults\\actual result - importclients.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\importresults\\expected result - importclients.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\importresults\\expected result - importclients.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,14 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\enums\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\enums\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation - 11 april 2023\\01-model-definition-skeleton\\invoices\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E3105-B89D-4AD8-A1E0-4548539C3DC2}|Invoices\\Invoices.csproj|solutionrelative:invoices\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,20 +117,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ImportAddressDTO.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
+              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
+              "RelativeToolTip": "Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T08:45:11.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "Invoices\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwGMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T17:14:18.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImportInvoiceDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportInvoiceDto.cs",
+              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\ImportDto\\ImportInvoiceDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportInvoiceDto.cs",
+              "RelativeToolTip": "Invoices\\DataProcessor\\ImportDto\\ImportInvoiceDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T08:05:08.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\StartUp.cs",
+              "RelativeDocumentMoniker": "Invoices\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\StartUp.cs",
+              "RelativeToolTip": "Invoices\\StartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T15:55:14.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CurrencyType.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
+              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
+              "RelativeToolTip": "Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T16:28:51.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryType.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CategoryType.cs",
+              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Enums\\CategoryType.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CategoryType.cs",
+              "RelativeToolTip": "Invoices\\Data\\Models\\Enums\\CategoryType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T16:08:29.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "XmlHelper.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Utilities\\XmlHelper.cs",
               "RelativeDocumentMoniker": "Invoices\\Utilities\\XmlHelper.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Utilities\\XmlHelper.cs",
               "RelativeToolTip": "Invoices\\Utilities\\XmlHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T07:33:27.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "Expected Result - ImportClients.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\ImportResults\\Expected Result - ImportClients.txt",
+              "RelativeDocumentMoniker": "Invoices\\ImportResults\\Expected Result - ImportClients.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\ImportResults\\Expected Result - ImportClients.txt",
+              "RelativeToolTip": "Invoices\\ImportResults\\Expected Result - ImportClients.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-23T07:56:07.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Configuration.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Configuration.cs",
@@ -135,59 +234,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataConstraints.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\DataConstraints.cs",
+              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\DataConstraints.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\DataConstraints.cs",
+              "RelativeToolTip": "Invoices\\Data\\Models\\DataConstraints.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAawCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T16:01:51.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Actual Result - ImportClients.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\ImportResults\\Actual Result - ImportClients.txt",
+              "RelativeDocumentMoniker": "Invoices\\ImportResults\\Actual Result - ImportClients.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\ImportResults\\Actual Result - ImportClients.txt",
+              "RelativeToolTip": "Invoices\\ImportResults\\Actual Result - ImportClients.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-23T07:56:11.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ImportAddressDTO.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
-              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
-              "RelativeToolTip": "Invoices\\DataProcessor\\ImportDto\\ImportAddressDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T17:20:35.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImportClientDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportClientDto.cs",
-              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\ImportDto\\ImportClientDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\ImportDto\\ImportClientDto.cs",
-              "RelativeToolTip": "Invoices\\DataProcessor\\ImportDto\\ImportClientDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T17:17:45.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Deserializer.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\Deserializer.cs",
-              "RelativeDocumentMoniker": "Invoices\\DataProcessor\\Deserializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\DataProcessor\\Deserializer.cs",
-              "RelativeToolTip": "Invoices\\DataProcessor\\Deserializer.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwEUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T17:14:18.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "InvoicesContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\InvoicesContext.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\InvoicesContext.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\InvoicesContext.cs",
               "RelativeToolTip": "Invoices\\Data\\InvoicesContext.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBIAAAA+AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T16:49:43.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ProductClient.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\ProductClient.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Models\\ProductClient.cs",
@@ -200,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Client.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Client.cs",
@@ -212,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Invoice.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Invoice.cs",
@@ -225,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Address.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Address.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Address.cs",
@@ -237,33 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataConstraints.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\DataConstraints.cs",
-              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\DataConstraints.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\DataConstraints.cs",
-              "RelativeToolTip": "Invoices\\Data\\Models\\DataConstraints.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T16:01:51.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\StartUp.cs",
-              "RelativeDocumentMoniker": "Invoices\\StartUp.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\StartUp.cs",
-              "RelativeToolTip": "Invoices\\StartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:55:14.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Product.cs",
@@ -276,37 +336,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AQIAAHoUAAAAAAAAAAAEwIMUAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-07-22T18:05:20.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CurrencyType.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
-              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
-              "RelativeToolTip": "Invoices\\Data\\Models\\Enums\\CurrencyType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T16:28:51.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CategoryType.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CategoryType.cs",
-              "RelativeDocumentMoniker": "Invoices\\Data\\Models\\Enums\\CategoryType.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation - 11 April 2023\\01-Model-Definition-Skeleton\\Invoices\\Data\\Models\\Enums\\CategoryType.cs",
-              "RelativeToolTip": "Invoices\\Data\\Models\\Enums\\CategoryType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T16:08:29.614Z"
             }
           ]
         }

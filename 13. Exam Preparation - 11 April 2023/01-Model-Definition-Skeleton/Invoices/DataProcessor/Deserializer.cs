@@ -82,12 +82,12 @@ namespace Invoices.DataProcessor
             return sb.ToString();
         }
 
-
         public static string ImportInvoices(InvoicesContext context, string jsonString)
         {
             StringBuilder sb = new StringBuilder();
 
             ICollection<Invoice> invoicesToImport = new List<Invoice>();
+            ICollection<int> validClientsIds = context.Clients.Select(c => c.Id).ToList();
 
             ImportInvoiceDto[] deserializedInvoices = JsonConvert.DeserializeObject<ImportInvoiceDto[]>(jsonString)!;
 
@@ -111,7 +111,7 @@ namespace Invoices.DataProcessor
                     continue;
                 }
 
-                if (!context.Clients.Any(c => c.Id == invoiceDto.ClientId))
+                if (!validClientsIds.Any(id => id == invoiceDto.ClientId))
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
@@ -139,9 +139,57 @@ namespace Invoices.DataProcessor
 
         public static string ImportProducts(InvoicesContext context, string jsonString)
         {
+            StringBuilder sb = new StringBuilder();
 
+            ICollection<Product> productsToImport = new List<Product>();
 
-            throw new NotImplementedException();
+            ImportProductDto[] deserializedProducts = JsonConvert.DeserializeObject<ImportProductDto[]>(jsonString)!;
+
+            foreach (ImportProductDto productDto in deserializedProducts)
+            {
+                if (!IsValid(productDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Product newProduct = new Product()
+                {
+                    Name = productDto.Name,
+                    Price = productDto.Price,
+                    CategoryType = (CategoryType)productDto.CategoryType
+                };
+
+                ICollection<ProductClient> productClientsToImport = new List<ProductClient>();
+
+                foreach (int clientId in productDto.Clients.Distinct())
+                {
+                    if (!context.Clients.Any(cl => cl.Id == clientId))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    ProductClient newProductClient = new ProductClient()
+                    {
+                        Product = newProduct,
+                        ClientId = clientId
+                    };
+
+                    productClientsToImport.Add(newProductClient);
+
+                }
+
+                newProduct.ProductsClients = productClientsToImport;
+                productsToImport.Add(newProduct);
+                sb.AppendLine(string.Format(SuccessfullyImportedProducts, productDto.Name,
+                    newProduct.ProductsClients.Count));
+            }
+
+            context.Products.AddRange(productsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         public static bool IsValid(object dto)

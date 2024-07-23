@@ -25,9 +25,7 @@ namespace Invoices.DataProcessor.ImportDto
         public string NumberVat { get; set; } = null!;
 
 
-        [XmlArray(nameof(Addresses))] 
-        public AddressImportDto[] Addresses { get; set; } 
-
+        [XmlArray(nameof(Addresses))] public ImportAddressDTO[] Addresses { get; set; } = null!;
 
     }
 }

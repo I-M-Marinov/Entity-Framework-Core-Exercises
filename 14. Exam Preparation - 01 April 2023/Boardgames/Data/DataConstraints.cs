@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Boardgames.Data.Models.Enums;
 
 namespace Boardgames.Data
 {
@@ -34,5 +35,10 @@ namespace Boardgames.Data
 
         public const int BoardGameYearPublishedMinValue = 2018;
         public const int BoardGameYearPublishedMaxValue = 2023;
+
+        // CATEGORY TYPE
+
+        public const int CategoryTypeMinValue = (int)CategoryType.Abstract;
+        public const int CategoryTypeMaxValue = (int)CategoryType.Strategy;
     }
 }

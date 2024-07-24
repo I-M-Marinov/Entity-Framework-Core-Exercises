@@ -9,13 +9,13 @@
         {
             var context = new BoardgamesContext();
 
-            ResetDatabase(context, shouldDropDatabase: true);
+            // ResetDatabase(context, shouldDropDatabase: true);
 
             var projectDir = GetProjectDirectory();
 
-            ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+           // ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
-           // ExportEntities(context, projectDir + @"ExportResults/");
+           ExportEntities(context, projectDir + @"ExportResults/");
 
             using (var transaction = context.Database.BeginTransaction())
             {
@@ -40,9 +40,9 @@
 
         private static void ExportEntities(BoardgamesContext context, string exportDir)
         {
-            var exportCreatorsWithTheirBoardgames = DataProcessor.Serializer.ExportCreatorsWithTheirBoardgames(context);
-            Console.WriteLine(exportCreatorsWithTheirBoardgames);
-            File.WriteAllText(exportDir + "Actual Result - ExportCreatorsWithTheirBoardgames.xml", exportCreatorsWithTheirBoardgames);
+            //var exportCreatorsWithTheirBoardgames = DataProcessor.Serializer.ExportCreatorsWithTheirBoardgames(context);
+            //Console.WriteLine(exportCreatorsWithTheirBoardgames);
+            //File.WriteAllText(exportDir + "Actual Result - ExportCreatorsWithTheirBoardgames.xml", exportCreatorsWithTheirBoardgames);
 
             var year = 2021;
             double rating = 9.50;

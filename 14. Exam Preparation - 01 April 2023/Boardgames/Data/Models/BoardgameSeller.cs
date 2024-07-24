@@ -12,7 +12,6 @@ namespace Boardgames.Data.Models
         [ForeignKey(nameof(Boardgame))]
         public int BoardgameId  { get; set; }
 
-            
         [Required]
         public virtual Boardgame Boardgame { get; set; } = null!;
 

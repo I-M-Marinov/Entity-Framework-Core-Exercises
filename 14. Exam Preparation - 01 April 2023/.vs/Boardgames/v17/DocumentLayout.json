@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\exportdto\\exportsellerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\exportdto\\exportsellerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\exportdto\\exportboardgametoxmldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\exportdto\\exportboardgametoxmldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\exportdto\\exportcreatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\exportdto\\exportcreatordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\exportdto\\exportboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\exportdto\\exportboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\importdto\\importboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\importdto\\importboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\exportresults\\expected result - exportsellerswithmostboardgames.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\exportresults\\expected result - exportsellerswithmostboardgames.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\exportresults\\actual result - exportsellerswithmostboardgames.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\exportresults\\actual result - exportsellerswithmostboardgames.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\exportdto\\exportsellerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\exportdto\\exportsellerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\dataprocessor\\importdto\\importboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|solutionrelative:boardgames\\dataprocessor\\importdto\\importboardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE3C2903-406D-4AFE-8A26-490687D823A3}|Boardgames\\Boardgames.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. exam preparation - 01 april 2023\\boardgames\\data\\models\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -119,19 +135,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ExportBoardgameToXmlDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameToXmlDto.cs",
+              "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameToXmlDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameToXmlDto.cs",
+              "RelativeToolTip": "Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameToXmlDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:27:15.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExportCreatorDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportCreatorDto.cs",
+              "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ExportDto\\ExportCreatorDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportCreatorDto.cs",
+              "RelativeToolTip": "Boardgames\\DataProcessor\\ExportDto\\ExportCreatorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:24:30.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Expected Result - ExportSellersWithMostBoardgames.json",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ExportResults\\Expected Result - ExportSellersWithMostBoardgames.json",
+              "RelativeDocumentMoniker": "Boardgames\\ExportResults\\Expected Result - ExportSellersWithMostBoardgames.json",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ExportResults\\Expected Result - ExportSellersWithMostBoardgames.json",
+              "RelativeToolTip": "Boardgames\\ExportResults\\Expected Result - ExportSellersWithMostBoardgames.json",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAkwJcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T11:14:04.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Actual Result - ExportSellersWithMostBoardgames.json",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ExportResults\\Actual Result - ExportSellersWithMostBoardgames.json",
+              "RelativeDocumentMoniker": "Boardgames\\ExportResults\\Actual Result - ExportSellersWithMostBoardgames.json",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ExportResults\\Actual Result - ExportSellersWithMostBoardgames.json",
+              "RelativeToolTip": "Boardgames\\ExportResults\\Actual Result - ExportSellersWithMostBoardgames.json",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAkwJcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T11:13:57.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ExportBoardgameDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameDto.cs",
               "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameDto.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameDto.cs",
               "RelativeToolTip": "Boardgames\\DataProcessor\\ExportDto\\ExportBoardgameDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T10:01:56.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ExportSellerDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ExportDto\\ExportSellerDto.cs",
               "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ExportDto\\ExportSellerDto.cs",
@@ -144,33 +212,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Serializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Serializer.cs",
               "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\Serializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Serializer.cs*",
-              "RelativeToolTip": "Boardgames\\DataProcessor\\Serializer.cs*",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCMAAAAaAAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "Boardgames\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T09:49:42.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Deserializer.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Deserializer.cs",
-              "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\Deserializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Deserializer.cs",
-              "RelativeToolTip": "Boardgames\\DataProcessor\\Deserializer.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAwAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T07:45:22.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Seller.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Models\\Seller.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Models\\Seller.cs",
@@ -183,20 +238,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\StartUp.cs",
               "RelativeDocumentMoniker": "Boardgames\\StartUp.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\StartUp.cs",
-              "RelativeToolTip": "Boardgames\\StartUp.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwC8AAAAhAAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\StartUp.cs*",
+              "RelativeToolTip": "Boardgames\\StartUp.cs*",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T07:27:42.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "Boardgames\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:45:22.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ImportBoardgameDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ImportDto\\ImportBoardgameDto.cs",
               "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ImportDto\\ImportBoardgameDto.cs",
@@ -209,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Expected Result - ImportSellers.txt",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ImportResults\\Expected Result - ImportSellers.txt",
               "RelativeDocumentMoniker": "Boardgames\\ImportResults\\Expected Result - ImportSellers.txt",
@@ -222,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Actual Result - ImportSellers.txt",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\ImportResults\\Actual Result - ImportSellers.txt",
               "RelativeDocumentMoniker": "Boardgames\\ImportResults\\Actual Result - ImportSellers.txt",
@@ -235,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Boardgame.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Models\\Boardgame.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Models\\Boardgame.cs",
@@ -248,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Creator.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Models\\Creator.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Models\\Creator.cs",
@@ -261,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "BoardgameSeller.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Models\\BoardgameSeller.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Models\\BoardgameSeller.cs",
@@ -274,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ImportSellerDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\DataProcessor\\ImportDto\\ImportSellerDto.cs",
               "RelativeDocumentMoniker": "Boardgames\\DataProcessor\\ImportDto\\ImportSellerDto.cs",
@@ -287,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Configuration.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Configuration.cs",
@@ -300,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "BoardgamesContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\BoardgamesContext.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\BoardgamesContext.cs",
@@ -313,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\DataConstraints.cs",
@@ -326,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "BoardgamesProfile.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\BoardgamesProfile.cs",
               "RelativeDocumentMoniker": "Boardgames\\BoardgamesProfile.cs",
@@ -339,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "CategoryType.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Exam Preparation - 01 April 2023\\Boardgames\\Data\\Models\\Enums\\CategoryType.cs",
               "RelativeDocumentMoniker": "Boardgames\\Data\\Models\\Enums\\CategoryType.cs",

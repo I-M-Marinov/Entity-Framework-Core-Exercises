@@ -3,16 +3,49 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\Deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\dataprocessor\\importdtos\\importpharmacydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\dataprocessor\\importdtos\\importpharmacydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\dataprocessor\\importdtos\\importmedicinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\dataprocessor\\importdtos\\importmedicinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\dataconstraints\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\dataconstraints\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\Common\\ValidationConstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\medicinescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\medicinescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\importresults\\actual result - importpharmacies.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\importresults\\actual result - importpharmacies.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\datasets\\pharmacies.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\datasets\\pharmacies.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\importresults\\expected result - importpharmacies.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\importresults\\expected result - importpharmacies.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\models\\pharmacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +56,20 @@
       "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\models\\patientmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\medicinescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\medicinescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\data\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\dataconstraints\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|solutionrelative:medicines\\dataconstraints\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4A00ADC-4A61-4984-AC49-DB741C1A4CAE}|Medicines\\Medicines.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. exam preparation - 02 december 2023\\medicines\\data\\models\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +91,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,32 +127,157 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValidationConstants.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\Common\\ValidationConstants.cs",
+              "ToolTip": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\Common\\ValidationConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T10:05:43.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImportMedicineDto.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "ToolTip": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T09:51:32.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImportMedicineDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "RelativeDocumentMoniker": "Medicines\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "RelativeToolTip": "Medicines\\DataProcessor\\ImportDtos\\ImportMedicineDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:42:32.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImportPharmacyDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\ImportDtos\\ImportPharmacyDto.cs",
+              "RelativeDocumentMoniker": "Medicines\\DataProcessor\\ImportDtos\\ImportPharmacyDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\ImportDtos\\ImportPharmacyDto.cs",
+              "RelativeToolTip": "Medicines\\DataProcessor\\ImportDtos\\ImportPharmacyDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:35:38.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "C:\\Users\\Marinov\\Downloads\\01. Model Definition_Author Solution\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAGAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T09:48:54.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "Medicines\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "Medicines\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowFEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:34:39.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Actual Result - ImportPharmacies.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\ImportResults\\Actual Result - ImportPharmacies.txt",
+              "RelativeDocumentMoniker": "Medicines\\ImportResults\\Actual Result - ImportPharmacies.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\ImportResults\\Actual Result - ImportPharmacies.txt",
+              "RelativeToolTip": "Medicines\\ImportResults\\Actual Result - ImportPharmacies.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-25T08:10:44.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataConstraints.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataConstraints\\DataConstraints.cs",
+              "RelativeDocumentMoniker": "Medicines\\DataConstraints\\DataConstraints.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataConstraints\\DataConstraints.cs",
+              "RelativeToolTip": "Medicines\\DataConstraints\\DataConstraints.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAEwBUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:00:04.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "pharmacies.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Datasets\\pharmacies.xml",
+              "RelativeDocumentMoniker": "Medicines\\Datasets\\pharmacies.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Datasets\\pharmacies.xml",
+              "RelativeToolTip": "Medicines\\Datasets\\pharmacies.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-25T08:29:40.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Expected Result - ImportPharmacies.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\ImportResults\\Expected Result - ImportPharmacies.txt",
+              "RelativeDocumentMoniker": "Medicines\\ImportResults\\Expected Result - ImportPharmacies.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\ImportResults\\Expected Result - ImportPharmacies.txt",
+              "RelativeToolTip": "Medicines\\ImportResults\\Expected Result - ImportPharmacies.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-25T08:10:53.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Utilities\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "Medicines\\Utilities\\XmlHelper.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Utilities\\XmlHelper.cs",
+              "RelativeToolTip": "Medicines\\Utilities\\XmlHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:33:47.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\StartUp.cs",
               "RelativeDocumentMoniker": "Medicines\\StartUp.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\StartUp.cs",
               "RelativeToolTip": "Medicines\\StartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T07:30:23.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Configuration.cs",
-              "RelativeDocumentMoniker": "Medicines\\Data\\Configuration.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Configuration.cs",
-              "RelativeToolTip": "Medicines\\Data\\Configuration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:24:44.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "MedicinesContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\MedicinesContext.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\MedicinesContext.cs",
@@ -123,11 +285,38 @@
               "RelativeToolTip": "Medicines\\Data\\MedicinesContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:23:00.427Z"
+              "WhenOpened": "2024-07-25T07:23:00.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
+              "Title": "Medicine.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Medicine.cs",
+              "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Medicine.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Medicine.cs",
+              "RelativeToolTip": "Medicines\\Data\\Models\\Medicine.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADgvygAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:12:57.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Configuration.cs",
+              "RelativeDocumentMoniker": "Medicines\\Data\\Configuration.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Configuration.cs",
+              "RelativeToolTip": "Medicines\\Data\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:24:44.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "PatientMedicine.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\PatientMedicine.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\Models\\PatientMedicine.cs",
@@ -135,23 +324,25 @@
               "RelativeToolTip": "Medicines\\Data\\Models\\PatientMedicine.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:21:21.371Z"
+              "WhenOpened": "2024-07-25T07:21:21.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Medicine.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Medicine.cs",
-              "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Medicine.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Medicine.cs",
-              "RelativeToolTip": "Medicines\\Data\\Models\\Medicine.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAIAwwC8AAAAAAAAA",
+              "DocumentIndex": 12,
+              "Title": "Pharmacy.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Pharmacy.cs",
+              "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Pharmacy.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Pharmacy.cs",
+              "RelativeToolTip": "Medicines\\Data\\Models\\Pharmacy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:12:57.639Z"
+              "WhenOpened": "2024-07-25T07:06:33.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Enums\\Category.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Enums\\Category.cs",
@@ -159,23 +350,12 @@
               "RelativeToolTip": "Medicines\\Data\\Models\\Enums\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:16:49.74Z"
+              "WhenOpened": "2024-07-25T07:16:49.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pharmacy.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Pharmacy.cs",
-              "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Pharmacy.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Pharmacy.cs",
-              "RelativeToolTip": "Medicines\\Data\\Models\\Pharmacy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:06:33.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "Gender.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Enums\\Gender.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Enums\\Gender.cs",
@@ -183,11 +363,12 @@
               "RelativeToolTip": "Medicines\\Data\\Models\\Enums\\Gender.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:05:16.93Z"
+              "WhenOpened": "2024-07-25T07:05:16.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "AgeGroup.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Enums\\AgeGroup.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Enums\\AgeGroup.cs",
@@ -195,23 +376,12 @@
               "RelativeToolTip": "Medicines\\Data\\Models\\Enums\\AgeGroup.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:04:28.689Z"
+              "WhenOpened": "2024-07-25T07:04:28.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DataConstraints.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataConstraints\\DataConstraints.cs",
-              "RelativeDocumentMoniker": "Medicines\\DataConstraints\\DataConstraints.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\DataConstraints\\DataConstraints.cs",
-              "RelativeToolTip": "Medicines\\DataConstraints\\DataConstraints.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:00:04.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "Patient.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Exam Preparation - 02 December 2023\\Medicines\\Data\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "Medicines\\Data\\Models\\Patient.cs",
@@ -219,7 +389,8 @@
               "RelativeToolTip": "Medicines\\Data\\Models\\Patient.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T06:58:30.957Z"
+              "WhenOpened": "2024-07-25T06:58:30.957Z",
+              "EditorCaption": ""
             }
           ]
         }

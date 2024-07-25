@@ -12,12 +12,9 @@ namespace Medicines.Data.Models
 
         [Required]
         [MaxLength(MedicineNameMaxLength)]
-
         public string Name { get; set; } = null!;
 
-
         [Required]
-
         public decimal Price { get; set; }
 
         [Required]

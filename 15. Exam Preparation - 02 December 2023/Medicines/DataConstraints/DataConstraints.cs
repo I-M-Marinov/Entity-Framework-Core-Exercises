@@ -9,8 +9,8 @@ namespace Medicines.DataConstraints
 {
     public static class DataConstraints
     {
-        public const byte PatientFullNameMinLength = 3;
-        public const byte PatientFullNameMaxLength = 150;
+        public const byte PatientFullNameMinLength = 5;
+        public const byte PatientFullNameMaxLength = 100;
 
         public const byte PharmacyNameMinLength = 2;
         public const byte PharmacyNameMaxLength = 50;
@@ -31,6 +31,11 @@ namespace Medicines.DataConstraints
         public const string PharmacyBooleanRegexValidation = @"^(true|false)$";
         public const string PharmacyPhoneNumberRegexValidation = @"^\(\d{3}\) \d{3}-\d{4}$";
 
+        public const int AgeGroupMinValue = (int)AgeGroup.Child;
+        public const int AgeGroupMaxValue = (int)AgeGroup.Senior;
+
+        public const int GenderMinValue = (int)Gender.Male;
+        public const int GenderMaxValue = (int)Gender.Female;
 
     }
 }

@@ -10,7 +10,7 @@
         {
             var context = new MedicinesContext();
 
-           ResetDatabase(context, shouldDropDatabase: false);
+            ResetDatabase(context, shouldDropDatabase: false);
 
             var projectDir = GetProjectDirectory();
 
@@ -46,10 +46,10 @@
 
             PrintAndExportEntityToFile(pharmacies, exportDir + "Actual Result - ImportPharmacies.txt");
 
-            //var patients = DataProcessor.Deserializer
-            //    .ImportPatients(context, File.ReadAllText(baseDir + "patients.json"));
+            var patients = DataProcessor.Deserializer
+                .ImportPatients(context, File.ReadAllText(baseDir + "patients.json"));
 
-            //PrintAndExportEntityToFile(patients, exportDir + "Actual Result - ImportPatients.txt");
+            PrintAndExportEntityToFile(patients, exportDir + "Actual Result - ImportPatients.txt");
         }
 
         private static void PrintAndExportEntityToFile(string entityOutput, string outputPath)

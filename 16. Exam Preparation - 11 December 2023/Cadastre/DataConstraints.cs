@@ -16,10 +16,6 @@ namespace Cadastre
         public const byte DistrictPostalCodeMinLength = 8;
         public const byte DistrictPostalCodeMaxLength = 8;
 
-        public static string[] DistrictRegionValidValues = { "SouthEast" , "SouthWest", "NorthEast", "NorthWest" };
-
-
-
 
         // CITIZEN 
 
@@ -28,6 +24,7 @@ namespace Cadastre
 
         public const byte CitizenLastNameMinLength = 2;
         public const byte CitizenLastNameMaxLength = 30;
+
 
         // PROPERTY 
 

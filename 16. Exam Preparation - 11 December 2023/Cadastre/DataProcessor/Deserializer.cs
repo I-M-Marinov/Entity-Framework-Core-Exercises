@@ -1,4 +1,5 @@
-﻿using Cadastre.Data.Enumerations;
+﻿using System.Reflection.Metadata.Ecma335;
+using Cadastre.Data.Enumerations;
 using Cadastre.Data.Models;
 using Cadastre.DataProcessor.ImportDtos;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ namespace Cadastre.DataProcessor
 {
     using Cadastre.Data;
     using Cadastre.Utilities;
+    using Newtonsoft.Json;
     using System.ComponentModel.DataAnnotations;
     using System.Data.SqlTypes;
     using System.Globalization;
@@ -40,14 +42,29 @@ namespace Cadastre.DataProcessor
                     continue;
                 }
 
-                Region region = districtDto.Region switch
+                Region region;
+
+                if (districtDto.Region == "NorthEast")
                 {
-                    "NorthEast" => Region.NorthEast,
-                    "NorthWest" => Region.NorthWest,
-                    "SouthEast" => Region.SouthEast,
-                    "SouthWest" => Region.SouthWest,
-                    _ => throw new InvalidOperationException("Invalid region value")
-                };
+                    region = Region.NorthEast;
+                }
+                else if (districtDto.Region == "NorthWest")
+                {
+                    region = Region.NorthWest;
+                }
+                else if (districtDto.Region == "SouthEast")
+                {
+                    region = Region.SouthEast;
+                }
+                else if (districtDto.Region == "SouthWest")
+                {
+                    region = Region.SouthWest;
+                }
+                else
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
 
                 District newDistrict = new District()
                 {
@@ -60,6 +77,12 @@ namespace Cadastre.DataProcessor
                 {
 
                     if (!IsValid(propertyDto))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    if (propertyDto.Area < 0)
                     {
                         sb.AppendLine(ErrorMessage);
                         continue;
@@ -118,11 +141,91 @@ namespace Cadastre.DataProcessor
 
             return sb.ToString();
         }
-    
-
+        
         public static string ImportCitizens(CadastreContext dbContext, string jsonDocument)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            ICollection<Citizen> citizensToImport = new List<Citizen>();
+
+            ImportCitizenDto[] deserializedCitizens = JsonConvert.DeserializeObject<ImportCitizenDto[]>(jsonDocument)!;
+
+            foreach (ImportCitizenDto citizenDto in deserializedCitizens)
+            {
+                if (!IsValid(citizenDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                MaritalStatus maritalStatus;
+
+                if (citizenDto.MaritalStatus == "Unmarried")
+                {
+                     maritalStatus = MaritalStatus.Unmarried;
+                }
+                else if (citizenDto.MaritalStatus == "Married")
+                {
+                     maritalStatus = MaritalStatus.Married;
+                }
+                else if (citizenDto.MaritalStatus == "Divorced")
+                {
+                     maritalStatus = MaritalStatus.Divorced;
+                }
+                else if (citizenDto.MaritalStatus == "Widowed")
+                {
+                     maritalStatus = MaritalStatus.Widowed;
+                }
+                else
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+
+                bool isBirthDateValid = DateTime.TryParseExact(citizenDto.BirthDate, "dd-MM-yyyy", CultureInfo.InvariantCulture,
+                    DateTimeStyles.None, out DateTime birthDate);
+
+                if (!isBirthDateValid)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Citizen newCitizen = new Citizen()
+                {
+                    FirstName = citizenDto.FirstName,
+                    LastName = citizenDto.LastName,
+                    BirthDate = birthDate,
+                    MaritalStatus = maritalStatus,
+                };
+
+                ICollection<PropertyCitizen> propertiesCitizensToImport = new List<PropertyCitizen>();
+
+                foreach (var propertyId in citizenDto.Properties.Distinct())
+                {
+                    PropertyCitizen propertyCitizen = new PropertyCitizen()
+                    {
+                        Citizen = newCitizen,
+                        PropertyId = propertyId
+                    };
+
+                    propertiesCitizensToImport.Add(propertyCitizen);
+                }
+
+                newCitizen.PropertiesCitizens = propertiesCitizensToImport;
+
+                citizensToImport.Add(newCitizen);
+
+                sb.AppendLine(string.Format(SuccessfullyImportedCitizen, newCitizen.FirstName, newCitizen.LastName, newCitizen.PropertiesCitizens.Count));
+
+            }
+
+            dbContext.Citizens.AddRange(citizensToImport);
+            dbContext.SaveChanges();
+
+            return sb.ToString();
+
         }
 
         private static bool IsValid(object dto)

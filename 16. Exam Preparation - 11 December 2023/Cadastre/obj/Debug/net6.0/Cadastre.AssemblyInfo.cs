@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cadastre")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cfc1e81c13bb0b3a27b8a4f7437d8a2cec2e4e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae572d397776e0de21b7c0acc16a6a81fb969c68")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cadastre")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cadastre")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,8 @@
-﻿using System.Globalization;
-using Cadastre.Data;
+﻿using Cadastre.Data;
 using Cadastre.DataProcessor.ExportDtos;
+using Cadastre.Utilities;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace Cadastre.DataProcessor
 {
@@ -54,7 +55,31 @@ namespace Cadastre.DataProcessor
 
         public static string ExportFilteredPropertiesWithDistrict(CadastreContext dbContext)
         {
-            throw new NotImplementedException();
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Properties";
+
+            ExportPropertyXmlDto[] propertiesToExport = dbContext.Properties
+                .Where(p => p.Area >= 100)
+                .OrderByDescending(p => p.Area)
+                .ThenBy(p => p.DateOfAcquisition)
+                .Select(p => new 
+                {
+                    PostalCode = p.District.PostalCode,
+                    PropertyIdentifier = p.PropertyIdentifier,
+                    Area = p.Area.ToString(),
+                    DateOfAcquisition = p.DateOfAcquisition
+                })
+                .AsEnumerable()
+                .Select(x => new ExportPropertyXmlDto()
+                {
+                    PostalCode = x.PostalCode,
+                    PropertyIdentifier = x.PropertyIdentifier,
+                    Area = x.Area.ToString(),
+                    DateOfAcquisition = x.DateOfAcquisition.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+                })
+                .ToArray();
+
+            return xmlHelper.Serialize(propertiesToExport, xmlRoot);
         }
     }
 }

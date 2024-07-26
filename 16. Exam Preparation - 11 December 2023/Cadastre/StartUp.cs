@@ -9,11 +9,11 @@
         {
             var dbContext = new CadastreContext();
 
-            //ResetDatabase(dbContext, shouldDropDatabase: false);
+            ResetDatabase(dbContext, shouldDropDatabase: false);
 
             var projectDir = GetProjectDirectory();
 
-            //ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
             ExportEntities(dbContext, projectDir + @"ExportResults/");
 
             using (var transaction = dbContext.Database.BeginTransaction())
@@ -42,11 +42,11 @@
             Console.WriteLine(exportPropertiesWithOwners);
             File.WriteAllText(exportDir + "Actual Result - ExportPropertiesWithOwners.json", exportPropertiesWithOwners);
 
-            //var exportFilteredPropertiesWithDistrict = DataProcessor.Serializer
-            //    .ExportFilteredPropertiesWithDistrict(dbContext);
+            var exportFilteredPropertiesWithDistrict = DataProcessor.Serializer
+                .ExportFilteredPropertiesWithDistrict(dbContext);
 
-            //Console.WriteLine(exportFilteredPropertiesWithDistrict);
-            //File.WriteAllText(exportDir + "Actual Result - ExportFilteredPropertiesWithDistrict.xml", exportFilteredPropertiesWithDistrict);
+            Console.WriteLine(exportFilteredPropertiesWithDistrict);
+            File.WriteAllText(exportDir + "Actual Result - ExportFilteredPropertiesWithDistrict.xml", exportFilteredPropertiesWithDistrict);
         }
 
 

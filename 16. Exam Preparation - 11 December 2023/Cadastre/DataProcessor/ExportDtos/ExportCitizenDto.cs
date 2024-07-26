@@ -8,8 +8,8 @@ namespace Cadastre.DataProcessor.ExportDtos
 {
     public class ExportCitizenDto
     {
-        public string LastName { get; set; }
-        public string MaritalStatus { get; set; }
+        public string LastName { get; set; } = null!;
+        public string MaritalStatus { get; set; } = null!;
 
     }
 }

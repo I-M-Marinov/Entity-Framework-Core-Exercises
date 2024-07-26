@@ -13,7 +13,7 @@
 
             var projectDir = GetProjectDirectory();
 
-            //ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ImportEntities(dbContext, projectDir + @"Datasets/", projectDir + @"ImportResults/");
             //ExportEntities(dbContext, projectDir + @"ExportResults/");
 
             using (var transaction = dbContext.Database.BeginTransaction())
@@ -28,10 +28,10 @@
 
             PrintAndExportEntityToFile(districts, exportDir + "Actualt Result - ImportedDistricts.txt");
 
-            var citizens = DataProcessor.Deserializer
-                .ImportCitizens(dbContext, File.ReadAllText(baseDirectory + "citizens.json"));
+            //var citizens = DataProcessor.Deserializer
+            //    .ImportCitizens(dbContext, File.ReadAllText(baseDirectory + "citizens.json"));
 
-            PrintAndExportEntityToFile(citizens, exportDir + "Actual Result - ImportedCitizens.txt");
+            //PrintAndExportEntityToFile(citizens, exportDir + "Actual Result - ImportedCitizens.txt");
         }
 
         private static void ExportEntities(CadastreContext dbContext, string exportDir)

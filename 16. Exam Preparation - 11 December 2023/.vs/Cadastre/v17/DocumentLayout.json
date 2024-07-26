@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataprocessor\\importdtos\\importdistrictdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataprocessor\\importdtos\\importdistrictdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataprocessor\\importdtos\\importpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataprocessor\\importdtos\\importpropertydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\enumerations\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\enumerations\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\datasets\\districts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\datasets\\districts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\cadastrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\cadastrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,26 +63,6 @@
       "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\enumerations\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\enumerations\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\cadastrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\cadastrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\16. exam preparation - 11 december 2023\\cadastre\\data\\enumerations\\maritalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55008AFA-EAF5-4B27-A15D-D1B420213D2D}|Cadastre\\Cadastre.csproj|solutionrelative:cadastre\\data\\enumerations\\maritalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,20 +110,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\Serializer.cs",
+              "RelativeDocumentMoniker": "Cadastre\\DataProcessor\\Serializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "Cadastre\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T12:13:45.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Districts.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Datasets\\Districts.xml",
+              "RelativeDocumentMoniker": "Cadastre\\Datasets\\Districts.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Datasets\\Districts.xml",
+              "RelativeToolTip": "Cadastre\\Datasets\\Districts.xml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAE0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-26T08:21:45.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImportPropertyDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\ImportDtos\\ImportPropertyDto.cs",
+              "RelativeDocumentMoniker": "Cadastre\\DataProcessor\\ImportDtos\\ImportPropertyDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\ImportDtos\\ImportPropertyDto.cs",
+              "RelativeToolTip": "Cadastre\\DataProcessor\\ImportDtos\\ImportPropertyDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:53:20.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImportDistrictDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\ImportDtos\\ImportDistrictDto.cs",
+              "RelativeDocumentMoniker": "Cadastre\\DataProcessor\\ImportDtos\\ImportDistrictDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\ImportDtos\\ImportDistrictDto.cs*",
+              "RelativeToolTip": "Cadastre\\DataProcessor\\ImportDtos\\ImportDistrictDto.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:45:50.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "Cadastre\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "Cadastre\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAjwDcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:43:14.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Utilities\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "Cadastre\\Utilities\\XmlHelper.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Utilities\\XmlHelper.cs",
+              "RelativeToolTip": "Cadastre\\Utilities\\XmlHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:42:18.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\StartUp.cs",
               "RelativeDocumentMoniker": "Cadastre\\StartUp.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\StartUp.cs",
               "RelativeToolTip": "Cadastre\\StartUp.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwEoAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:35:21.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "PropertyCitizen.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Models\\PropertyCitizen.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Models\\PropertyCitizen.cs",
@@ -112,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Property.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Models\\Property.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Models\\Property.cs",
@@ -125,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "MaritalStatus.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Enumerations\\MaritalStatus.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Enumerations\\MaritalStatus.cs",
@@ -138,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "Citizen.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Models\\Citizen.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Models\\Citizen.cs",
@@ -151,33 +253,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Cadastre\\DataConstraints.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataConstraints.cs",
-              "RelativeToolTip": "Cadastre\\DataConstraints.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAEwCEAAAA3AAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\DataConstraints.cs*",
+              "RelativeToolTip": "Cadastre\\DataConstraints.cs*",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAEwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:11:43.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CadastreContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\CadastreContext.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\CadastreContext.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\CadastreContext.cs",
               "RelativeToolTip": "Cadastre\\Data\\CadastreContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBMAAAA9AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:10:48.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Configuration.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Configuration.cs",
@@ -190,12 +292,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Region.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Enumerations\\Region.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Enumerations\\Region.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Enumerations\\Region.cs*",
-              "RelativeToolTip": "Cadastre\\Data\\Enumerations\\Region.cs*",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Enumerations\\Region.cs",
+              "RelativeToolTip": "Cadastre\\Data\\Enumerations\\Region.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:08:04.425Z",
@@ -203,13 +305,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "District.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Models\\District.cs",
               "RelativeDocumentMoniker": "Cadastre\\Data\\Models\\District.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\16. Exam Preparation - 11 December 2023\\Cadastre\\Data\\Models\\District.cs",
               "RelativeToolTip": "Cadastre\\Data\\Models\\District.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T07:06:11.443Z",
               "EditorCaption": ""

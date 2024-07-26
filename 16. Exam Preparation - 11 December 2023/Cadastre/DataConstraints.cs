@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cadastre.Data.Enumerations;
 
 namespace Cadastre
 {
@@ -14,6 +15,11 @@ namespace Cadastre
 
         public const byte DistrictPostalCodeMinLength = 8;
         public const byte DistrictPostalCodeMaxLength = 8;
+
+        public static string[] DistrictRegionValidValues = { "SouthEast" , "SouthWest", "NorthEast", "NorthWest" };
+
+
+
 
         // CITIZEN 
 
@@ -33,5 +39,7 @@ namespace Cadastre
 
         public const byte PropertyAddressMinLength = 5;
         public const byte PropertyAddressMaxLength = 200;
+
+        public const string DistrictPostalCodeRegexValidation = @"^[A-Z]{2}-\d{5}$";
     }
 }

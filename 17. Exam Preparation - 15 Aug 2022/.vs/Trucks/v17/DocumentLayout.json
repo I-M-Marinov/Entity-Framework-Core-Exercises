@@ -7,32 +7,12 @@
       "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataprocessor\\exportdto\\exportdispatchersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataprocessor\\exportdto\\exportdispatchersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\exportresults\\expected result - exportclientswithmosttrucks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\exportresults\\expected result - exportclientswithmosttrucks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\exportresults\\actual result - exportclientswithmosttrucks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\exportresults\\actual result - exportclientswithmosttrucks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataprocessor\\exportdto\\exporttrucksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataprocessor\\exportdto\\exporttrucksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\despatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\despatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataprocessor\\exportdto\\exportclientsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataprocessor\\exportdto\\exportclientsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataprocessor\\exportdto\\exporttruckxmldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataprocessor\\exportdto\\exporttruckxmldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Trucks\\DataConstraints.cs",
@@ -64,93 +44,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Expected Result - ExportClientsWithMostTrucks.json",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\ExportResults\\Expected Result - ExportClientsWithMostTrucks.json",
-              "RelativeDocumentMoniker": "Trucks\\ExportResults\\Expected Result - ExportClientsWithMostTrucks.json",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\ExportResults\\Expected Result - ExportClientsWithMostTrucks.json",
-              "RelativeToolTip": "Trucks\\ExportResults\\Expected Result - ExportClientsWithMostTrucks.json",
-              "ViewState": "AQIAAEcBAAAAAAAAAAAkwF0BAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-27T14:44:21.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Actual Result - ExportClientsWithMostTrucks.json",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\ExportResults\\Actual Result - ExportClientsWithMostTrucks.json",
-              "RelativeDocumentMoniker": "Trucks\\ExportResults\\Actual Result - ExportClientsWithMostTrucks.json",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\ExportResults\\Actual Result - ExportClientsWithMostTrucks.json",
-              "RelativeToolTip": "Trucks\\ExportResults\\Actual Result - ExportClientsWithMostTrucks.json",
-              "ViewState": "AQIAANgCAAAAAAAAAAAkwAwDAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-27T14:44:14.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\StartUp.cs",
-              "RelativeDocumentMoniker": "Trucks\\StartUp.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\StartUp.cs",
-              "RelativeToolTip": "Trucks\\StartUp.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCkAAAA9AAAA",
+              "Title": "ExportDispatchersDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportDispatchersDto.cs",
+              "RelativeDocumentMoniker": "Trucks\\DataProcessor\\ExportDto\\ExportDispatchersDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportDispatchersDto.cs",
+              "RelativeToolTip": "Trucks\\DataProcessor\\ExportDto\\ExportDispatchersDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T14:34:37.516Z",
+              "WhenOpened": "2024-07-27T14:47:22.829Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Despatcher.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Despatcher.cs",
-              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Despatcher.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Despatcher.cs",
-              "RelativeToolTip": "Trucks\\Data\\Models\\Despatcher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "ExportTruckXmlDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportTruckXmlDto.cs",
+              "RelativeDocumentMoniker": "Trucks\\DataProcessor\\ExportDto\\ExportTruckXmlDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportTruckXmlDto.cs",
+              "RelativeToolTip": "Trucks\\DataProcessor\\ExportDto\\ExportTruckXmlDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T14:23:43.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Truck.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Truck.cs",
-              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Truck.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Truck.cs",
-              "RelativeToolTip": "Trucks\\Data\\Models\\Truck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T14:22:01.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExportTrucksDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportTrucksDto.cs",
-              "RelativeDocumentMoniker": "Trucks\\DataProcessor\\ExportDto\\ExportTrucksDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportTrucksDto.cs",
-              "RelativeToolTip": "Trucks\\DataProcessor\\ExportDto\\ExportTrucksDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T14:21:48.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExportClientsDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportClientsDto.cs",
-              "RelativeDocumentMoniker": "Trucks\\DataProcessor\\ExportDto\\ExportClientsDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\ExportDto\\ExportClientsDto.cs",
-              "RelativeToolTip": "Trucks\\DataProcessor\\ExportDto\\ExportClientsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T14:20:43.141Z",
+              "WhenOpened": "2024-07-27T14:49:14.131Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -159,11 +76,12 @@
               "Title": "Serializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\Serializer.cs",
               "RelativeDocumentMoniker": "Trucks\\DataProcessor\\Serializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\Serializer.cs*",
-              "RelativeToolTip": "Trucks\\DataProcessor\\Serializer.cs*",
-              "ViewState": "AQIAABEAAAAAAAAAAAAowC8AAAA6AAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "Trucks\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-27T14:19:48.903Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {

@@ -25,6 +25,5 @@ namespace Trucks.DataProcessor.ImportDto
         [XmlArrayItem("Truck")]
         public ImportTruckDto[] Trucks { get; set; }
 
-
     }
 }

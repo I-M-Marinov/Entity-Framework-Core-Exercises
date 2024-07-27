@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\truckscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\truckscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\despatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\despatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\clienttruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\clienttruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\enums\\maketype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\enums\\maketype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\data\\models\\enums\\categorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|d:\\lcfr\\developer\\entity framework core exercises\\17. exam preparation - 15 aug 2022\\trucks\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B8D073-5BCE-4726-92EF-2ACEFFD8C40E}|Trucks\\Trucks.csproj|solutionrelative:trucks\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataConstraints.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataConstraints.cs",
+              "RelativeDocumentMoniker": "Trucks\\DataConstraints.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\DataConstraints.cs",
+              "RelativeToolTip": "Trucks\\DataConstraints.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAEwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:22:18.459Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\StartUp.cs",
+              "RelativeDocumentMoniker": "Trucks\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\StartUp.cs",
+              "RelativeToolTip": "Trucks\\StartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:00:25.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientTruck.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\ClientTruck.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\ClientTruck.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\ClientTruck.cs",
+              "RelativeToolTip": "Trucks\\Data\\Models\\ClientTruck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:56:38.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MakeType.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Enums\\MakeType.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Enums\\MakeType.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Enums\\MakeType.cs",
+              "RelativeToolTip": "Trucks\\Data\\Models\\Enums\\MakeType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:47:15.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryType.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Enums\\CategoryType.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Enums\\CategoryType.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Enums\\CategoryType.cs",
+              "RelativeToolTip": "Trucks\\Data\\Models\\Enums\\CategoryType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:45:48.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Truck.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Truck.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Truck.cs*",
+              "RelativeToolTip": "Trucks\\Data\\Models\\Truck.cs*",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:32:25.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Despatcher.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Despatcher.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Despatcher.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Despatcher.cs*",
+              "RelativeToolTip": "Trucks\\Data\\Models\\Despatcher.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:29:38.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Models\\Client.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Models\\Client.cs",
+              "RelativeToolTip": "Trucks\\Data\\Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:19:47.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrucksContext.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\TrucksContext.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\TrucksContext.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\TrucksContext.cs",
+              "RelativeToolTip": "Trucks\\Data\\TrucksContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:17:25.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Configuration.cs",
+              "RelativeDocumentMoniker": "Trucks\\Data\\Configuration.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\17. Exam Preparation - 15 Aug 2022\\Trucks\\Data\\Configuration.cs",
+              "RelativeToolTip": "Trucks\\Data\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T10:09:32.817Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

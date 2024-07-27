@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trucks.Data.Models.Enums;
 
 namespace Trucks
 {
@@ -31,6 +32,12 @@ namespace Trucks
 
         public const int TruckCargoCapacityMinValue = 5000;
         public const int TruckCargoCapacityMaxValue = 29000;
+
+        public const int TruckCategoryTypeMinValue = (int)CategoryType.Flatbed;
+        public const int TruckCategoryTypeMaxValue = (int)CategoryType.Semi;
+
+        public const int TruckMakeTypeMinValue = (int)MakeType.Daf;
+        public const int TruckMakeTypeMaxValue = (int)MakeType.Volvo;
 
     }
 }

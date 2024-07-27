@@ -13,7 +13,8 @@ namespace Trucks.Data.Models
         [MaxLength(DispatcherNameMaxLength)]
         public string Name { get; set; } = null!;
 
-        public string? Position { get; set; }
+        [Required]
+        public string Position { get; set; } = null!;
 
         public virtual ICollection<Truck> Trucks { get; set; } = new HashSet<Truck>();
     }

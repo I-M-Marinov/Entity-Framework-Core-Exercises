@@ -196,8 +196,7 @@ namespace Trucks.DataProcessor
             context.Clients.AddRange(clientsToImport);
             context.SaveChanges();
 
-            return sb.ToString(); 
-
+            return sb.ToString();
         }
 
         private static bool IsValid(object dto)

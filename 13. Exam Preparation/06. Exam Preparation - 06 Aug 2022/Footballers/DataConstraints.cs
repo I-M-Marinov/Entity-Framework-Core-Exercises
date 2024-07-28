@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Footballers.Data.Models.Enums;
 
 namespace Footballers
 {
@@ -27,5 +28,11 @@ namespace Footballers
 
         public const byte FootballerNameMinLength = 2;
         public const byte FootballerNameMaxLength = 40;
+
+        public const int FootballerBestSkillTypeMinValue = (int)BestSkillType.Defence;
+        public const int FootballerBestSkillTypeMaxValue = (int)BestSkillType.Speed;
+
+        public const int FootballerPositionTypeMinValue = (int)PositionType.Goalkeeper;
+        public const int FootballerPositionTypeMaxValue = (int)PositionType.Forward;
     }
 }

@@ -7,7 +7,9 @@ namespace Footballers.DataProcessor
 {
     using Footballers.Data;
     using Footballers.Utilities;
+    using Newtonsoft.Json;
     using System.ComponentModel.DataAnnotations;
+    using System.Net;
     using System.Security.AccessControl;
     using System.Text;
     using static Footballers.DataProcessor.ImportDto.ImportCoachesDto;
@@ -147,7 +149,69 @@ namespace Footballers.DataProcessor
 
         public static string ImportTeams(FootballersContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            ICollection<Team> teamsToImport = new List<Team>();
+
+            var validFootballersIds = context.Footballers.Select(f => f.Id).ToList();
+
+
+            ImportTeamDto[] deserializedTeams = JsonConvert.DeserializeObject<ImportTeamDto[]>(jsonString)!;
+
+
+            foreach (ImportTeamDto teamDto in deserializedTeams)
+            {
+                if (!IsValid(teamDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                if (teamDto.Trophies == null || teamDto.Trophies == 0)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Team team = new Team()
+                {
+                    Name = teamDto.Name,
+                    Nationality = teamDto.Nationality,
+                    Trophies = teamDto.Trophies
+                };
+
+                ICollection<TeamFootballer> teamFootballersToImport = new List<TeamFootballer>();
+
+                foreach (var footballerId in teamDto.Footballers.Distinct())
+                {
+
+                    if (!validFootballersIds.Contains(footballerId))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    TeamFootballer newTeamFootballer = new TeamFootballer()
+                    {
+                        Team = team,
+                        FootballerId = footballerId
+                    };
+
+                    teamFootballersToImport.Add(newTeamFootballer);
+
+                }
+
+                team.TeamsFootballers = teamFootballersToImport;
+
+                teamsToImport.Add(team);
+
+                sb.AppendLine(string.Format(SuccessfullyImportedTeam, team.Name, team.TeamsFootballers.Count));
+            }
+
+            context.Teams.AddRange(teamsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         private static bool IsValid(object dto)

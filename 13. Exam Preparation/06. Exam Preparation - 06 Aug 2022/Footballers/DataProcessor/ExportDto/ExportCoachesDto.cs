@@ -13,7 +13,7 @@ namespace Footballers.DataProcessor.ExportDto
 
     public class ExportCoachesDto
     {
-        [XmlElement(nameof(Name))] 
+        [XmlElement("CoachName")] 
         public string Name { get; set; } = null!;
 
         [XmlAttribute(nameof(FootballersCount))]

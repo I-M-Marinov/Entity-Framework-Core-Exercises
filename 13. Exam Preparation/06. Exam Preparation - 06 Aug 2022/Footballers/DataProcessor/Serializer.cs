@@ -15,8 +15,27 @@ namespace Footballers.DataProcessor
             XmlHelper xmlHelper = new XmlHelper();
             const string xmlRoot = "Coaches";
 
+            ExportCoachesDto[] coachesToExport = context.Coaches
+                .Where(c => c.Footballers.Any())
+                .Select(c => new ExportCoachesDto
+                {
+                    Name = c.Name,
+                    FootballersCount = c.Footballers.Count,
+                    Footballers = c.Footballers
+                        .Select(f => new ExportFootballerXmlDto()
+                        {
+                            Name = f.Name,
+                            Position = f.PositionType.ToString()
+                        })
+                        .OrderBy(f => f.Name)
+                        .ToArray()
+                })
+                .OrderByDescending(c => c.FootballersCount)
+                .ThenBy(c => c.Name)
+                .ToArray();
 
 
+            return xmlHelper.Serialize(coachesToExport, xmlRoot);
         }
 
         public static string ExportTeamsWithMostFootballers(FootballersContext context, DateTime date)

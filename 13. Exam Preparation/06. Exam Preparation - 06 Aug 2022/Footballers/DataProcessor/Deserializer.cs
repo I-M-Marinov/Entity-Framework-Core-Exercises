@@ -167,7 +167,7 @@ namespace Footballers.DataProcessor
                     continue;
                 }
 
-                if (teamDto.Trophies == null || teamDto.Trophies == 0)
+                if (teamDto.Trophies == 0)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;

@@ -27,8 +27,8 @@ namespace Artillery
 
         // SHELL 
 
-        public const double ShellWeightMinValue = 2.00;
-        public const double ShellWeightMaxValue = 1_680.00;
+        public const double ShellWeightMinValue = 2;
+        public const double ShellWeightMaxValue = 1_680;
 
         public const byte ShellCaliberMinLength = 4;
         public const byte ShellCaliberMaxLength = 30;

@@ -38,9 +38,9 @@
             modelBuilder.Entity<CountryGun>()
                 .HasKey(cg => new {cg.CountryId, cg.GunId});
 
-            //modelBuilder.Entity<Manufacturer>()
-            //    .HasIndex(m => m.ManufacturerName)
-            //    .IsUnique(); // ensures the uniqueness of the name of the Manufacturer
+            modelBuilder.Entity<Manufacturer>()
+                .HasIndex(m => m.ManufacturerName)
+                .IsUnique(); // ensures the uniqueness of the name of the Manufacturer
         }
     }
 }

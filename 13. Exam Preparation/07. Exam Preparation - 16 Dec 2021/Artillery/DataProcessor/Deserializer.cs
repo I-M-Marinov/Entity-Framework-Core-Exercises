@@ -5,10 +5,13 @@ using Artillery.DataProcessor.ImportDto;
 namespace Artillery.DataProcessor
 {
     using Artillery.Data;
+    using Artillery.Data.Models.Enums;
     using Artillery.Utilities;
     using Microsoft.EntityFrameworkCore;
+    using Newtonsoft.Json;
     using System.Linq;
     using System.Text;
+    using System.Text.Json;
     using System.Xml;
 
     public class Deserializer
@@ -79,20 +82,30 @@ namespace Artillery.DataProcessor
                     continue;
                 }
 
+                if (manufacturersToImport.Any(m => m.ManufacturerName == manufacturerDto.ManufacturerName))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+
                 Manufacturer newManufacturer = new Manufacturer()
                 {
                     ManufacturerName = manufacturerDto.ManufacturerName,
                     Founded = manufacturerDto.Founded
                 };
 
-                if (manufacturersToImport.Any(m => m.ManufacturerName == newManufacturer.ManufacturerName))
+                var manufacturerFounded = newManufacturer.Founded.Split(", ");
+
+                var stateFounded = " ";
+
+                for (int i = 0; i < manufacturerFounded.Length; i++)
                 {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
+                    stateFounded = manufacturerFounded[manufacturerFounded.Length-2] + ", " + manufacturerFounded[manufacturerFounded.Length-1];
                 }
 
                 manufacturersToImport.Add(newManufacturer);
-                sb.AppendLine(string.Format(SuccessfulImportManufacturer, newManufacturer.ManufacturerName, newManufacturer.Founded));
+                sb.AppendLine(string.Format(SuccessfulImportManufacturer, newManufacturer.ManufacturerName, stateFounded));
             }
 
             context.Manufacturers.AddRange(manufacturersToImport);
@@ -127,7 +140,6 @@ namespace Artillery.DataProcessor
                     Caliber = shellDto.Caliber
                 };
 
-
                 shellsToImport.Add(newShell);
                 sb.AppendLine(string.Format(SuccessfulImportShell, newShell.Caliber, newShell.ShellWeight));
             }
@@ -140,8 +152,106 @@ namespace Artillery.DataProcessor
 
         public static string ImportGuns(ArtilleryContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            ICollection<Gun> gunsToImport = new List<Gun>();
+
+            ImportGunDto[] deserializedGuns = JsonConvert.DeserializeObject<ImportGunDto[]>(jsonString)!;
+
+            var validCountriesIds = context.Countries.Select(c => c.Id).ToList();
+
+            foreach (ImportGunDto gunDto in deserializedGuns)
+            {
+                if (!IsValid(gunDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                GunType gunType;
+
+                if (gunDto.GunType == "Howitzer")
+                {
+                    gunType = GunType.Howitzer;
+                }
+                else if (gunDto.GunType == "Mortar")
+                {
+                    gunType = GunType.Mortar;
+                }
+                else if (gunDto.GunType == "FieldGun")
+                {
+                    gunType = GunType.FieldGun;
+                }
+                else if (gunDto.GunType == "AntiAircraftGun")
+                {
+                    gunType = GunType.AntiAircraftGun;
+                }
+                else if (gunDto.GunType == "MountainGun")
+                {
+                    gunType = GunType.MountainGun;
+                }
+                else if (gunDto.GunType == "AntiTankGun")
+                {
+                    gunType = GunType.AntiTankGun;
+                }
+                else
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Gun newGun = new Gun()
+                {
+                    ManufacturerId = gunDto.ManufacturerId,
+                    GunWeight = gunDto.GunWeight,
+                    BarrelLength = gunDto.BarrelLength,
+                    NumberBuild = gunDto.NumberBuild,
+                    Range = gunDto.Range,
+                    GunType = gunType,
+                    ShellId = gunDto.ShellId
+                };
+
+                ICollection<CountryGun> countryGunToImport = new List<CountryGun>();
+
+                foreach (ImportCountriesDto countryDto in gunDto.Countries)
+                {
+
+                    if (!IsValid(countryDto))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    if (!validCountriesIds.Contains(countryDto.Id))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    CountryGun newCountryGun = new CountryGun()
+                    {
+                        Gun = newGun, 
+                        CountryId = countryDto.Id
+                    };
+
+                    countryGunToImport.Add(newCountryGun);
+                }
+
+                newGun.CountriesGuns = countryGunToImport;
+
+                gunsToImport.Add(newGun);
+
+                sb.AppendLine(string.Format(SuccessfulImportGun, newGun.GunType, newGun.GunWeight, newGun.BarrelLength));
+
+
+            }
+
+            context.Guns.AddRange(gunsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
+
         private static bool IsValid(object obj)
         {
             var validator = new ValidationContext(obj);

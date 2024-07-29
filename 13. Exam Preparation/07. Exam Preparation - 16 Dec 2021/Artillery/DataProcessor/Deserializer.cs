@@ -59,7 +59,7 @@ namespace Artillery.DataProcessor
             context.Countries.AddRange(countriesToImport);
             context.SaveChanges();
 
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
 
         }
 
@@ -74,7 +74,7 @@ namespace Artillery.DataProcessor
 
             ImportManufacturerDto[] deserializedManufacturers = xmlHelper.Deserialize<ImportManufacturerDto[]>(xmlString, xmlRoot);
 
-            foreach (ImportManufacturerDto manufacturerDto in deserializedManufacturers)
+            foreach (ImportManufacturerDto manufacturerDto in deserializedManufacturers.Distinct())
             {
                 if (!IsValid(manufacturerDto))
                 {
@@ -88,30 +88,29 @@ namespace Artillery.DataProcessor
                     continue;
                 }
 
-
                 Manufacturer newManufacturer = new Manufacturer()
                 {
                     ManufacturerName = manufacturerDto.ManufacturerName,
                     Founded = manufacturerDto.Founded
                 };
 
-                var manufacturerFounded = newManufacturer.Founded.Split(", ");
+                manufacturersToImport.Add(newManufacturer);
 
-                var stateFounded = " ";
+                var manufacturerFounded = newManufacturer.Founded.Split(", ").ToArray();
 
+               var stateFounded = "";
                 for (int i = 0; i < manufacturerFounded.Length; i++)
-                {
-                    stateFounded = manufacturerFounded[manufacturerFounded.Length-2] + ", " + manufacturerFounded[manufacturerFounded.Length-1];
+                { 
+                    stateFounded = manufacturerFounded[manufacturerFounded.Length - 2] + ", " + manufacturerFounded[manufacturerFounded.Length - 1];
                 }
 
-                manufacturersToImport.Add(newManufacturer);
                 sb.AppendLine(string.Format(SuccessfulImportManufacturer, newManufacturer.ManufacturerName, stateFounded));
             }
 
             context.Manufacturers.AddRange(manufacturersToImport);
             context.SaveChanges();
 
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
 
         }
 
@@ -147,7 +146,7 @@ namespace Artillery.DataProcessor
             context.Shells.AddRange(shellsToImport);
             context.SaveChanges();
 
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
         }
 
         public static string ImportGuns(ArtilleryContext context, string jsonString)
@@ -158,7 +157,7 @@ namespace Artillery.DataProcessor
 
             ImportGunDto[] deserializedGuns = JsonConvert.DeserializeObject<ImportGunDto[]>(jsonString)!;
 
-            var validCountriesIds = context.Countries.Select(c => c.Id).ToList();
+           // var validCountriesIds = context.Countries.Select(c => c.Id).ToList();
 
             foreach (ImportGunDto gunDto in deserializedGuns)
             {
@@ -222,16 +221,16 @@ namespace Artillery.DataProcessor
                         continue;
                     }
 
-                    if (!validCountriesIds.Contains(countryDto.Id))
-                    {
-                        sb.AppendLine(ErrorMessage);
-                        continue;
-                    }
+                    //if (!validCountriesIds.Contains(countryDto.Id))
+                    //{
+                    //    sb.AppendLine(ErrorMessage);
+                    //    continue;
+                    //}
 
                     CountryGun newCountryGun = new CountryGun()
                     {
-                        Gun = newGun, 
-                        CountryId = countryDto.Id
+                        CountryId = countryDto.Id,
+                        Gun = newGun
                     };
 
                     countryGunToImport.Add(newCountryGun);
@@ -249,7 +248,7 @@ namespace Artillery.DataProcessor
             context.Guns.AddRange(gunsToImport);
             context.SaveChanges();
 
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
         }
 
         private static bool IsValid(object obj)

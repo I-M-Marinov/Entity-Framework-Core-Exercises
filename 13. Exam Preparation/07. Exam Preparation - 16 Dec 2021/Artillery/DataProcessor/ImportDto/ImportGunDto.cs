@@ -29,9 +29,8 @@ namespace Artillery.DataProcessor.ImportDto
         [Required] 
         public string GunType { get; set; } = null!;
 
-        [Required]
         public int ShellId { get; set; }
 
-        public ImportCountriesDto[] Countries { get; set; } = Array.Empty<ImportCountriesDto>();
+        public ImportCountriesDto[] Countries { get; set; }
     }
 }

@@ -10,11 +10,15 @@ namespace Artillery.DataProcessor.ImportDto
     {
         [Required]
         [Range(ShellWeightMinValue, ShellWeightMaxValue)]
+        [XmlElement(nameof(ShellWeight))]
+
         public double ShellWeight { get; set; }
 
         [Required]
         [MinLength(ShellCaliberMinLength)]
         [MaxLength(ShellCaliberMaxLength)]
+        [XmlElement(nameof(Caliber))]
+
         public string Caliber { get; set; } = null!;
 
 

@@ -41,6 +41,16 @@
             modelBuilder.Entity<Manufacturer>()
                 .HasIndex(m => m.ManufacturerName)
                 .IsUnique(); // ensures the uniqueness of the name of the Manufacturer
+
+            modelBuilder.Entity<CountryGun>()
+                .HasOne(c => c.Country)
+                .WithMany(x => x.CountriesGuns)
+                .HasForeignKey(x => x.CountryId);
+
+            modelBuilder.Entity<CountryGun>()
+                .HasOne(g => g.Gun)
+                .WithMany(x => x.CountriesGuns)
+                .HasForeignKey(x => x.GunId);
         }
     }
 }

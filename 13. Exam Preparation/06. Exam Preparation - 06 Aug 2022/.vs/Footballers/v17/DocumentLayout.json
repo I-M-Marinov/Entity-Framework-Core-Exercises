@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\exportdto\\exportcoachesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\exportdto\\exportcoachesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\importdto\\importteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\importdto\\importteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\exportresults\\actual result - exportcoacheswiththeirfootballers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\exportresults\\actual result - exportcoacheswiththeirfootballers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\exportdto\\exportcoachesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\exportdto\\exportcoachesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\exportresults\\expected result - exportcoacheswiththeirfootballers.xml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -35,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\exportdto\\exportfootballerxmldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataprocessor\\importdto\\importteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataprocessor\\importdto\\importteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\06. exam preparation - 06 aug 2022\\footballers\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843DD1A4-565F-452C-A9D3-955EA744E2DD}|Footballers\\Footballers.csproj|solutionrelative:footballers\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -54,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\StartUp.cs",
               "RelativeDocumentMoniker": "Footballers\\StartUp.cs",
@@ -72,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Footballers\\DataConstraints.cs",
@@ -92,7 +96,7 @@
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\Serializer.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\Serializer.cs",
               "RelativeToolTip": "Footballers\\DataProcessor\\Serializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA7AAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T15:09:29.091Z",
               "IsPinned": true,
@@ -100,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "ImportTeamDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\ImportDto\\ImportTeamDto.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\ImportDto\\ImportTeamDto.cs",
@@ -114,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Deserializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\Deserializer.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\Deserializer.cs",
@@ -128,7 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Actual Result - ExportCoachesWithTheirFootballers.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
+              "RelativeDocumentMoniker": "Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
+              "RelativeToolTip": "Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAmwAMBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-28T20:35:42.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Expected Result - ExportCoachesWithTheirFootballers.xml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\ExportResults\\Expected Result - ExportCoachesWithTheirFootballers.xml",
               "RelativeDocumentMoniker": "Footballers\\ExportResults\\Expected Result - ExportCoachesWithTheirFootballers.xml",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Actual Result - ExportCoachesWithTheirFootballers.xml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
               "RelativeDocumentMoniker": "Footballers\\ExportResults\\Actual Result - ExportCoachesWithTheirFootballers.xml",
@@ -154,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ExportFootballerDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\ExportDto\\ExportFootballerDto.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\ExportDto\\ExportFootballerDto.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ExportTeamsDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\ExportDto\\ExportTeamsDto.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\ExportDto\\ExportTeamsDto.cs",
@@ -180,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ExportFootballerXmlDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\ExportDto\\ExportFootballerXmlDto.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\ExportDto\\ExportFootballerXmlDto.cs",
@@ -193,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ExportCoachesDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\06. Exam Preparation - 06 Aug 2022\\Footballers\\DataProcessor\\ExportDto\\ExportCoachesDto.cs",
               "RelativeDocumentMoniker": "Footballers\\DataProcessor\\ExportDto\\ExportCoachesDto.cs",

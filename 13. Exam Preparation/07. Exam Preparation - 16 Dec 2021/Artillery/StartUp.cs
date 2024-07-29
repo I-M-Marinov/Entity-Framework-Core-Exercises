@@ -36,9 +36,9 @@
                   File.ReadAllText(baseDir + "countries.xml"));
             PrintAndExportEntityToFile(importCountries, exportDir + "Actual Result - ImportCountries.txt");
 
-            //var importManufacturers = DataProcessor.Deserializer.ImportManufacturers(context,
-            //   File.ReadAllText(baseDir + "manufacturers.xml"));
-            //PrintAndExportEntityToFile(importManufacturers, exportDir + "Actual Result - ImportMnufacturers.txt");
+            var importManufacturers = DataProcessor.Deserializer.ImportManufacturers(context,
+               File.ReadAllText(baseDir + "manufacturers.xml"));
+            PrintAndExportEntityToFile(importManufacturers, exportDir + "Actual Result - ImportManufacturers.txt");
 
             //var importShells = DataProcessor.Deserializer.ImportShells(context,
             //  File.ReadAllText(baseDir + "shells.xml"));

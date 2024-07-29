@@ -7,6 +7,7 @@ namespace Artillery.DataProcessor
     using Artillery.Data;
     using Artillery.Utilities;
     using Microsoft.EntityFrameworkCore;
+    using System.Linq;
     using System.Text;
     using System.Xml;
 
@@ -61,7 +62,44 @@ namespace Artillery.DataProcessor
 
         public static string ImportManufacturers(ArtilleryContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Manufacturers";
+
+            ICollection<Manufacturer> manufacturersToImport = new List<Manufacturer>();
+
+            ImportManufacturerDto[] deserializedManufacturers = xmlHelper.Deserialize<ImportManufacturerDto[]>(xmlString, xmlRoot);
+
+            foreach (ImportManufacturerDto manufacturerDto in deserializedManufacturers)
+            {
+                if (!IsValid(manufacturerDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Manufacturer newManufacturer = new Manufacturer()
+                {
+                    ManufacturerName = manufacturerDto.ManufacturerName,
+                    Founded = manufacturerDto.Founded
+                };
+
+                if (manufacturersToImport.Any(m => m.ManufacturerName == newManufacturer.ManufacturerName))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                manufacturersToImport.Add(newManufacturer);
+                sb.AppendLine(string.Format(SuccessfulImportManufacturer, newManufacturer.ManufacturerName, newManufacturer.Founded));
+            }
+
+            context.Manufacturers.AddRange(manufacturersToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
+
         }
 
         public static string ImportShells(ArtilleryContext context, string xmlString)

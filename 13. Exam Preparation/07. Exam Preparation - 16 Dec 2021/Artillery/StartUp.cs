@@ -20,7 +20,7 @@
 
             ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
-            ExportEntities(context, projectDir + @"ExportResults/");
+          //  ExportEntities(context, projectDir + @"ExportResults/");
 
             using (var transaction = context.Database.BeginTransaction())
             {
@@ -36,18 +36,18 @@
                   File.ReadAllText(baseDir + "countries.xml"));
             PrintAndExportEntityToFile(importCountries, exportDir + "Actual Result - ImportCountries.txt");
 
-            var importManufacturers = DataProcessor.Deserializer.ImportManufacturers(context,
-               File.ReadAllText(baseDir + "manufacturers.xml"));
-            PrintAndExportEntityToFile(importManufacturers, exportDir + "Actual Result - ImportMnufacturers.txt");
+            //var importManufacturers = DataProcessor.Deserializer.ImportManufacturers(context,
+            //   File.ReadAllText(baseDir + "manufacturers.xml"));
+            //PrintAndExportEntityToFile(importManufacturers, exportDir + "Actual Result - ImportMnufacturers.txt");
 
-            var importShells = DataProcessor.Deserializer.ImportShells(context,
-              File.ReadAllText(baseDir + "shells.xml"));
-            PrintAndExportEntityToFile(importShells, exportDir + "Actual Result - ImportShells.txt");
+            //var importShells = DataProcessor.Deserializer.ImportShells(context,
+            //  File.ReadAllText(baseDir + "shells.xml"));
+            //PrintAndExportEntityToFile(importShells, exportDir + "Actual Result - ImportShells.txt");
 
-            var importGuns =
-                DataProcessor.Deserializer.ImportGuns(context,
-                    File.ReadAllText(baseDir + "guns.json"));
-            PrintAndExportEntityToFile(importGuns, exportDir + "Actual Result - ImportGuns.txt");
+            //var importGuns =
+            //    DataProcessor.Deserializer.ImportGuns(context,
+            //        File.ReadAllText(baseDir + "guns.json"));
+            //PrintAndExportEntityToFile(importGuns, exportDir + "Actual Result - ImportGuns.txt");
 
         }
 

@@ -157,8 +157,6 @@ namespace Artillery.DataProcessor
 
             ImportGunDto[] deserializedGuns = JsonConvert.DeserializeObject<ImportGunDto[]>(jsonString)!;
 
-           // var validCountriesIds = context.Countries.Select(c => c.Id).ToList();
-
             foreach (ImportGunDto gunDto in deserializedGuns)
             {
                 if (!IsValid(gunDto))
@@ -220,12 +218,6 @@ namespace Artillery.DataProcessor
                         sb.AppendLine(ErrorMessage);
                         continue;
                     }
-
-                    //if (!validCountriesIds.Contains(countryDto.Id))
-                    //{
-                    //    sb.AppendLine(ErrorMessage);
-                    //    continue;
-                    //}
 
                     CountryGun newCountryGun = new CountryGun()
                     {

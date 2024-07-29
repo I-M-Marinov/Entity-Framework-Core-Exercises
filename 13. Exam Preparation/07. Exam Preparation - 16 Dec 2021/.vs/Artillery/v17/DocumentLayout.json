@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\dataprocessor\\importdto\\importmanufacturerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\dataprocessor\\importdto\\importmanufacturerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\dataprocessor\\importdto\\importshelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\dataprocessor\\importdto\\importshelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\data\\models\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|solutionrelative:artillery\\data\\models\\shell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A01CDA47-D81E-45CF-87F9-02E2A7E41FF5}|Artillery\\Artillery.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\07. exam preparation - 16 dec 2021\\artillery\\data\\models\\manufacturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Artillery\\DataConstraints.cs",
@@ -52,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Serializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\Serializer.cs",
               "RelativeDocumentMoniker": "Artillery\\DataProcessor\\Serializer.cs",
@@ -66,13 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Deserializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\Deserializer.cs",
               "RelativeDocumentMoniker": "Artillery\\DataProcessor\\Deserializer.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\Deserializer.cs",
               "RelativeToolTip": "Artillery\\DataProcessor\\Deserializer.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAQwFIAAAARAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwH8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T09:02:41.331Z",
               "IsPinned": true,
@@ -81,19 +85,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ImportShellDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\ImportDto\\ImportShellDto.cs",
+              "RelativeDocumentMoniker": "Artillery\\DataProcessor\\ImportDto\\ImportShellDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\ImportDto\\ImportShellDto.cs",
+              "RelativeToolTip": "Artillery\\DataProcessor\\ImportDto\\ImportShellDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:11:49.022Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shell.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\Data\\Models\\Shell.cs",
+              "RelativeDocumentMoniker": "Artillery\\Data\\Models\\Shell.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\Data\\Models\\Shell.cs",
+              "RelativeToolTip": "Artillery\\Data\\Models\\Shell.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:12:18.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\StartUp.cs",
               "RelativeDocumentMoniker": "Artillery\\StartUp.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\StartUp.cs",
               "RelativeToolTip": "Artillery\\StartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABBAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCsAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T13:07:16.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Manufacturer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\Data\\Models\\Manufacturer.cs",
               "RelativeDocumentMoniker": "Artillery\\Data\\Models\\Manufacturer.cs",
@@ -102,19 +133,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T13:02:41.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ImportManufacturerDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\ImportDto\\ImportManufacturerDto.cs",
-              "RelativeDocumentMoniker": "Artillery\\DataProcessor\\ImportDto\\ImportManufacturerDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\07. Exam Preparation - 16 Dec 2021\\Artillery\\DataProcessor\\ImportDto\\ImportManufacturerDto.cs",
-              "RelativeToolTip": "Artillery\\DataProcessor\\ImportDto\\ImportManufacturerDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:02:17.242Z",
               "EditorCaption": ""
             },
             {

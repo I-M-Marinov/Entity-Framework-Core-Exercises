@@ -104,7 +104,38 @@ namespace Artillery.DataProcessor
 
         public static string ImportShells(ArtilleryContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Shells";
+
+            ICollection<Shell> shellsToImport = new List<Shell>();
+
+            ImportShellDto[] deserializedShells = xmlHelper.Deserialize<ImportShellDto[]>(xmlString, xmlRoot);
+
+            foreach (ImportShellDto shellDto in deserializedShells)
+            {
+                if (!IsValid(shellDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Shell newShell = new Shell()
+                {
+                    ShellWeight = shellDto.ShellWeight,
+                    Caliber = shellDto.Caliber
+                };
+
+
+                shellsToImport.Add(newShell);
+                sb.AppendLine(string.Format(SuccessfulImportShell, newShell.Caliber, newShell.ShellWeight));
+            }
+
+            context.Shells.AddRange(shellsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         public static string ImportGuns(ArtilleryContext context, string jsonString)

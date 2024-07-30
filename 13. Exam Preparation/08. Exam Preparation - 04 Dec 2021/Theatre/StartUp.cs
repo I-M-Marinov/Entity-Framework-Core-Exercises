@@ -22,7 +22,7 @@ namespace Theatre
 
             ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
-            //ExportEntities(context, projectDir + @"ExportResults/");
+            ExportEntities(context, projectDir + @"ExportResults/");
 
             using (var transaction = context.Database.BeginTransaction())
             {
@@ -55,9 +55,9 @@ namespace Theatre
             Console.WriteLine(exportTheaters);
             File.WriteAllText(exportDir + "Actual Result - ExportTheatres.json", exportTheaters);
 
-            var exportActors = DataProcessor.Serializer.ExportPlays(context, 7.5);
-            Console.WriteLine(exportActors);
-            File.WriteAllText(exportDir + "Actual Result - ExportActors.xml", exportActors);
+            //var exportActors = DataProcessor.Serializer.ExportPlays(context, 7.5);
+            //Console.WriteLine(exportActors);
+            //File.WriteAllText(exportDir + "Actual Result - ExportActors.xml", exportActors);
         }
 
         private static void ResetDatabase(TheatreContext context, bool shouldDropDatabase = false)

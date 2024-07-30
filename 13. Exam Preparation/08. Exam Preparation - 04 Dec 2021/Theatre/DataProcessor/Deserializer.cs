@@ -6,6 +6,7 @@ using Theatre.Utilities;
 
 namespace Theatre.DataProcessor
 {
+    using Newtonsoft.Json;
     using System.ComponentModel.DataAnnotations;
 
     using Theatre.Data;
@@ -152,9 +153,61 @@ namespace Theatre.DataProcessor
 
         public static string ImportTtheatersTickets(TheatreContext context, string jsonString)
         {
-            throw new NotImplementedException();
-        }
+            StringBuilder sb = new StringBuilder();
 
+            ICollection<Data.Models.Theatre> theatresToImport = new List<Data.Models.Theatre>();
+
+
+            ImportTheatresDto[] deserializedTheatres = JsonConvert.DeserializeObject<ImportTheatresDto[]>(jsonString)!;
+
+            foreach (ImportTheatresDto theatreDto in deserializedTheatres)
+            {
+                if (!IsValid(theatreDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Data.Models.Theatre newTheatre = new Data.Models.Theatre()
+                {
+                    Name = theatreDto.Name,
+                    NumberOfHalls = (sbyte)theatreDto.NumberOfHalls,
+                    Director = theatreDto.Director,
+                };
+
+                ICollection<Ticket> ticketsToImport = new List<Ticket>();
+
+                foreach (ImportTicketsDto ticketDto in theatreDto.Tickets)
+                {
+
+                    if (!IsValid(ticketDto))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+                    Ticket ticket = new Ticket()
+                    {
+                        Price = ticketDto.Price,
+                        RowNumber = ticketDto.RowNumber,
+                        PlayId = ticketDto.PlayId
+                    };
+
+                    ticketsToImport.Add(ticket);
+                }
+
+                newTheatre.Tickets = ticketsToImport;
+
+                theatresToImport.Add(newTheatre);
+
+                sb.AppendLine(string.Format(SuccessfulImportTheatre, newTheatre.Name, newTheatre.Tickets.Count));
+            }
+
+            context.Theatres.AddRange(theatresToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
+        }
 
         private static bool IsValid(object obj)
         {
@@ -166,3 +219,4 @@ namespace Theatre.DataProcessor
         }
     }
 }
+    

@@ -37,7 +37,7 @@ namespace Theatre
         public const byte CastFullNameMinLength = 4;
         public const byte CastFullNameMaxLength = 30;
 
-        public const string CastPhoneNumberRegexValidation = @"^\\+44-\\d{2}-\\d{3}-\\d{4}$\n";
+        public const string CastPhoneNumberRegexValidation = @"\+44-\d{2}-\d{3}-\d{4}";
 
         // TICKET 
 

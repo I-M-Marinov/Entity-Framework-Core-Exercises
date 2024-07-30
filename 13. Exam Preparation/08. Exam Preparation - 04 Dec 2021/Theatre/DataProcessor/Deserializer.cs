@@ -95,7 +95,59 @@ namespace Theatre.DataProcessor
 
         public static string ImportCasts(TheatreContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Casts";
+
+            ICollection<Cast> castsToImport = new List<Cast>();
+
+            ImportCastsDto[] deserializedCasts = xmlHelper.Deserialize<ImportCastsDto[]>(xmlString, xmlRoot);
+
+            foreach (ImportCastsDto castDto in deserializedCasts)
+            {
+
+                if (!IsValid(castDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                var isMainCharacter = false;
+
+                if (castDto.IsMainCharacter == "true")
+                {
+                    isMainCharacter = true;
+                }
+                else if (castDto.IsMainCharacter == "false")
+                {
+                    isMainCharacter = false;
+                }
+                else
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Cast newCast = new Cast()
+                {
+                    FullName = castDto.FullName,
+                    IsMainCharacter = isMainCharacter,
+                    PhoneNumber = castDto.PhoneNumber,
+                    PlayId = castDto.PlayId
+                };
+
+                var typeCharacter = newCast.IsMainCharacter == true ? "main" : "lesser";
+
+                castsToImport.Add(newCast);
+                sb.AppendLine(string.Format(SuccessfulImportActor, newCast.FullName, typeCharacter));
+            }
+
+            context.Casts.AddRange(castsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
+
         }
 
         public static string ImportTtheatersTickets(TheatreContext context, string jsonString)

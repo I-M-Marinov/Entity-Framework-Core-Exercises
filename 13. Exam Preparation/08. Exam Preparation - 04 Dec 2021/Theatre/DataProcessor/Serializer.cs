@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Theatre.Data.Models.Enums;
 using Theatre.DataProcessor.ExportDto;
 
 namespace Theatre.DataProcessor
@@ -6,6 +8,7 @@ namespace Theatre.DataProcessor
 
     using System;
     using Theatre.Data;
+    using Theatre.Utilities;
 
     public class Serializer
     {
@@ -42,7 +45,49 @@ namespace Theatre.DataProcessor
 
         public static string ExportPlays(TheatreContext context, double raiting)
         {
-            throw new NotImplementedException();
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Plays";
+
+            var playsToExport = context.Plays
+                .Where(p => p.Rating <= raiting)
+                .Select(p => new
+                {
+                    p.Title,
+                    p.Duration,
+                    p.Rating,
+                    Genre = p.Genre, 
+                    Actors = p.Casts
+                        .Where(c => c.IsMainCharacter == true) 
+                        .Select(c => new
+                        {
+                            c.FullName,
+                            PlayTitle = p.Title 
+                        })
+                        .OrderByDescending(a => a.FullName) 
+                        .ToArray()
+                })
+                .AsEnumerable() 
+                .Select(p => new ExportPlaysDto()
+                {
+                    Title = p.Title,
+                    Duration = p.Duration.ToString("c"), 
+                    Rating = p.Rating == 0 ? "Premier" : p.Rating.ToString(), 
+                    Genre = p.Genre.ToString(), 
+                    Actors = p.Actors
+                        .Select(a => new ExportActorDto()
+                        {
+                            FullName = a.FullName,
+                            MainCharacter = $"Plays main character in '{a.PlayTitle}'."
+                        })
+                        .ToArray()
+                })
+                .OrderBy(p => p.Title) 
+                .ThenByDescending(p => p.Genre) 
+                .ToArray();
+
+
+            return xmlHelper.Serialize(playsToExport, xmlRoot);
+
         }
     }
 }

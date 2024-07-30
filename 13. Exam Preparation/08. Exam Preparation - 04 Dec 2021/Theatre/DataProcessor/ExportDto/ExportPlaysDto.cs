@@ -19,7 +19,7 @@ namespace Theatre.DataProcessor.ExportDto
 
         [XmlAttribute(nameof(Rating))]
 
-        public float Rating { get; set; }
+        public string Rating { get; set; }
 
         [XmlAttribute(nameof(Genre))]
         public string Genre { get; set; }
@@ -27,8 +27,7 @@ namespace Theatre.DataProcessor.ExportDto
         [XmlArray(nameof(Actors))]
         [XmlArrayItem("Actor")]
 
-        public ExportCountryDto[] Actors { get; set; } = new ExportCountryDto[0];
-
+        public ExportActorDto[] Actors { get; set; } = new ExportActorDto[0];
 
     }
 }

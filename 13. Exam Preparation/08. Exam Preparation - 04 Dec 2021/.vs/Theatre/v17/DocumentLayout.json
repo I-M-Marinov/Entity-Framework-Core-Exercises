@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\dataprocessor\\importdto\\importplaysdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\dataprocessor\\importdto\\importplaysdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\datasets\\plays.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\datasets\\plays.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\theatrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\theatrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\importresults\\expected result - importplays.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\importresults\\expected result - importplays.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\theatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\theatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\importresults\\actual result - importplays.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\importresults\\actual result - importplays.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\play.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\play.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\models\\theatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\models\\theatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\theatrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|solutionrelative:theatre\\data\\theatrecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54FC381F-C040-443B-B516-BFCD6A977757}|Theatre\\Theatre.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\08. exam preparation - 04 dec 2021\\theatre\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,59 +66,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataConstraints.cs",
               "RelativeDocumentMoniker": "Theatre\\DataConstraints.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataConstraints.cs",
               "RelativeToolTip": "Theatre\\DataConstraints.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAEwCYAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAEwB8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:18:03.037Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Ticket.cs",
-              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Ticket.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Ticket.cs",
-              "RelativeToolTip": "Theatre\\Data\\Models\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:37:42.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cast.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Cast.cs",
-              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Cast.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Cast.cs*",
-              "RelativeToolTip": "Theatre\\Data\\Models\\Cast.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:33:48.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Play.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Play.cs",
-              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Play.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Play.cs",
-              "RelativeToolTip": "Theatre\\Data\\Models\\Play.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:25:35.683Z",
               "EditorCaption": ""
             },
             {
@@ -131,33 +116,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Expected Result - ImportPlays.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\ImportResults\\Expected Result - ImportPlays.txt",
+              "RelativeDocumentMoniker": "Theatre\\ImportResults\\Expected Result - ImportPlays.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\ImportResults\\Expected Result - ImportPlays.txt",
+              "RelativeToolTip": "Theatre\\ImportResults\\Expected Result - ImportPlays.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-30T13:20:51.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Actual Result - ImportPlays.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\ImportResults\\Actual Result - ImportPlays.txt",
+              "RelativeDocumentMoniker": "Theatre\\ImportResults\\Actual Result - ImportPlays.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\ImportResults\\Actual Result - ImportPlays.txt",
+              "RelativeToolTip": "Theatre\\ImportResults\\Actual Result - ImportPlays.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-30T13:20:48.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "plays.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Datasets\\plays.xml",
+              "RelativeDocumentMoniker": "Theatre\\Datasets\\plays.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Datasets\\plays.xml",
+              "RelativeToolTip": "Theatre\\Datasets\\plays.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-07-30T13:16:26.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportPlaysDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\ImportDto\\ImportPlaysDto.cs",
+              "RelativeDocumentMoniker": "Theatre\\DataProcessor\\ImportDto\\ImportPlaysDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\ImportDto\\ImportPlaysDto.cs",
+              "RelativeToolTip": "Theatre\\DataProcessor\\ImportDto\\ImportPlaysDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T13:01:22.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\Serializer.cs",
+              "RelativeDocumentMoniker": "Theatre\\DataProcessor\\Serializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "Theatre\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:59:25.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "Theatre\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\DataProcessor\\Deserializer.cs*",
+              "RelativeToolTip": "Theatre\\DataProcessor\\Deserializer.cs*",
+              "ViewState": "AQIAACIAAAAAAAAAAAAswD4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:58:51.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Ticket.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Ticket.cs",
+              "RelativeToolTip": "Theatre\\Data\\Models\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:37:42.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cast.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Cast.cs",
+              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Cast.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Cast.cs",
+              "RelativeToolTip": "Theatre\\Data\\Models\\Cast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:33:48.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Play.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Play.cs",
+              "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Play.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Play.cs",
+              "RelativeToolTip": "Theatre\\Data\\Models\\Play.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:25:35.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Theatre.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Theatre.cs",
               "RelativeDocumentMoniker": "Theatre\\Data\\Models\\Theatre.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Models\\Theatre.cs",
               "RelativeToolTip": "Theatre\\Data\\Models\\Theatre.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:17:46.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StartUp.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\StartUp.cs",
               "RelativeDocumentMoniker": "Theatre\\StartUp.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\StartUp.cs*",
-              "RelativeToolTip": "Theatre\\StartUp.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\StartUp.cs",
+              "RelativeToolTip": "Theatre\\StartUp.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAEwC0AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:17:29.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "TheatreContext.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\TheatreContext.cs",
               "RelativeDocumentMoniker": "Theatre\\Data\\TheatreContext.cs",
@@ -170,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\08. Exam Preparation - 04 Dec 2021\\Theatre\\Data\\Configuration.cs",
               "RelativeDocumentMoniker": "Theatre\\Data\\Configuration.cs",

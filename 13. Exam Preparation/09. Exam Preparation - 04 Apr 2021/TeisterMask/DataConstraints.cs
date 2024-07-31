@@ -16,6 +16,8 @@ namespace TeisterMask
         public const byte EmployeeUsernameMaxLength = 40;
 
         public const string EmployeePhoneRegexValidation = @"^\d{3}-\d{3}-\d{4}$";
+        public const string EmployeeUsernameRegexValidation = @"^[a-zA-Z0-9]{3,40}$";
+
 
         // PROJECT 
 

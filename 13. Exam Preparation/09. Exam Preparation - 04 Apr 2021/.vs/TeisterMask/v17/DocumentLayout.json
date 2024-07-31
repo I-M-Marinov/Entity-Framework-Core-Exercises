@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\importdto\\importemployeesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\importdto\\importemployeesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\importdto\\importtasksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\importdto\\importtasksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\datasets\\projects.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\datasets\\projects.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\expected result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\expected result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\actual result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\actual result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\importdto\\importprojectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\importdto\\importprojectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\importdto\\importprojectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\importdto\\importprojectsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\expected result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\expected result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\actual result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\actual result - importprojects.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\importdto\\importtasksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\importdto\\importtasksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\expected result - importemployees.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\expected result - importemployees.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\importresults\\actual result - importemployees.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\importresults\\actual result - importemployees.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\datasets\\employees.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\datasets\\employees.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\data\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\data\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\09. exam preparation - 04 apr 2021\\teistermask\\datasets\\projects.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BED990A7-EDE5-4167-8082-C34D891A25BA}|TeisterMask\\TeisterMask.csproj|solutionrelative:teistermask\\datasets\\projects.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "DataConstraints.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataConstraints.cs",
               "RelativeDocumentMoniker": "TeisterMask\\DataConstraints.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataConstraints.cs",
-              "RelativeToolTip": "TeisterMask\\DataConstraints.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAEwCQAAAAAAAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataConstraints.cs*",
+              "RelativeToolTip": "TeisterMask\\DataConstraints.cs*",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAEwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T15:39:43.75Z",
               "IsPinned": true,
@@ -56,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Deserializer.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\Deserializer.cs",
               "RelativeDocumentMoniker": "TeisterMask\\DataProcessor\\Deserializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\Deserializer.cs*",
-              "RelativeToolTip": "TeisterMask\\DataProcessor\\Deserializer.cs*",
-              "ViewState": "AQIAADkAAAAAAAAAAAAuwFUAAAAAAAAA",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "TeisterMask\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAMwPkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T15:38:22.614Z",
               "IsPinned": true,
@@ -102,7 +126,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "employees.json",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\Datasets\\employees.json",
+              "RelativeDocumentMoniker": "TeisterMask\\Datasets\\employees.json",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\Datasets\\employees.json",
+              "RelativeToolTip": "TeisterMask\\Datasets\\employees.json",
+              "ViewState": "AQIAAKgBAAAAAAAAAIAwwMgBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T16:42:33.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Expected Result - ImportEmployees.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Expected Result - ImportEmployees.txt",
+              "RelativeDocumentMoniker": "TeisterMask\\ImportResults\\Expected Result - ImportEmployees.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Expected Result - ImportEmployees.txt",
+              "RelativeToolTip": "TeisterMask\\ImportResults\\Expected Result - ImportEmployees.txt",
+              "ViewState": "AQIAACQAAAAAAAAAAAAmwFgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-31T16:41:58.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Actual Result - ImportEmployees.txt",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Actual Result - ImportEmployees.txt",
+              "RelativeDocumentMoniker": "TeisterMask\\ImportResults\\Actual Result - ImportEmployees.txt",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Actual Result - ImportEmployees.txt",
+              "RelativeToolTip": "TeisterMask\\ImportResults\\Actual Result - ImportEmployees.txt",
+              "ViewState": "AQIAACQAAAAAAAAAAAAmwFgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-31T16:41:55.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\StartUp.cs",
+              "RelativeDocumentMoniker": "TeisterMask\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\StartUp.cs",
+              "RelativeToolTip": "TeisterMask\\StartUp.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T16:40:11.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\Data\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "TeisterMask\\Data\\Models\\Employee.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\Data\\Models\\Employee.cs",
+              "RelativeToolTip": "TeisterMask\\Data\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T16:28:26.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImportEmployeesDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportEmployeesDto.cs",
+              "RelativeDocumentMoniker": "TeisterMask\\DataProcessor\\ImportDto\\ImportEmployeesDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportEmployeesDto.cs",
+              "RelativeToolTip": "TeisterMask\\DataProcessor\\ImportDto\\ImportEmployeesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T16:28:15.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "projects.xml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\Datasets\\projects.xml",
               "RelativeDocumentMoniker": "TeisterMask\\Datasets\\projects.xml",
@@ -121,46 +223,46 @@
               "RelativeDocumentMoniker": "TeisterMask\\ImportResults\\Expected Result - ImportProjects.txt",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Expected Result - ImportProjects.txt",
               "RelativeToolTip": "TeisterMask\\ImportResults\\Expected Result - ImportProjects.txt",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAUwMoAAAANAAAA",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAmwNcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-31T16:15:13.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Actual Result - ImportProjects.txt",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Actual Result - ImportProjects.txt",
               "RelativeDocumentMoniker": "TeisterMask\\ImportResults\\Actual Result - ImportProjects.txt",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\ImportResults\\Actual Result - ImportProjects.txt",
               "RelativeToolTip": "TeisterMask\\ImportResults\\Actual Result - ImportProjects.txt",
-              "ViewState": "AQIAALoAAAAAAAAAAAAUwO8AAAANAAAA",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAmwLsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-31T16:15:00.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ImportTasksDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportTasksDto.cs",
               "RelativeDocumentMoniker": "TeisterMask\\DataProcessor\\ImportDto\\ImportTasksDto.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportTasksDto.cs",
               "RelativeToolTip": "TeisterMask\\DataProcessor\\ImportDto\\ImportTasksDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T15:43:01.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ImportProjectsDto.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportProjectsDto.cs",
               "RelativeDocumentMoniker": "TeisterMask\\DataProcessor\\ImportDto\\ImportProjectsDto.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\DataProcessor\\ImportDto\\ImportProjectsDto.cs",
               "RelativeToolTip": "TeisterMask\\DataProcessor\\ImportDto\\ImportProjectsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T15:39:07.722Z",
               "EditorCaption": ""

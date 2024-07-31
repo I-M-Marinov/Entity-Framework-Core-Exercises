@@ -15,6 +15,7 @@ namespace TeisterMask.DataProcessor
     using System.Diagnostics.Metrics;
     using System.Text;
     using TeisterMask.Utilities;
+    using Newtonsoft.Json;
 
     public class Deserializer
     {
@@ -175,7 +176,67 @@ namespace TeisterMask.DataProcessor
 
         public static string ImportEmployees(TeisterMaskContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            ICollection<Employee> employeesToImport = new List<Employee>();
+
+            var validTaskIds = context.Tasks.Select(t => t.Id).ToList();
+
+
+            ImportEmployeesDto[] deserializedEmployees =
+                JsonConvert.DeserializeObject<ImportEmployeesDto[]>(jsonString)!;
+
+            foreach (ImportEmployeesDto employeeDto in deserializedEmployees)
+            {
+                if (!IsValid(employeeDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Employee newEmployee = new Employee()
+                {
+                    Username = employeeDto.Username,
+                    Email = employeeDto.Email,
+                    Phone = employeeDto.Phone
+
+                };
+
+                HashSet<int> uniqueTaskIds = new HashSet<int>();
+
+
+                foreach (var taskId in employeeDto.Tasks)
+                {
+                    if (!uniqueTaskIds.Add(taskId))
+                    {
+                        continue;
+                    }
+
+                    if (!validTaskIds.Contains(taskId))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+
+
+                    EmployeeTask newEmployeeTask = new EmployeeTask()
+                    {
+                        Employee = newEmployee,
+                        TaskId = taskId
+                    };
+
+                    newEmployee.EmployeesTasks.Add(newEmployeeTask);
+                }
+
+                employeesToImport.Add(newEmployee);
+                sb.AppendLine(string.Format(SuccessfullyImportedEmployee, newEmployee.Username, newEmployee.EmployeesTasks.Count));
+
+            }
+
+            context.Employees.AddRange(employeesToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         private static bool IsValid(object dto)

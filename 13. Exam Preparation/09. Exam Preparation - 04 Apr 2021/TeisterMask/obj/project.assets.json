@@ -7056,11 +7056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marinov\\Desktop\\Exam Preaparation\\C# DB Advanced Exam - 04 April 2021\\01. Model Defition_Skeleton\\TeisterMask\\TeisterMask.csproj",
+      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\TeisterMask.csproj",
       "projectName": "TeisterMask",
-      "projectPath": "C:\\Users\\Marinov\\Desktop\\Exam Preaparation\\C# DB Advanced Exam - 04 April 2021\\01. Model Defition_Skeleton\\TeisterMask\\TeisterMask.csproj",
+      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\TeisterMask.csproj",
       "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marinov\\Desktop\\Exam Preaparation\\C# DB Advanced Exam - 04 April 2021\\01. Model Defition_Skeleton\\TeisterMask\\obj\\",
+      "outputPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

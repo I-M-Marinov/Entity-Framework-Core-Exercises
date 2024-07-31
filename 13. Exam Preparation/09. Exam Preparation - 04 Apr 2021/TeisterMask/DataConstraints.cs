@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeisterMask.Data.Models.Enums;
 
 namespace TeisterMask
 {
@@ -25,5 +26,11 @@ namespace TeisterMask
 
         public const byte TaskNameMinLength = 2;
         public const byte TaskNameMaxLength = 40;
+
+        public const int TaskExecutionTypeMinValue = (int)ExecutionType.ProductBacklog;
+        public const int TaskExecutionTypeMaxValue = (int)ExecutionType.Finished;
+
+        public const int TaskLabelTypeMinValue = (int)LabelType.Priority;
+        public const int TaskLabelTypeMaxValue = (int)LabelType.Hibernate;
     }
 }

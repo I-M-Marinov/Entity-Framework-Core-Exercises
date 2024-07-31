@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RcDaRQoIXec=",
+  "dgSpecHash": "2qmiaoWH+bQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marinov\\Desktop\\Exam Preaparation\\C# DB Advanced Exam - 04 April 2021\\01. Model Defition_Skeleton\\TeisterMask\\TeisterMask.csproj",
+  "projectFilePath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\09. Exam Preparation - 04 Apr 2021\\TeisterMask\\TeisterMask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marinov\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Marinov\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",

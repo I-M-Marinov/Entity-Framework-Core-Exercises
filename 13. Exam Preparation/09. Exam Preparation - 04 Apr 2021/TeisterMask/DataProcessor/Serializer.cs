@@ -7,12 +7,41 @@ namespace TeisterMask.DataProcessor
     using Data;
     using Newtonsoft.Json;
     using System.Globalization;
+    using TeisterMask.Utilities;
 
     public class Serializer
     {
+
         public static string ExportProjectWithTheirTasks(TeisterMaskContext context)
         {
-            throw new NotImplementedException();
+
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Projects";
+
+            ExportProjectsDto[] projectsToExport = context.Projects
+                .Where(p => p.Tasks.Any())
+                .Select(p => new ExportProjectsDto()
+                {
+                    TasksCount = p.Tasks.Count(),
+                    ProjectName = p.Name,
+                    HasEndDate = p.DueDate.HasValue ? "Yes" : "No",
+                    Tasks = p.Tasks
+                        .Select(t => new ExportTasksXmlDto()
+                        {
+                            Name = t.Name,
+                            Label = t.LabelType.ToString()
+                        })
+                        .OrderBy(t => t.Name)
+                        .ToArray()
+                })
+                .AsEnumerable()
+                .OrderByDescending(p => p.TasksCount)
+                .ThenBy(p => p.ProjectName)
+                .ToArray();
+
+            return xmlHelper.Serialize(projectsToExport, xmlRoot);
+
         }
 
         public static string ExportMostBusiestEmployees(TeisterMaskContext context, DateTime date)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeisterMask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1db191ea2983d1d92cd00fb3618819a4b248e32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77565567050f647ae53ff7c1a10abcfcd4f9bc74")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeisterMask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeisterMask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

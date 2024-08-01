@@ -15,7 +15,8 @@ namespace VaporStore.Data.Models
         public string Name { get; set; } = null!;
 
         [Required]
-        public decimal Price { get; set; } // cannot be negative !!!! 
+        [Range(0, double.MaxValue)] // cannot be negative !!!! 
+        public decimal Price { get; set; } 
 
         [Required]
         public DateTime ReleaseDate { get; set; }
@@ -24,8 +25,8 @@ namespace VaporStore.Data.Models
         [ForeignKey(nameof(Developer))]
         public int DeveloperId { get; set; }
 
-        [Required]
-        public virtual Developer Developer { get; set; }
+        [Required] 
+        public virtual Developer Developer { get; set; } = null!;
 
 
         [Required]
@@ -33,12 +34,12 @@ namespace VaporStore.Data.Models
         public int GenreId { get; set; }
 
         [Required]
-        public virtual Genre Genre { get; set; }
+        public virtual Genre Genre { get; set; } = null!;
 
 
-        // TODO:
-        //•	Purchases - collection of type Purchase
-        //•	GameTags - collection of type GameTag.Each game must have at least one tag.
+        public virtual ICollection<Purchase> Purchases { get; set; } = new HashSet<Purchase>();
+
+        public virtual ICollection<GameTag> GameTags { get; set; } = new HashSet<GameTag>();
 
     }
 }

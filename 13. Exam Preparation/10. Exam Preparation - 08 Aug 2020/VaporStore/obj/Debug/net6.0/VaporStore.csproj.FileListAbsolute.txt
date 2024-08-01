@@ -1,0 +1,6 @@
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.csproj.AssemblyReference.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.AssemblyInfoInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.AssemblyInfo.cs
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.csproj.CoreCompileInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\13. Exam Preparation\10. Exam Preparation - 08 Aug 2020\VaporStore\obj\Debug\net6.0\VaporStore.sourcelink.json

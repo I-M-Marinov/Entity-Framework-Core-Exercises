@@ -16,15 +16,14 @@ namespace VaporStore.Data
         {
         }
 
-        public DbSet<Game> Games { get; set; } = null!;
-        public DbSet<Tag> Tags { get; set; } = null!;
-        public DbSet<Developer> Developers { get; set; } = null!;
-        public DbSet<Genre> Genres { get; set; } = null!;
-        public DbSet<GameTag> GameTags { get; set; } = null!;
-        public DbSet<Purchase> Purchases { get; set; } = null!;
-        public DbSet<Card> Cards { get; set; } = null!;
-        public DbSet<User> Users { get; set; } = null!;
-
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<Developer> Developers { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<GameTag> GameTags { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
@@ -39,8 +38,10 @@ namespace VaporStore.Data
 
         protected override void OnModelCreating(ModelBuilder model)
         {
-            model.Entity<GameTag>()
-                .HasKey(gt => new { gt.GameId, gt.TagId });
+            model.Entity<GameTag>(entity =>
+            {
+                entity.HasKey(gt => new { gt.GameId, gt.TagId });
+            });
         }
     }
 }

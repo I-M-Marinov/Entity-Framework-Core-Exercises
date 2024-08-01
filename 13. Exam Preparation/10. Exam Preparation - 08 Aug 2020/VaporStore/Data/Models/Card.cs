@@ -12,16 +12,16 @@ namespace VaporStore.Data.Models
         public int Id { get; set; }
 
         [Required]
-     //   [RegularExpression(@"^\d{4} \d{4} \d{4} \d{4}$")]
+        [RegularExpression(@"^\d{4} \d{4} \d{4} \d{4}$")]
         public string Number { get; set; } = null!;
 
         [Required]
-    //    [RegularExpression("^\\d{3}$\n")]
+        [RegularExpression("^\\d{3}$\n")]
         [MaxLength(3)]
         public string Cvc { get; set; } = null!;
 
         [Required]
-        public TypeCard Type { get; set; }
+        public CardType Type { get; set; }
 
         [Required]
         [ForeignKey(nameof(User))]

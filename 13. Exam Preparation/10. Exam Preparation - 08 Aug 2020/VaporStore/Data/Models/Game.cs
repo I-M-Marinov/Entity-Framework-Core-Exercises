@@ -15,7 +15,7 @@ namespace VaporStore.Data.Models
         public string Name { get; set; } = null!;
 
         [Required]
-        [Range(0, double.MaxValue)] // cannot be negative !!!! 
+        [Range(0.0, double.MaxValue)] // cannot be negative !!!! 
         public decimal Price { get; set; } 
 
         [Required]

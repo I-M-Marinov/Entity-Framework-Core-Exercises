@@ -14,10 +14,11 @@ namespace VaporStore.Data.Models
         public string Username { get; set; } = null!;
 
         [Required]
-       // [RegularExpression(@"^[A-Z][a-z]+ [A-Z][a-z]+$")]
+        [RegularExpression(@"^[A-Z][a-z]+ [A-Z][a-z]+$")]
         public string FullName { get; set; } = null!;
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; } = null!;
 
 

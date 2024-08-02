@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VaporStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4924ac628df2a2f1b7d0c15f746d8b342c17dfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+275d66adef33c8e9c7547ba9b1c4f544bce3cc93")]
 [assembly: System.Reflection.AssemblyProductAttribute("VaporStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VaporStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

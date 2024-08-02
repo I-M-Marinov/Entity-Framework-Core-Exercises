@@ -21,7 +21,7 @@ namespace VaporStore.Data.Models
         [EmailAddress]
         public string Email { get; set; } = null!;
 
-
+        [Required]
         [Range(3,103)]
         public int Age  { get; set; }
 

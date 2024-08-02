@@ -42,8 +42,8 @@
             var games = Deserializer.ImportGames(context, File.ReadAllText(baseDir + "games.json"));
             PrintAndExportEntityToFile(games, exportDir + "ImportGames.txt");
 
-            //var users = Deserializer.ImportUsers(context, File.ReadAllText(baseDir + "users.json"));
-            //PrintAndExportEntityToFile(users, exportDir + "ImportUsers.txt");
+            var users = Deserializer.ImportUsers(context, File.ReadAllText(baseDir + "users.json"));
+            PrintAndExportEntityToFile(users, exportDir + "ImportUsers.txt");
 
             //var purchases = Deserializer.ImportPurchases(context, File.ReadAllText(baseDir + "purchases.xml"));
             //PrintAndExportEntityToFile(purchases, exportDir + "ImportPurchases.txt");

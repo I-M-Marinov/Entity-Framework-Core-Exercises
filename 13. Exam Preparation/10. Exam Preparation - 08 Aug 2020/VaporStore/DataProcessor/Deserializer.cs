@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using System.Text;
 using VaporStore.Data.Models;
+using VaporStore.Data.Models.Enums;
 using VaporStore.DataProcessor.ImportDto;
 
 namespace VaporStore.DataProcessor
@@ -24,12 +25,9 @@ namespace VaporStore.DataProcessor
         {
             StringBuilder sb = new StringBuilder();
 
-            ICollection<Game> gamesToImport = new List<Game>();
-
             ImportGamesDto[] deserializedGames = JsonConvert.DeserializeObject<ImportGamesDto[]>(jsonString)!;
 
-
-            List<Game> games = new List<Game>();
+            ICollection<Game> gamesToImport = new List<Game>();
             List<Developer> developers = new List<Developer>();
             List<Genre> genres = new List<Genre>();
             List<Tag> tags = new List<Tag>();
@@ -142,7 +140,7 @@ namespace VaporStore.DataProcessor
                     continue;
                 }
 
-                games.Add(g);
+                gamesToImport.Add(g);
                 sb.AppendLine(String.Format(SuccessfullyImportedGame, g.Name, g.Genre.Name, g.GameTags.Count));
             }
 
@@ -154,7 +152,78 @@ namespace VaporStore.DataProcessor
 
         public static string ImportUsers(VaporStoreDbContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            ICollection<User> usersToImport = new List<User>();
+
+            ImportUsersDto[] deserializedUsers = JsonConvert.DeserializeObject<ImportUsersDto[]>(jsonString)!;
+
+            foreach (ImportUsersDto userDto in deserializedUsers)
+            {
+                if (!IsValid(userDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                User newUser = new User()
+                {
+                    FullName = userDto.FullName,
+                    Username = userDto.Username,
+                    Email = userDto.Email,
+                    Age = userDto.Age
+                };
+
+                ICollection<Card> cardsToImport = new List<Card>();
+                bool allCardsValid = true;
+
+                foreach (ImportCardsDto cardDto in userDto.Cards)
+                {
+                    if (!IsValid(cardDto))
+                    {
+                        allCardsValid = false;
+                        break;
+                    }
+
+                    CardType type;
+                    if (cardDto.Type == "Debit")
+                    {
+                        type = CardType.Debit;
+                    }
+                    else if (cardDto.Type == "Credit")
+                    {
+                        type = CardType.Credit;
+                    }
+                    else
+                    {
+                        allCardsValid = false;
+                        break;
+                    }
+
+                    Card newCard = new Card()
+                    {
+                        Number = cardDto.Number,
+                        Cvc = cardDto.CVC,
+                        Type = type
+                    };
+
+                    cardsToImport.Add(newCard);
+                }
+
+                if (!allCardsValid)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                newUser.Cards = cardsToImport;
+                usersToImport.Add(newUser);
+                sb.AppendLine(string.Format(SuccessfullyImportedUser, newUser.Username, newUser.Cards.Count));
+            }
+
+            context.Users.AddRange(usersToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         public static string ImportPurchases(VaporStoreDbContext context, string xmlString)

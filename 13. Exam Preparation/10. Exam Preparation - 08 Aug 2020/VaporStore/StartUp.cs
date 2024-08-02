@@ -45,8 +45,8 @@
             var users = Deserializer.ImportUsers(context, File.ReadAllText(baseDir + "users.json"));
             PrintAndExportEntityToFile(users, exportDir + "ImportUsers.txt");
 
-            //var purchases = Deserializer.ImportPurchases(context, File.ReadAllText(baseDir + "purchases.xml"));
-            //PrintAndExportEntityToFile(purchases, exportDir + "ImportPurchases.txt");
+            var purchases = Deserializer.ImportPurchases(context, File.ReadAllText(baseDir + "purchases.xml"));
+            PrintAndExportEntityToFile(purchases, exportDir + "ImportPurchases.txt");
         }
 
         private static void ResetDatabase(DbContext context, bool shouldDropDatabase = false)

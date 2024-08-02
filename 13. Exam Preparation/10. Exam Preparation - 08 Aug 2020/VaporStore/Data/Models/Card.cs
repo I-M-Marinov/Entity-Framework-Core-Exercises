@@ -16,7 +16,7 @@ namespace VaporStore.Data.Models
         public string Number { get; set; } = null!;
 
         [Required]
-        [RegularExpression("^\\d{3}$\n")]
+        [RegularExpression("^\\d{3}$")]
         [MaxLength(3)]
         public string Cvc { get; set; } = null!;
 

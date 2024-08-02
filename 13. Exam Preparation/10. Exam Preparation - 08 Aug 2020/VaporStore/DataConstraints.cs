@@ -12,5 +12,9 @@ namespace VaporStore
 
         public const int CardTypeMinValue = (int)CardType.Debit;
         public const int CardTypeMaxValue = (int)CardType.Credit;
+
+
+        public const int PurchaseTypeMinValue = (int)PurchaseType.Retail;
+        public const int PurchaseTypeMaxValue = (int)PurchaseType.Digital;
     }
 }

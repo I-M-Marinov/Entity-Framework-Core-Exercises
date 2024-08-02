@@ -9,7 +9,9 @@ namespace VaporStore.DataProcessor
     using System.ComponentModel.DataAnnotations;
 
     using Data;
+    using Microsoft.EntityFrameworkCore;
     using Newtonsoft.Json;
+    using VaporStore.Utilities;
 
     public static class Deserializer
     {
@@ -228,7 +230,67 @@ namespace VaporStore.DataProcessor
 
         public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Purchases";
+
+            ICollection<Purchase> purchasesToImport = new List<Purchase>();
+
+            ImportPurchasesDto[] deserializedPurchases = xmlHelper.Deserialize<ImportPurchasesDto[]>(xmlString, xmlRoot);
+
+            foreach (ImportPurchasesDto purchaseDto in deserializedPurchases)
+            {
+                bool isValidDate = DateTime.TryParseExact(purchaseDto.Date, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture,
+                    DateTimeStyles.None, out DateTime date);
+
+                if (!IsValid(purchaseDto) || !isValidDate)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                var game = context.Games.FirstOrDefault(g => g.Name == purchaseDto.Title);
+                var card = context.Cards.FirstOrDefault(c => c.Number == purchaseDto.Card);
+
+                if (game == null || card == null)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                PurchaseType purchaseType;
+                if (purchaseDto.Type == "Retail")
+                {
+                    purchaseType = PurchaseType.Retail;
+                }
+                else if (purchaseDto.Type == "Digital")
+                {
+                    purchaseType = PurchaseType.Digital;
+                }
+                else
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                Purchase newPurchase = new Purchase()
+                {
+                    Game = game,
+                    Type = purchaseType,
+                    Card = card,
+                    Date = date,
+                    ProductKey = purchaseDto.ProductKey
+                };
+
+                purchasesToImport.Add(newPurchase);
+                sb.AppendLine(string.Format(SuccessfullyImportedPurchase, newPurchase.Game.Name, newPurchase.Card.User.Username));
+            }
+
+            context.Purchases.AddRange(purchasesToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         private static bool IsValid(object dto)

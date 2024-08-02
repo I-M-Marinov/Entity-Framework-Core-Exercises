@@ -3,84 +3,28 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\exportdto\\exportgenresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\exportdto\\exportgenresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\importdto\\importpurchasesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\importdto\\importpurchasesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\enums\\purchasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\enums\\purchasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\importdto\\importgamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\importdto\\importgamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\importdto\\importcardsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\importdto\\importcardsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\importresults\\importusers-expected.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\importresults\\importusers-expected.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\importresults\\importusers.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\importresults\\importusers.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\importdto\\importusersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\importdto\\importusersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\vaporstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\vaporstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\importresults\\importgames.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\importresults\\importgames.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\importresults\\importgames-expected.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\importresults\\importgames-expected.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\data\\models\\gametag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\data\\models\\gametag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|d:\\lcfr\\developer\\entity framework core exercises\\13. exam preparation\\10. exam preparation - 08 aug 2020\\vaporstore\\dataprocessor\\exportdto\\exportgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58E89C1-489E-418B-9E01-2657C87B2768}|VaporStore\\VaporStore.csproj|solutionrelative:vaporstore\\dataprocessor\\exportdto\\exportgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,139 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Game.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\Game.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Game.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Serializer.cs",
+              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\Serializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "VaporStore\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:22:10.055Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ImportUsersDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportUsersDto.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ImportDto\\ImportUsersDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportUsersDto.cs",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\ImportDto\\ImportUsersDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T13:24:40.976Z",
+              "WhenOpened": "2024-08-02T06:11:45.682Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Deserializer.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Deserializer.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\Deserializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Deserializer.cs*",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\Deserializer.cs*",
-              "ViewState": "AQIAAPgAAAAAAAAAAAAWwBEBAAAdAAAA",
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\StartUp.cs",
+              "RelativeDocumentMoniker": "VaporStore\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\StartUp.cs",
+              "RelativeToolTip": "VaporStore\\StartUp.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wDcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T06:06:14.546Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-08-02T16:28:25.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataConstraints.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataConstraints.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataConstraints.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataConstraints.cs",
-              "RelativeToolTip": "VaporStore\\DataConstraints.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "VaporStore\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAPgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:15:57.418Z",
+              "WhenOpened": "2024-08-02T16:24:11.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PurchaseType.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Enums\\PurchaseType.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\Enums\\PurchaseType.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Enums\\PurchaseType.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\Enums\\PurchaseType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\Game.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Game.cs",
+              "RelativeToolTip": "VaporStore\\Data\\Models\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:15:52.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Card.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Card.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\Card.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Card.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\Card.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:07:35.292Z",
+              "WhenOpened": "2024-08-02T16:19:51.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ImportGamesDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportGamesDto.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ImportDto\\ImportGamesDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportGamesDto.cs",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\ImportDto\\ImportGamesDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ExportGameDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ExportDto\\ExportGameDto.cs",
+              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ExportDto\\ExportGameDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ExportDto\\ExportGameDto.cs",
+              "RelativeToolTip": "VaporStore\\DataProcessor\\ExportDto\\ExportGameDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:05:20.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Purchase.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Purchase.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\Purchase.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\Purchase.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\Purchase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:03:25.295Z",
+              "WhenOpened": "2024-08-02T16:06:17.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ImportPurchasesDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportPurchasesDto.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ImportDto\\ImportPurchasesDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportPurchasesDto.cs",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\ImportDto\\ImportPurchasesDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Title": "ExportGenresDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ExportDto\\ExportGenresDto.cs",
+              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ExportDto\\ExportGenresDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ExportDto\\ExportGenresDto.cs",
+              "RelativeToolTip": "VaporStore\\DataProcessor\\ExportDto\\ExportGenresDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:02:20.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImportCardsDto.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportCardsDto.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\ImportDto\\ImportCardsDto.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\ImportDto\\ImportCardsDto.cs",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\ImportDto\\ImportCardsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T14:56:38.782Z",
+              "WhenOpened": "2024-08-02T16:00:02.537Z",
               "EditorCaption": ""
             },
             {
@@ -256,136 +146,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\User.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\User.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\User.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T14:47:53.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ImportUsers-Expected.txt",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportUsers-Expected.txt",
-              "RelativeDocumentMoniker": "VaporStore\\ImportResults\\ImportUsers-Expected.txt",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportUsers-Expected.txt",
-              "RelativeToolTip": "VaporStore\\ImportResults\\ImportUsers-Expected.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-02T13:50:57.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ImportUsers.txt",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportUsers.txt",
-              "RelativeDocumentMoniker": "VaporStore\\ImportResults\\ImportUsers.txt",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportUsers.txt",
-              "RelativeToolTip": "VaporStore\\ImportResults\\ImportUsers.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-02T13:50:54.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VaporStoreDbContext.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\VaporStoreDbContext.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\VaporStoreDbContext.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\VaporStoreDbContext.cs",
-              "RelativeToolTip": "VaporStore\\Data\\VaporStoreDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:10:54.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Configuration.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Configuration.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Configuration.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Configuration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:10:51.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ImportGames-Expected.txt",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportGames-Expected.txt",
-              "RelativeDocumentMoniker": "VaporStore\\ImportResults\\ImportGames-Expected.txt",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportGames-Expected.txt",
-              "RelativeToolTip": "VaporStore\\ImportResults\\ImportGames-Expected.txt",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADwAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-02T08:08:37.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ImportGames.txt",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportGames.txt",
-              "RelativeDocumentMoniker": "VaporStore\\ImportResults\\ImportGames.txt",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\ImportResults\\ImportGames.txt",
-              "RelativeToolTip": "VaporStore\\ImportResults\\ImportGames.txt",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAqwDUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-02T08:08:19.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\StartUp.cs",
-              "RelativeDocumentMoniker": "VaporStore\\StartUp.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\StartUp.cs",
-              "RelativeToolTip": "VaporStore\\StartUp.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvzYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T07:53:14.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GameTag.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\GameTag.cs",
-              "RelativeDocumentMoniker": "VaporStore\\Data\\Models\\GameTag.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\Data\\Models\\GameTag.cs",
-              "RelativeToolTip": "VaporStore\\Data\\Models\\GameTag.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T07:45:17.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Serializer.cs",
-              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Serializer.cs",
-              "RelativeDocumentMoniker": "VaporStore\\DataProcessor\\Serializer.cs",
-              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\13. Exam Preparation\\10. Exam Preparation - 08 Aug 2020\\VaporStore\\DataProcessor\\Serializer.cs",
-              "RelativeToolTip": "VaporStore\\DataProcessor\\Serializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T06:11:45.682Z",
-              "EditorCaption": ""
             }
           ]
         }

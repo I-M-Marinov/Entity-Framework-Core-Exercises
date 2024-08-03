@@ -1,5 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Text.Json;
+using System.Xml;
 using TravelAgency.Data;
+using TravelAgency.Data.Models;
+using TravelAgency.DataProcessor.ImportDtos;
+using TravelAgency.Utilities;
 
 namespace TravelAgency.DataProcessor
 {
@@ -12,12 +22,95 @@ namespace TravelAgency.DataProcessor
 
         public static string ImportCustomers(TravelAgencyContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string xmlRoot = "Customers";
+
+
+            ICollection<Customer> customersToImport = new List<Customer>();
+
+            ImportCustomersDto[] deserializedCustomers =
+                xmlHelper.Deserialize<ImportCustomersDto[]>(xmlString, xmlRoot);
+
+            foreach (ImportCustomersDto customerDto in deserializedCustomers)
+            {
+                if (!IsValid(customerDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                if (customersToImport.Any(c => c.FullName == customerDto.FullName) ||
+                    customersToImport.Any(c => c.Email == customerDto.Email) ||
+                    customersToImport.Any(c => c.PhoneNumber == customerDto.PhoneNumber))
+                {
+                    sb.AppendLine(DuplicationDataMessage);
+                    continue;
+                }
+
+                Customer newCustomer = new Customer()
+                {
+                    FullName = customerDto.FullName,
+                    Email = customerDto.Email,
+                    PhoneNumber = customerDto.PhoneNumber
+                };
+
+                customersToImport.Add(newCustomer);
+                sb.AppendLine(string.Format(SuccessfullyImportedCustomer, newCustomer.FullName));
+            }
+
+            context.Customers.AddRange(customersToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         public static string ImportBookings(TravelAgencyContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            ICollection<Booking> bookingsToImport = new List<Booking>();
+
+            ImportBookingsDto[] deserializedBookings = JsonConvert.DeserializeObject<ImportBookingsDto[]>(jsonString)!;
+
+            foreach (ImportBookingsDto bookingDto in deserializedBookings)
+            {
+                if (!IsValid(bookingDto))
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                bool isBookingDateValid = DateTime.TryParseExact(bookingDto.BookingDate, "yyyy-MM-dd", CultureInfo.InvariantCulture,
+                    DateTimeStyles.None, out DateTime bookingDate);
+
+                if (!isBookingDateValid)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
+                TourPackage tourPackage = context.TourPackages.FirstOrDefault(tp => tp.PackageName == bookingDto.TourPackageName)!;
+                Customer customer = context.Customers.FirstOrDefault(c => c.FullName == bookingDto.CustomerName)!;
+
+                Booking newBooking = new Booking()
+                {
+                    BookingDate = bookingDate,
+                    Customer = customer,
+                    TourPackage = tourPackage
+                };
+
+
+                bookingsToImport.Add(newBooking);
+                sb.AppendLine(string.Format(SuccessfullyImportedBooking, newBooking.TourPackage.PackageName, newBooking.BookingDate.ToString("yyyy-MM-dd")));
+
+            }
+
+            context.Bookings.AddRange(bookingsToImport);
+            context.SaveChanges();
+
+            return sb.ToString();
         }
 
         public static bool IsValid(object dto)

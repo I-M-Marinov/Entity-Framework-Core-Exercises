@@ -1,6 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using TravelAgency.Data.Models.Enums;
 using static TravelAgency.DataConstraints;
 
 namespace TravelAgency.Data.Models

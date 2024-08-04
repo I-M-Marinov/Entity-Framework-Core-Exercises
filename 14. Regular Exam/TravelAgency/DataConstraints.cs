@@ -17,6 +17,8 @@ namespace TravelAgency
         public const byte CustomerEmailMinLength = 6;
         public const byte CustomerEmailMaxLength = 50;
 
+        public const string CustomerPhoneNumberRegexValidation = @"^\+\d{12}$";
+
         // GUIDE 
 
         public const byte GuideFullNameMinLength = 4;

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using TravelAgency.Data.Models;
 using TravelAgency.Data.Models.Enums;
 
@@ -31,7 +30,7 @@ namespace TravelAgency.Data
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                    .UseLazyLoadingProxies()
+                    .UseLazyLoadingProxies() // use lazy loading 
                     .UseSqlServer(connectionString);
             }
         }
@@ -149,7 +148,7 @@ namespace TravelAgency.Data
                 );
 
             modelBuilder.Entity<TourPackageGuide>()
-                .HasKey(tpg => new { tpg.TourPackageId, tpg.GuideId });
+                .HasKey(tpg => new { tpg.TourPackageId, tpg.GuideId }); // composite key for the mapping table TourPackageGuide
         }
     }
 }

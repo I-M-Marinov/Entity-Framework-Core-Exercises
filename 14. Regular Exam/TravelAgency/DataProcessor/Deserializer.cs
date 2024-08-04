@@ -1,11 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Text.Json;
-using System.Xml;
 using TravelAgency.Data;
 using TravelAgency.Data.Models;
 using TravelAgency.DataProcessor.ImportDtos;

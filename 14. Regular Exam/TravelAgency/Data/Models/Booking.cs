@@ -1,7 +1,5 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using static TravelAgency.DataConstraints;
 
 
 namespace TravelAgency.Data.Models

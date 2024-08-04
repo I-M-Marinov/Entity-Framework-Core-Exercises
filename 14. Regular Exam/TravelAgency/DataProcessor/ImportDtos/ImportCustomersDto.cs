@@ -24,7 +24,7 @@ namespace TravelAgency.DataProcessor.ImportDtos
 
         [Required]
         [RegularExpression(CustomerPhoneNumberRegexValidation)]
-        [XmlAttribute("phoneNumber")]
+        [XmlAttribute(CustomerPhoneNumberXmlAttributeName)]
         public string PhoneNumber { get; set; } = null!;
     }
 }

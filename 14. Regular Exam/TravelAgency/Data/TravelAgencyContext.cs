@@ -6,7 +6,6 @@ namespace TravelAgency.Data
 {
     public class TravelAgencyContext : DbContext
     {
-        private const string connectionString = @"Server= MARINOV-GAME-PC\SQLEXPRESS; Database = TravelAgency; Integrated Security = True; Encrypt = False; TrustServerCertificate = True;";
 
         public TravelAgencyContext()
         {
@@ -31,7 +30,7 @@ namespace TravelAgency.Data
             {
                 optionsBuilder
                     .UseLazyLoadingProxies() // use lazy loading 
-                    .UseSqlServer(connectionString);
+                    .UseSqlServer(Configuration.ConnectionString);
             }
         }
 

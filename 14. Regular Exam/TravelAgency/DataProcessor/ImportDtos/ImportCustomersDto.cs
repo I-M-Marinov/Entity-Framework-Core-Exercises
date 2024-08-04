@@ -23,7 +23,7 @@ namespace TravelAgency.DataProcessor.ImportDtos
         public string Email { get; set; } = null!;
 
         [Required]
-        [RegularExpression(@"^\+\d{12}$")]
+        [RegularExpression(CustomerPhoneNumberRegexValidation)]
         [XmlAttribute("phoneNumber")]
         public string PhoneNumber { get; set; } = null!;
     }

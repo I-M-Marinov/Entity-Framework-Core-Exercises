@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EventmiWorkshop.Data\EventmiWorkshop.Data.csproj" />
     <ProjectReference Include="..\EventmiWorkshopMVC.Common\EventmiWorkshopMVC.Common.csproj" />
+    <ProjectReference Include="..\EventmiWorkshopMVC.Services.Data\EventmiWorkshopMVC.Services.Data.csproj" />
     <ProjectReference Include="..\EventmiWorkshopMVC.Web.ViewModels\EventmiWorkshopMVC.Web.ViewModels.csproj" />
   </ItemGroup>
 

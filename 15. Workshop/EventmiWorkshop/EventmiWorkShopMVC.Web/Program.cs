@@ -1,5 +1,7 @@
 using System.Reflection.Emit;
 using EventmiWorkshop.Data;
+using EventmiWorkshopMVC.Services.Data;
+using EventmiWorkshopMVC.Services.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventmiWorkShopMVC.Web
@@ -14,6 +16,8 @@ namespace EventmiWorkShopMVC.Web
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<EventmiDbContext>(options => options.UseSqlServer(connectionString));
+
+            builder.Services.AddScoped<IEventService, EventService>();
 
             var app = builder.Build();
 

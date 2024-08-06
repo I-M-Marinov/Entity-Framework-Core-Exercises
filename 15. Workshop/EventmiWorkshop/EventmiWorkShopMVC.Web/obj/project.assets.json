@@ -807,6 +807,21 @@
           "bin/placeholder/EventmiWorkshopMVC.Common.dll": {}
         }
       },
+      "EventmiWorkshopMVC.Services.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EventmiWorkshop.Data": "1.0.0",
+          "EventmiWorkshop.Data.Models": "1.0.0",
+          "EventmiWorkshopMVC.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EventmiWorkshopMVC.Services.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventmiWorkshopMVC.Services.Data.dll": {}
+        }
+      },
       "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2045,6 +2060,11 @@
       "path": "../EventmiWorkshopMVC.Common/EventmiWorkshopMVC.Common.csproj",
       "msbuildProject": "../EventmiWorkshopMVC.Common/EventmiWorkshopMVC.Common.csproj"
     },
+    "EventmiWorkshopMVC.Services.Data/1.0.0": {
+      "type": "project",
+      "path": "../EventmiWorkshopMVC.Services.Data/EventmiWorkshopMVC.Services.Data.csproj",
+      "msbuildProject": "../EventmiWorkshopMVC.Services.Data/EventmiWorkshopMVC.Services.Data.csproj"
+    },
     "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
       "type": "project",
       "path": "../EventmiWorkshopMVC.Web.ViewModels/EventmiWorkshopMVC.Web.ViewModels.csproj",
@@ -2055,6 +2075,7 @@
     "net6.0": [
       "EventmiWorkshop.Data >= 1.0.0",
       "EventmiWorkshopMVC.Common >= 1.0.0",
+      "EventmiWorkshopMVC.Services.Data >= 1.0.0",
       "EventmiWorkshopMVC.Web.ViewModels >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.32",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0"
@@ -2067,9 +2088,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj",
-      "projectName": "EventmiWorkShopMVC.Web",
-      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj",
+      "projectUniqueName": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj",
+      "projectName": "EventmiWorkshopMVC.Web",
+      "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj",
       "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
       "outputPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\obj\\",
       "projectStyle": "PackageReference",
@@ -2098,6 +2119,9 @@
             },
             "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj": {
               "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj"
+            },
+            "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\EventmiWorkshopMVC.Services.Data.csproj": {
+              "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\EventmiWorkshopMVC.Services.Data.csproj"
             },
             "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj": {
               "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj"

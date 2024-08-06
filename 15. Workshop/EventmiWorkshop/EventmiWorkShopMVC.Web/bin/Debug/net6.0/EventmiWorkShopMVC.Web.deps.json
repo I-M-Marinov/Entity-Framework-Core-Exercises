@@ -10,6 +10,7 @@
         "dependencies": {
           "EventmiWorkshop.Data": "1.0.0",
           "EventmiWorkshopMVC.Common": "1.0.0",
+          "EventmiWorkshopMVC.Services.Data": "1.0.0",
           "EventmiWorkshopMVC.Web.ViewModels": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.32",
           "Microsoft.Extensions.DependencyInjection": "8.0.0"
@@ -470,6 +471,16 @@
           "EventmiWorkshopMVC.Common.dll": {}
         }
       },
+      "EventmiWorkshopMVC.Services.Data/1.0.0": {
+        "dependencies": {
+          "EventmiWorkshop.Data": "1.0.0",
+          "EventmiWorkshop.Data.Models": "1.0.0",
+          "EventmiWorkshopMVC.Web.ViewModels": "1.0.0"
+        },
+        "runtime": {
+          "EventmiWorkshopMVC.Services.Data.dll": {}
+        }
+      },
       "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
         "dependencies": {
           "EventmiWorkshopMVC.Common": "1.0.0"
@@ -791,6 +802,11 @@
       "sha512": ""
     },
     "EventmiWorkshopMVC.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventmiWorkshopMVC.Services.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

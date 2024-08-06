@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{4E409729-82C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshopMVC.Web.ViewModels", "EventmiWorkshopMVC.Web.ViewModels\EventmiWorkshopMVC.Web.ViewModels.csproj", "{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{00272989-93BB-4A1B-B65E-4DDB04556AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventmiWorkshopMVC.Services.Data", "EventmiWorkshopMVC.Services.Data\EventmiWorkshopMVC.Services.Data.csproj", "{95C320FD-3F4D-4940-A858-259DD4E2FEE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C320FD-3F4D-4940-A858-259DD4E2FEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C320FD-3F4D-4940-A858-259DD4E2FEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C320FD-3F4D-4940-A858-259DD4E2FEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C320FD-3F4D-4940-A858-259DD4E2FEE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +60,7 @@ Global
 		{6330C860-B4C7-48DB-8B88-33072ADBA872} = {5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}
 		{ED04C811-6E80-48A8-8762-B03C96C54CE9} = {5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}
 		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D} = {4E409729-82CB-493E-93C3-555A694CC8C1}
+		{95C320FD-3F4D-4940-A858-259DD4E2FEE7} = {00272989-93BB-4A1B-B65E-4DDB04556AE6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D8C1BDA-179B-480E-BA96-C63F43FE9E7B}

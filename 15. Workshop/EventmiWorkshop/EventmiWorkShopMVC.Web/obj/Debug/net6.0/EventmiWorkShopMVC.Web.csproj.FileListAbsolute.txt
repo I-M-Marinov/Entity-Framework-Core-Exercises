@@ -151,3 +151,5 @@ D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\E
 D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\bin\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.dll
 D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\bin\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.pdb
 D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\obj\Debug\net6.0\EventmiW.AC165CB2.Up2Date
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\bin\Debug\net6.0\EventmiWorkshopMVC.Services.Data.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\bin\Debug\net6.0\EventmiWorkshopMVC.Services.Data.pdb

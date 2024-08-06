@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "EventmiWorkshopMVC.Common": "1.0.0"
+        },
+        "runtime": {
+          "EventmiWorkshopMVC.Web.ViewModels.dll": {}
+        }
+      },
+      "EventmiWorkshopMVC.Common/1.0.0": {
+        "runtime": {
+          "EventmiWorkshopMVC.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventmiWorkshopMVC.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

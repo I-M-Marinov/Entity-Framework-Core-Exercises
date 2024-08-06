@@ -806,6 +806,19 @@
         "runtime": {
           "bin/placeholder/EventmiWorkshopMVC.Common.dll": {}
         }
+      },
+      "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EventmiWorkshopMVC.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EventmiWorkshopMVC.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventmiWorkshopMVC.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -2031,11 +2044,18 @@
       "type": "project",
       "path": "../EventmiWorkshopMVC.Common/EventmiWorkshopMVC.Common.csproj",
       "msbuildProject": "../EventmiWorkshopMVC.Common/EventmiWorkshopMVC.Common.csproj"
+    },
+    "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../EventmiWorkshopMVC.Web.ViewModels/EventmiWorkshopMVC.Web.ViewModels.csproj",
+      "msbuildProject": "../EventmiWorkshopMVC.Web.ViewModels/EventmiWorkshopMVC.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "EventmiWorkshop.Data >= 1.0.0",
+      "EventmiWorkshopMVC.Common >= 1.0.0",
+      "EventmiWorkshopMVC.Web.ViewModels >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.32",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0"
     ]
@@ -2075,6 +2095,12 @@
           "projectReferences": {
             "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshop.Data\\EventmiWorkshop.Data.csproj": {
               "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshop.Data\\EventmiWorkshop.Data.csproj"
+            },
+            "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj": {
+              "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj"
+            },
+            "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj"
             }
           }
         }

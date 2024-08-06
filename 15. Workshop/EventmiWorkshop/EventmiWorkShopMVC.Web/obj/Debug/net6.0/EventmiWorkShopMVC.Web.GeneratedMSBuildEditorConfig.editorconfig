@@ -7,8 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = EventmiWorkShopMVC.Web
-build_property.RootNamespace = EventmiWorkShopMVC.Web
+build_property.RootNamespace = EventmiWorkshopMVC.Web
+build_property.RootNamespace = EventmiWorkshopMVC.Web
 build_property.ProjectDir = D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
@@ -17,6 +17,22 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkShopMVC.Web
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Event/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Event/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Event/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Event/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
@@ -44,4 +60,4 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Lcfr/DEVELOPER/Entity Framework Core Exercises/15. Workshop/EventmiWorkshop/EventmiWorkShopMVC.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-fukajr2vmg
+build_metadata.AdditionalFiles.CssScope = b-t0ovhib8l3

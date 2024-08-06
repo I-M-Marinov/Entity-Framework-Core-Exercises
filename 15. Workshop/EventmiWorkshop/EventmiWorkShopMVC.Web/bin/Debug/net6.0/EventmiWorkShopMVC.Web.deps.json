@@ -6,14 +6,16 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "EventmiWorkShopMVC.Web/1.0.0": {
+      "EventmiWorkshopMVC.Web/1.0.0": {
         "dependencies": {
           "EventmiWorkshop.Data": "1.0.0",
+          "EventmiWorkshopMVC.Common": "1.0.0",
+          "EventmiWorkshopMVC.Web.ViewModels": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.32",
           "Microsoft.Extensions.DependencyInjection": "8.0.0"
         },
         "runtime": {
-          "EventmiWorkShopMVC.Web.dll": {}
+          "EventmiWorkshopMVC.Web.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -467,11 +469,19 @@
         "runtime": {
           "EventmiWorkshopMVC.Common.dll": {}
         }
+      },
+      "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "EventmiWorkshopMVC.Common": "1.0.0"
+        },
+        "runtime": {
+          "EventmiWorkshopMVC.Web.ViewModels.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "EventmiWorkShopMVC.Web/1.0.0": {
+    "EventmiWorkshopMVC.Web/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -781,6 +791,11 @@
       "sha512": ""
     },
     "EventmiWorkshopMVC.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventmiWorkshopMVC.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

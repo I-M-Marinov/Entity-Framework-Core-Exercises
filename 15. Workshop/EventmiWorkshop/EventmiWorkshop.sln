@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventmiWorkShopMVC.Web", "EventmiWorkShopMVC.Web\EventmiWorkShopMVC.Web.csproj", "{3656D618-7B60-40B8-94B6-25FEB8CD326C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshopMVC.Web", "EventmiWorkShopMVC.Web\EventmiWorkshopMVC.Web.csproj", "{3656D618-7B60-40B8-94B6-25FEB8CD326C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventmiWorkshop.Data.Models", "EventmiWorkshop.Data.Models\EventmiWorkshop.Data.Models.csproj", "{6330C860-B4C7-48DB-8B88-33072ADBA872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshop.Data.Models", "EventmiWorkshop.Data.Models\EventmiWorkshop.Data.Models.csproj", "{6330C860-B4C7-48DB-8B88-33072ADBA872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventmiWorkshopMVC.Common", "EventmiWorkshopMVC.Common\EventmiWorkshopMVC.Common.csproj", "{95434A19-3DF5-4C5C-BC0B-0ED9607A85D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshopMVC.Common", "EventmiWorkshopMVC.Common\EventmiWorkshopMVC.Common.csproj", "{95434A19-3DF5-4C5C-BC0B-0ED9607A85D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventmiWorkshop.Data", "EventmiWorkshop.Data\EventmiWorkshop.Data.csproj", "{ED04C811-6E80-48A8-8762-B03C96C54CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshop.Data", "EventmiWorkshop.Data\EventmiWorkshop.Data.csproj", "{ED04C811-6E80-48A8-8762-B03C96C54CE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{4E409729-82CB-493E-93C3-555A694CC8C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventmiWorkshopMVC.Web.ViewModels", "EventmiWorkshopMVC.Web.ViewModels\EventmiWorkshopMVC.Web.ViewModels.csproj", "{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +39,19 @@ Global
 		{ED04C811-6E80-48A8-8762-B03C96C54CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED04C811-6E80-48A8-8762-B03C96C54CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED04C811-6E80-48A8-8762-B03C96C54CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3656D618-7B60-40B8-94B6-25FEB8CD326C} = {4E409729-82CB-493E-93C3-555A694CC8C1}
 		{6330C860-B4C7-48DB-8B88-33072ADBA872} = {5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}
-		{95434A19-3DF5-4C5C-BC0B-0ED9607A85D3} = {5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}
 		{ED04C811-6E80-48A8-8762-B03C96C54CE9} = {5740CA58-56E8-4CF7-A80B-13BD0E4D6F15}
+		{03FB5A78-00CB-4525-9DF7-0C49693B3A9D} = {4E409729-82CB-493E-93C3-555A694CC8C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D8C1BDA-179B-480E-BA96-C63F43FE9E7B}

@@ -17,3 +17,23 @@ C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net
 C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.pdb
 C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.genruntimeconfig.cache
 C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\ref\EventmiWorkshop.Data.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.deps.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.runtimeconfig.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.Models.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshopMVC.Common.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshop.Data.Models.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\bin\Debug\net6.0\EventmiWorkshopMVC.Common.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.csproj.AssemblyReference.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.AssemblyInfoInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.AssemblyInfo.cs
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.csproj.CoreCompileInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.sourcelink.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiW.AD788283.Up2Date
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\refint\EventmiWorkshop.Data.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\EventmiWorkshop.Data.genruntimeconfig.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshop.Data\obj\Debug\net6.0\ref\EventmiWorkshop.Data.dll

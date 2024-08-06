@@ -1,7 +1,9 @@
-﻿using EventmiWorkShopMVC.Web.ViewModels;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using EventmiWorkShopMVC.Web.ViewModels;
+
+using EventmiWorkshopMVC.Web.ViewModels.Home;
+
 
 namespace EventmiWorkShopMVC.Web.Controllers
 {

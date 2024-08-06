@@ -1,0 +1,16 @@
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\bin\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.deps.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\bin\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\bin\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.AssemblyInfoInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.AssemblyInfo.cs
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.csproj.CoreCompileInputs.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.sourcelink.json
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\refint\EventmiWorkshopMVC.Web.ViewModels.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\ref\EventmiWorkshopMVC.Web.ViewModels.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\bin\Debug\net6.0\EventmiWorkshopMVC.Common.dll
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\bin\Debug\net6.0\EventmiWorkshopMVC.Common.pdb
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiWorkshopMVC.Web.ViewModels.csproj.AssemblyReference.cache
+D:\Lcfr\DEVELOPER\Entity Framework Core Exercises\15. Workshop\EventmiWorkshop\EventmiWorkshopMVC.Web.ViewModels\obj\Debug\net6.0\EventmiW.534C3BA8.Up2Date

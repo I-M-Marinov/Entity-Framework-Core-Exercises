@@ -1,0 +1,273 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED04C811-6E80-48A8-8762-B03C96C54CE9}|EventmiWorkshop.Data\\EventmiWorkshop.Data.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshop.data\\eventmidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED04C811-6E80-48A8-8762-B03C96C54CE9}|EventmiWorkshop.Data\\EventmiWorkshop.Data.csproj|solutionrelative:eventmiworkshop.data\\eventmidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|solutionrelative:eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95434A19-3DF5-4C5C-BC0B-0ED9607A85D3}|EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.common\\entityconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95434A19-3DF5-4C5C-BC0B-0ED9607A85D3}|EventmiWorkshopMVC.Common\\EventmiWorkshopMVC.Common.csproj|solutionrelative:eventmiworkshopmvc.common\\entityconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|c:\\users\\marinov\\source\\repos\\eventmiworkshop\\eventmiworkshopmvc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkShopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240806115908_Initial_Db.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs",
+              "RelativeDocumentMoniker": "EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs",
+              "RelativeToolTip": "EventmiWorkshop.Data\\Migrations\\20240806115908_Initial_Db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:59:09.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventmiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data\\EventmiDbContext.cs",
+              "RelativeDocumentMoniker": "EventmiWorkshop.Data\\EventmiDbContext.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data\\EventmiDbContext.cs",
+              "RelativeToolTip": "EventmiWorkshop.Data\\EventmiDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:30:34.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EntityConstraints.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EntityConstraints.cs",
+              "RelativeDocumentMoniker": "EventmiWorkshopMVC.Common\\EntityConstraints.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshopMVC.Common\\EntityConstraints.cs",
+              "RelativeToolTip": "EventmiWorkshopMVC.Common\\EntityConstraints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:24:14.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data.Models\\Event.cs",
+              "RelativeDocumentMoniker": "EventmiWorkshop.Data.Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkshop.Data.Models\\Event.cs",
+              "RelativeToolTip": "EventmiWorkshop.Data.Models\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:08:00.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\ViewModels\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\ViewModels\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\ViewModels\\ErrorViewModel.cs",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\ViewModels\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:04:45.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T11:02:36.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T11:02:35.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T11:01:20.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T11:00:11.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:58:07.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\appsettings.Development.json",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T10:34:41.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\appsettings.json",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T10:34:39.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Marinov\\source\\repos\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Program.cs",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T10:34:26.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

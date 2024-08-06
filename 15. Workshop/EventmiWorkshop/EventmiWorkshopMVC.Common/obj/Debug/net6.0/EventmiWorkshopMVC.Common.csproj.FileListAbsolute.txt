@@ -1,0 +1,11 @@
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\bin\Debug\net6.0\EventmiWorkshopMVC.Common.deps.json
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\bin\Debug\net6.0\EventmiWorkshopMVC.Common.dll
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\bin\Debug\net6.0\EventmiWorkshopMVC.Common.pdb
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.AssemblyInfoInputs.cache
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.AssemblyInfo.cs
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.csproj.CoreCompileInputs.cache
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.dll
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\refint\EventmiWorkshopMVC.Common.dll
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\EventmiWorkshopMVC.Common.pdb
+C:\Users\Marinov\source\repos\EventmiWorkshop\EventmiWorkshopMVC.Common\obj\Debug\net6.0\ref\EventmiWorkshopMVC.Common.dll

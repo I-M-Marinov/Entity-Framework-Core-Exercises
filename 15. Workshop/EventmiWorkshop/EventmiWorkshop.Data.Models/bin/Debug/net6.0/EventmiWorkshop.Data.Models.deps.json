@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EventmiWorkshop.Data.Models/1.0.0": {
+        "dependencies": {
+          "EventmiWorkshopMVC.Common": "1.0.0"
+        },
+        "runtime": {
+          "EventmiWorkshop.Data.Models.dll": {}
+        }
+      },
+      "EventmiWorkshopMVC.Common/1.0.0": {
+        "runtime": {
+          "EventmiWorkshopMVC.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventmiWorkshop.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventmiWorkshopMVC.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

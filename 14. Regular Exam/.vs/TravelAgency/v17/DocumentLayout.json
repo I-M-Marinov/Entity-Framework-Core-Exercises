@@ -1,0 +1,409 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataconstraints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\travelagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\travelagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\importdtos\\importbookingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\importdtos\\importbookingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\importdtos\\importcustomersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\importdtos\\importcustomersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\exportdtos\\exporttourpackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\exportdtos\\exporttourpackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\exportdtos\\exportcustomersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\exportdtos\\exportcustomersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\exportdtos\\exportbookingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\exportdtos\\exportbookingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\travelagencyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\travelagencyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\utilities\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\exportresults\\expected result -  export guides with spanish language with all their tour packages.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\exportresults\\expected result -  export guides with spanish language with all their tour packages.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\enums\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\enums\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\guide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\guide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\tourpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\tourpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\data\\models\\tourpackageguide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\data\\models\\tourpackageguide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\deserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|d:\\lcfr\\developer\\entity framework core exercises\\14. regular exam\\travelagency\\dataprocessor\\exportdtos\\exportguidesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B51875C-9FFB-4045-9550-83CB9149833A}|TravelAgency\\TravelAgency.csproj|solutionrelative:travelagency\\dataprocessor\\exportdtos\\exportguidesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Configuration.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Configuration.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Configuration.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:28:21.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExportTourPackageDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportTourPackageDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ExportDtos\\ExportTourPackageDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportTourPackageDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ExportDtos\\ExportTourPackageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:27:17.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExportCustomersDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportCustomersDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ExportDtos\\ExportCustomersDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportCustomersDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ExportDtos\\ExportCustomersDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:26:22.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Utilities\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Utilities\\XmlHelper.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Utilities\\XmlHelper.cs",
+              "RelativeToolTip": "TravelAgency\\Utilities\\XmlHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:24:08.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TravelAgencyProfile.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\TravelAgencyProfile.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\TravelAgencyProfile.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\TravelAgencyProfile.cs",
+              "RelativeToolTip": "TravelAgency\\TravelAgencyProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:22:33.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Language.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Enums\\Language.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\Enums\\Language.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Enums\\Language.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\Enums\\Language.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:22:07.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\Booking.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Booking.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:21:51.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\Customer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Customer.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:21:48.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Guide.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Guide.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\Guide.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\Guide.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\Guide.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:21:43.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TourPackage.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\TourPackage.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\TourPackage.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\TourPackage.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\TourPackage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:21:35.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TourPackageGuide.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\TourPackageGuide.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\Models\\TourPackageGuide.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\Models\\TourPackageGuide.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\Models\\TourPackageGuide.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:21:30.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TravelAgencyContext.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\TravelAgencyContext.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\Data\\TravelAgencyContext.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\Data\\TravelAgencyContext.cs",
+              "RelativeToolTip": "TravelAgency\\Data\\TravelAgencyContext.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:20:25.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\StartUp.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\StartUp.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\StartUp.cs",
+              "RelativeToolTip": "TravelAgency\\StartUp.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAmwAMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:20:17.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\Serializer.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\Serializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\Serializer.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\Serializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:19:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Expected Result -  Export Guides With Spanish Language With All Their Tour Packages.xml",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\ExportResults\\Expected Result -  Export Guides With Spanish Language With All Their Tour Packages.xml",
+              "RelativeDocumentMoniker": "TravelAgency\\ExportResults\\Expected Result -  Export Guides With Spanish Language With All Their Tour Packages.xml",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\ExportResults\\Expected Result -  Export Guides With Spanish Language With All Their Tour Packages.xml",
+              "RelativeToolTip": "TravelAgency\\ExportResults\\Expected Result -  Export Guides With Spanish Language With All Their Tour Packages.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-08-04T17:19:43.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExportGuidesDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportGuidesDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ExportDtos\\ExportGuidesDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportGuidesDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ExportDtos\\ExportGuidesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:17:12.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExportBookingsDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportBookingsDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ExportDtos\\ExportBookingsDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ExportDtos\\ExportBookingsDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ExportDtos\\ExportBookingsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:17:09.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataConstraints.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataConstraints.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataConstraints.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataConstraints.cs",
+              "RelativeToolTip": "TravelAgency\\DataConstraints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:16:09.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImportCustomersDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ImportDtos\\ImportCustomersDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ImportDtos\\ImportCustomersDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ImportDtos\\ImportCustomersDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ImportDtos\\ImportCustomersDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:15:58.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImportBookingsDto.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ImportDtos\\ImportBookingsDto.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\ImportDtos\\ImportBookingsDto.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\ImportDtos\\ImportBookingsDto.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\ImportDtos\\ImportBookingsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:15:04.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Deserializer.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\Deserializer.cs",
+              "RelativeDocumentMoniker": "TravelAgency\\DataProcessor\\Deserializer.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\14. Regular Exam\\TravelAgency\\DataProcessor\\Deserializer.cs",
+              "RelativeToolTip": "TravelAgency\\DataProcessor\\Deserializer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:14:55.242Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

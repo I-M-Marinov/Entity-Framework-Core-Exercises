@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.Design;
-using System.Globalization;
+﻿
 using EventmiWorkshop.Data;
 using EventmiWorkshop.Data.Models;
 using EventmiWorkshopMVC.Services.Data.Interfaces;
 using EventmiWorkshopMVC.Web.ViewModels.Event;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventmiWorkshopMVC.Services.Data
 {
@@ -16,29 +16,49 @@ namespace EventmiWorkshopMVC.Services.Data
         {
             this.dbContext = dbContext;
         }
-        public async Task<bool> AddEvent(AddEventFormModel eventFormModel)
+        public async Task AddEvent(AddEventFormModel eventFormModel, DateTime startDate, DateTime endDate)
         {
-            bool isStartDateValid = DateTime.TryParse(eventFormModel.StartDate, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime startDate);
-
-            bool isEndDateValid = DateTime.TryParse(eventFormModel.EndDate, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime ednDate);
-
-            if (!isStartDateValid || !isEndDateValid)
-            {
-                return false;
-            }
-
+            
             Event newEvent = new Event()
             {
                 Name = eventFormModel.Name,
                 StartDate = startDate,
-                EndDate = ednDate,
+                EndDate = endDate,
                 Place = eventFormModel.Place
             };
 
            await dbContext.Events.AddAsync(newEvent);
            await dbContext.SaveChangesAsync();
 
-            return true;
+        }
+
+        public async Task<EditEventFormModel> GetEventById(int id)
+        {
+            EditEventFormModel eventFound = await this.dbContext.Events
+                .Where(e => e.Id == id)
+                .Select(e => new EditEventFormModel()
+                {
+                    Name = e.Name,
+                    StartDate = e.StartDate.ToString(),
+                    EndDate = e.EndDate.ToString(),
+                    Place = e.Place
+                })
+                .FirstAsync();
+
+            return eventFound;
+        }
+
+        public async Task EditEventById(int id, EditEventFormModel eventFormModel, DateTime startDate, DateTime endDate)
+        {
+            Event eventToEdit = await dbContext.Events
+                .FirstAsync(e => e.Id == id);
+
+            eventToEdit.Name = eventFormModel.Name;
+            eventToEdit.StartDate = startDate;
+            eventToEdit.EndDate = endDate;
+            eventToEdit.Place = eventFormModel.Place;
+
+            await dbContext.SaveChangesAsync();
         }
     }
 }

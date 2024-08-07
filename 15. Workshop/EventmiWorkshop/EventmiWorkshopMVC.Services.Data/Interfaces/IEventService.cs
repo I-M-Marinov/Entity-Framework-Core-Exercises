@@ -10,6 +10,10 @@ namespace EventmiWorkshopMVC.Services.Data.Interfaces
     public interface IEventService 
 
     { 
-        Task<bool> AddEvent (AddEventFormModel eventFormModel);
+        Task AddEvent (AddEventFormModel eventFormModel, DateTime startDate, DateTime endDate);
+
+        Task<EditEventFormModel> GetEventById(int id);
+
+        Task EditEventById(int id, EditEventFormModel eventFormModel, DateTime startDate, DateTime endDate);
     }
 }

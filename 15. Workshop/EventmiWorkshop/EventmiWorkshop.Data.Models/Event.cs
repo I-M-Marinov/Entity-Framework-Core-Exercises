@@ -14,7 +14,7 @@ namespace EventmiWorkshop.Data.Models
         public string Name { get; set; } = null!;
 
         [Required]
-        public DateTime StartDate   { get; set; }
+        public DateTime StartDate { get; set; }
 
         [Required]
         public DateTime EndDate { get; set; }

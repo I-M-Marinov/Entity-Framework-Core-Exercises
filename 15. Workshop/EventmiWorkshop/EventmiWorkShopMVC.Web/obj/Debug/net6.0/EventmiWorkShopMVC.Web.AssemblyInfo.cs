@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventmiWorkshopMVC.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+126b15c84687df4da2da5877ceec9481367b40be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+222cc51c84c7ffe71fb728eb255c746c011f9a13")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventmiWorkshopMVC.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventmiWorkshopMVC.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -23,5 +23,7 @@ namespace EventmiWorkshop.Data.Models
         [MaxLength(EntityConstraints.Event.EventPlaceMaxLength)]
         public string Place { get; set; } = null!;
 
+        [Required]
+        public bool IsActive { get; set; }
     }
 }

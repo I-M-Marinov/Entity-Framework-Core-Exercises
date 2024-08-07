@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventmiWorkshop.Data.Migrations
 {
     [DbContext(typeof(EventmiDbContext))]
-    [Migration("20240806115908_Initial_Db")]
-    partial class Initial_Db
+    [Migration("20240807142243_Added-IsActive-Column")]
+    partial class AddedIsActiveColumn
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,11 @@ namespace EventmiWorkshop.Data.Migrations
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
 
                     b.Property<string>("Name")
                         .IsRequired()

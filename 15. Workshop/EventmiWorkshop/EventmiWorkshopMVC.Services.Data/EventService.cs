@@ -34,16 +34,27 @@ namespace EventmiWorkshopMVC.Services.Data
 
         public async Task<EditEventFormModel> GetEventById(int id)
         {
-            EditEventFormModel eventFound = await this.dbContext.Events
-                .Where(e => e.Id == id)
-                .Select(e => new EditEventFormModel()
-                {
-                    Name = e.Name,
-                    StartDate = e.StartDate.ToString(),
-                    EndDate = e.EndDate.ToString(),
-                    Place = e.Place
-                })
-                .FirstAsync();
+            Event? eventDb = await this.dbContext.Events
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (eventDb == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            if (!eventDb.IsActive)
+            {
+                throw new InvalidOperationException();
+            }
+
+
+            EditEventFormModel eventFound =  new EditEventFormModel()
+            {
+                Name = eventDb.Name,
+                StartDate = eventDb.StartDate.ToString("G"),
+                EndDate = eventDb.EndDate.ToString("G"),
+                Place = eventDb.Place
+            };
 
             return eventFound;
         }
@@ -52,6 +63,11 @@ namespace EventmiWorkshopMVC.Services.Data
         {
             Event eventToEdit = await dbContext.Events
                 .FirstAsync(e => e.Id == id);
+
+            if (!eventToEdit.IsActive)
+            {
+                throw new InvalidOperationException();
+            }
 
             eventToEdit.Name = eventFormModel.Name;
             eventToEdit.StartDate = startDate;

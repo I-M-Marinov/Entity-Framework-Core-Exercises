@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventmiWorkshop.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b0e62f73f7e77c4919245d180044213bf9238ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f28e6a061c760cb05a0c2b36de4ff94bf70ae2a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventmiWorkshop.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventmiWorkshop.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

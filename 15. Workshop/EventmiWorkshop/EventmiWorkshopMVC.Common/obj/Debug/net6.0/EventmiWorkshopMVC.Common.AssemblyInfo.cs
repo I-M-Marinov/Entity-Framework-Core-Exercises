@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventmiWorkshopMVC.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+222cc51c84c7ffe71fb728eb255c746c011f9a13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f28e6a061c760cb05a0c2b36de4ff94bf70ae2a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventmiWorkshopMVC.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventmiWorkshopMVC.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

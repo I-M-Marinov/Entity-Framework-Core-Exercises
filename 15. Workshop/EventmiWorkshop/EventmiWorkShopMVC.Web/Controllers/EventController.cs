@@ -73,11 +73,16 @@ namespace EventmiWorkshopMVC.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, EditEventFormModel model)
+        public async Task<IActionResult> Edit(int? id, EditEventFormModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
+            }
+
+            if (!id.HasValue)
+            {
+                return RedirectToAction("Index", "Home");
             }
 
             bool isStartDateValid = DateTime.TryParse(model.StartDate, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime startDateValid);
@@ -99,11 +104,32 @@ namespace EventmiWorkshopMVC.Web.Controllers
 
             try
             {
-                await this._eventService.EditEventById(id, model, startDateValid, endDateValid);
+                await this._eventService.EditEventById(id.Value, model, startDateValid, endDateValid);
                 return RedirectToAction("Index", "Home");
             }
             catch (Exception e )
             {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [HttpGet]
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            try
+            {
+                EditEventFormModel eventModel = await this._eventService.GetEventById(id.Value);
+                return View(eventModel);
+            }
+            catch (Exception e)
+            {
+
                 return RedirectToAction("Index", "Home");
             }
         }

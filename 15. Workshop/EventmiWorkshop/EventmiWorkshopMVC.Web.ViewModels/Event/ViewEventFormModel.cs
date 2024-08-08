@@ -1,10 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-using EventmiWorkshopMVC.Common;
+﻿using EventmiWorkshopMVC.Common;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace EventmiWorkshopMVC.Web.ViewModels.Event
 {
-    public class AddEventFormModel
+    public class ViewEventFormModel
     {
+        [Required]
+        public int Id { get; set; }
+
         [Required]
         [MinLength(EntityConstraints.Event.EventNameMinLength)]
         [MaxLength(EntityConstraints.Event.EventNameMaxLength)]
@@ -23,5 +27,7 @@ namespace EventmiWorkshopMVC.Web.ViewModels.Event
         [MaxLength(EntityConstraints.Event.EventPlaceMaxLength)]
         public string Place { get; set; } = null!;
 
+        [Required]
+        public bool IsActive { get; set; }
     }
 }

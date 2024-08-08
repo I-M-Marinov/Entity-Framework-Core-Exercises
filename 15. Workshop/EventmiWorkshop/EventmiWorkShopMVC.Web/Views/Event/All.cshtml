@@ -1,4 +1,4 @@
-﻿@* @model IEnumerable<EventFormModel>
+﻿@model List<ViewEventFormModel>
 
 @{
     ViewData["Title"] = "Explore All Events";
@@ -27,8 +27,8 @@
                 <tr>
                     <th scope="row"></th>
                     <td>@item.Name</td>
-                    <td>@item.Start</td>
-                    <td>@item.End</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>
                     <td>@item.Place</td>
                     <td> 
                         <div class="d-flex flex-row justify-content-around">
@@ -45,4 +45,4 @@
     </table>
 </div>
 
-*@
+

@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using EventmiWorkshop.Data.Models;
 using EventmiWorkshopMVC.Services.Data.Interfaces;
 using EventmiWorkshopMVC.Web.ViewModels.Event;
 
@@ -149,6 +150,82 @@ namespace EventmiWorkshopMVC.Web.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> All()
+        {
+            try
+            {
+                List<Event> allEvents = await this._eventService.GetAllEvents();
+
+                List<ViewEventFormModel> eventModels = allEvents.Select(e => new ViewEventFormModel
+                {
+                    Id = e.Id,
+                    Name = e.Name,
+                    StartDate = e.StartDate.ToString("MM/dd/yyyy"), 
+                    EndDate = e.EndDate.ToString("MM/dd/yyyy"),    
+                    Place = e.Place
+                }).ToList();
+
+                return View(eventModels);
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> All(List<ViewEventFormModel> models)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(models);
+            }
+
+            foreach (var model in models)
+            {
+
+                bool isStartDateValid = DateTime.TryParse(model.StartDate, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime startDateValid);
+                bool isEndDateValid = DateTime.TryParse(model.EndDate, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime endDateValid);
+
+                try
+                {
+                    await this._eventService.AddEvent(new AddEventFormModel
+                    {
+                        Name = model.Name,
+                        Place = model.Place,
+                        StartDate = model.StartDate,
+                        EndDate = model.EndDate
+                    }, startDateValid, endDateValid);
+
+                    return RedirectToAction("All");
+                }
+                catch (Exception e)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            try
+            {
+                var eventModel = await _eventService.GetEventDetails(id);
+                return View(eventModel);
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+
 
     }
 }

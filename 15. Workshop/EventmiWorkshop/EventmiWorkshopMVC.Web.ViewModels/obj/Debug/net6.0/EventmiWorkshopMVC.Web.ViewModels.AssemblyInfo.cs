@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventmiWorkshopMVC.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af267c9c1e36cd88e6fec88134a92f318dc4239")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b464b539e326c56b77a240adda2ad24d436c8e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventmiWorkshopMVC.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventmiWorkshopMVC.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

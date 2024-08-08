@@ -1,4 +1,4 @@
-﻿@* @model EventFormModel;
+﻿@model ViewEventFormModel;
 
 @{
     ViewBag.Title = "Event Details";
@@ -14,12 +14,12 @@
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <p class="form-label font-weight-bold">Start: @Model.Start</p>
-            <span asp-validation-for="Start" class="text-danger"></span>
+            <p class="form-label font-weight-bold">Start: @Model.StartDate</p>
+            <span asp-validation-for="StartDate" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <p asp-for="End" class="form-label font-weight-bold">End: @Model.End</p>
-            <span asp-validation-for="End" class="text-danger"></span>
+            <p asp-for="End" class="form-label font-weight-bold">End: @Model.EndDate</p>
+            <span asp-validation-for="EndDate" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <p asp-for="End" class="form-label font-weight-bold">Place: @Model.Place</p>
@@ -33,6 +33,6 @@
         </div>
     </div>
 </div>
-*@
+
 
 

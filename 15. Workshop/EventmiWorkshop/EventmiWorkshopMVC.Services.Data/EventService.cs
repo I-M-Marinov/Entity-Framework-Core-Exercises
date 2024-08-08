@@ -95,5 +95,45 @@ namespace EventmiWorkshopMVC.Services.Data
             this.dbContext.Events.Remove(eventToDelete);
             await dbContext.SaveChangesAsync();
         }
+
+        public async Task<List<Event>> GetAllEvents()
+        {
+            List<Event> allEvents = await this.dbContext.Events
+                .Where(e => e.IsActive)
+                .ToListAsync(); // get all the events that are active from the DB 
+
+            return allEvents;
+        }
+
+        public async Task<ViewEventFormModel> GetEventDetails(int id)
+        {
+            // Fetch the event entity from the database
+            var eventEntity = await dbContext.Events
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (eventEntity == null)
+            {
+                throw new InvalidOperationException("Event not found.");
+            }
+
+            if (!eventEntity.IsActive)
+            {
+                throw new InvalidOperationException("Event is not active.");
+            }
+
+            // Map the entity to the ViewEventFormModel
+            ViewEventFormModel eventToView = new ViewEventFormModel
+            {
+                Id = eventEntity.Id,
+                Name = eventEntity.Name,
+                StartDate = eventEntity.StartDate.ToString("MM/dd/yyyy"), // Convert DateTime to string
+                EndDate = eventEntity.EndDate.ToString("MM/dd/yyyy"),     // Convert DateTime to string
+                Place = eventEntity.Place,
+                IsActive = eventEntity.IsActive
+            };
+
+            return eventToView;
+        }
+
     }
 }

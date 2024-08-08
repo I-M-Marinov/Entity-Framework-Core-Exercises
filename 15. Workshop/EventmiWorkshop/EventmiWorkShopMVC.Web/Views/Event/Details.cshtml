@@ -28,7 +28,7 @@
         <div class="d-flex flex-row justify-content-around">
             <a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
             <form asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id" method="Post">
-                <input type="submit" value="Delete" class="btn btn-primary" />
+                <input type="submit" value="Delete" class="btn btn-danger" />
             </form>
         </div>
     </div>

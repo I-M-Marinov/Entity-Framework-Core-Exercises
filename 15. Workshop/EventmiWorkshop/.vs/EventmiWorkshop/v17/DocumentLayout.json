@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\event\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\event\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\event\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\event\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,8 +11,40 @@
       "RelativeMoniker": "D:0:0:{95C320FD-3F4D-4940-A858-259DD4E2FEE7}|EventmiWorkshopMVC.Services.Data\\EventmiWorkshopMVC.Services.Data.csproj|solutionrelative:eventmiworkshopmvc.services.data\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95C320FD-3F4D-4940-A858-259DD4E2FEE7}|EventmiWorkshopMVC.Services.Data\\EventmiWorkshopMVC.Services.Data.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.services.data\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95C320FD-3F4D-4940-A858-259DD4E2FEE7}|EventmiWorkshopMVC.Services.Data\\EventmiWorkshopMVC.Services.Data.csproj|solutionrelative:eventmiworkshopmvc.services.data\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web.viewmodels\\home\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|solutionrelative:eventmiworkshopmvc.web.viewmodels\\home\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web.viewmodels\\event\\editeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|solutionrelative:eventmiworkshopmvc.web.viewmodels\\event\\editeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web.viewmodels\\event\\addeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|solutionrelative:eventmiworkshopmvc.web.viewmodels\\event\\addeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|solutionrelative:eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\event\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|solutionrelative:eventmiworkshopmvc.web\\views\\event\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3656D618-7B60-40B8-94B6-25FEB8CD326C}|EventmiWorkShopMVC.Web\\EventmiWorkshopMVC.Web.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web\\views\\event\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,18 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshop.data.models\\eventmiworkshop.data.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|solutionrelative:eventmiworkshop.data.models\\eventmiworkshop.data.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6330C860-B4C7-48DB-8B88-33072ADBA872}|EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj|solutionrelative:eventmiworkshop.data.models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web.viewmodels\\event\\addeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|solutionrelative:eventmiworkshopmvc.web.viewmodels\\event\\addeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|d:\\lcfr\\developer\\entity framework core exercises\\15. workshop\\eventmiworkshop\\eventmiworkshopmvc.web.viewmodels\\event\\editeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03FB5A78-00CB-4525-9DF7-0C49693B3A9D}|EventmiWorkshopMVC.Web.ViewModels\\EventmiWorkshopMVC.Web.ViewModels.csproj|solutionrelative:eventmiworkshopmvc.web.viewmodels\\event\\editeventformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,33 +106,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EventmiWorkShopMVC.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:55:36.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\Home\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "EventmiWorkshopMVC.Web.ViewModels\\Home\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\Home\\ErrorViewModel.cs",
+              "RelativeToolTip": "EventmiWorkshopMVC.Web.ViewModels\\Home\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:54:08.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Program.cs",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Program.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Program.cs",
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T15:16:49.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\Delete.cshtml",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Event\\Delete.cshtml",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\Delete.cshtml",
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Event\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T14:56:33.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Add.cshtml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\Add.cshtml",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Event\\Add.cshtml",
@@ -132,12 +166,11 @@
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Event\\Add.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T14:55:58.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:55:58.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "All.cshtml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\All.cshtml",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Event\\All.cshtml",
@@ -145,12 +178,11 @@
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Event\\All.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T14:55:57.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:55:57.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\Details.cshtml",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Event\\Details.cshtml",
@@ -158,25 +190,24 @@
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Event\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T14:55:53.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:55:53.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Event.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshop.Data.Models\\Event.cs",
               "RelativeDocumentMoniker": "EventmiWorkshop.Data.Models\\Event.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshop.Data.Models\\Event.cs",
               "RelativeToolTip": "EventmiWorkshop.Data.Models\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T14:05:29.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "EventmiWorkshop.Data.Models.csproj",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj",
               "RelativeDocumentMoniker": "EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj",
@@ -184,12 +215,11 @@
               "RelativeToolTip": "EventmiWorkshop.Data.Models\\EventmiWorkshop.Data.Models.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-07T14:05:26.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:05:26.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Views\\Event\\Edit.cshtml",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Views\\Event\\Edit.cshtml",
@@ -197,38 +227,37 @@
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Views\\Event\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T13:10:38.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T13:10:38.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "IEventService.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\Interfaces\\IEventService.cs",
               "RelativeDocumentMoniker": "EventmiWorkshopMVC.Services.Data\\Interfaces\\IEventService.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\Interfaces\\IEventService.cs",
               "RelativeToolTip": "EventmiWorkshopMVC.Services.Data\\Interfaces\\IEventService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T12:56:13.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EventController.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "EventmiWorkShopMVC.Web\\Controllers\\EventController.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkShopMVC.Web\\Controllers\\EventController.cs",
               "RelativeToolTip": "EventmiWorkShopMVC.Web\\Controllers\\EventController.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAcwIQAAAA5AAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAA4wIwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T12:53:14.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "AddEventFormModel.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\Event\\AddEventFormModel.cs",
               "RelativeDocumentMoniker": "EventmiWorkshopMVC.Web.ViewModels\\Event\\AddEventFormModel.cs",
@@ -236,29 +265,31 @@
               "RelativeToolTip": "EventmiWorkshopMVC.Web.ViewModels\\Event\\AddEventFormModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T12:52:23.277Z"
+              "WhenOpened": "2024-08-07T12:52:23.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "EditEventFormModel.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\Event\\EditEventFormModel.cs",
               "RelativeDocumentMoniker": "EventmiWorkshopMVC.Web.ViewModels\\Event\\EditEventFormModel.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Web.ViewModels\\Event\\EditEventFormModel.cs",
               "RelativeToolTip": "EventmiWorkshopMVC.Web.ViewModels\\Event\\EditEventFormModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T12:52:11.132Z"
+              "WhenOpened": "2024-08-07T12:52:11.132Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EventService.cs",
               "DocumentMoniker": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\EventService.cs",
               "RelativeDocumentMoniker": "EventmiWorkshopMVC.Services.Data\\EventService.cs",
               "ToolTip": "D:\\Lcfr\\DEVELOPER\\Entity Framework Core Exercises\\15. Workshop\\EventmiWorkshop\\EventmiWorkshopMVC.Services.Data\\EventService.cs",
               "RelativeToolTip": "EventmiWorkshopMVC.Services.Data\\EventService.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAkwDkAAAAAAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAkwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T12:50:08.641Z",
               "EditorCaption": ""

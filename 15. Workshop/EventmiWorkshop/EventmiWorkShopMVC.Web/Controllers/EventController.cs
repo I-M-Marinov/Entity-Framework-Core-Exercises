@@ -136,16 +136,12 @@ namespace EventmiWorkshopMVC.Web.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Delete(int? id, EditEventFormModel model)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (!id.HasValue)
-            {
-                return RedirectToAction("Index", "Home");
-            }
 
             try
             {
-                await this._eventService.DeleteEventById(id.Value);
+                await this._eventService.DeleteEventById(id);
                 return RedirectToAction("Index", "Home");
             }
             catch (Exception e)

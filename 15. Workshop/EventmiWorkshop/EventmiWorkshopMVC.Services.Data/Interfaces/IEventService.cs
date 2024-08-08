@@ -15,5 +15,7 @@ namespace EventmiWorkshopMVC.Services.Data.Interfaces
         Task<EditEventFormModel> GetEventById(int id);
 
         Task EditEventById(int id, EditEventFormModel eventFormModel, DateTime startDate, DateTime endDate);
+            
+        Task DeleteEventById(int id);
     }
 }

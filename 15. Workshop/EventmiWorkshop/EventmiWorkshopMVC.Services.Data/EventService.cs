@@ -92,7 +92,8 @@ namespace EventmiWorkshopMVC.Services.Data
                 throw new InvalidOperationException();
             }
 
-            this.dbContext.Events.Remove(eventToDelete);
+            eventToDelete.IsActive = false; // SOFT DELETE 
+
             await dbContext.SaveChangesAsync();
         }
 

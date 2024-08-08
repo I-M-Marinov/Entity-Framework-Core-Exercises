@@ -210,7 +210,6 @@ namespace EventmiWorkshopMVC.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
         [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
@@ -224,8 +223,6 @@ namespace EventmiWorkshopMVC.Web.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
-
 
     }
 }

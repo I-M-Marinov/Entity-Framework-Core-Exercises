@@ -76,5 +76,24 @@ namespace EventmiWorkshopMVC.Services.Data
 
             await dbContext.SaveChangesAsync();
         }
+
+        public async Task DeleteEventById(int id)
+        {
+            Event eventToDelete = await this.dbContext.Events
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (eventToDelete == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            if (!eventToDelete.IsActive)
+            {
+                throw new InvalidOperationException();
+            }
+
+            this.dbContext.Events.Remove(eventToDelete);
+            await dbContext.SaveChangesAsync();
+        }
     }
 }

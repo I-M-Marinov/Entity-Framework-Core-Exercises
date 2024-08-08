@@ -134,5 +134,25 @@ namespace EventmiWorkshopMVC.Web.Controllers
             }
         }
 
+        [HttpPost]
+
+        public async Task<IActionResult> Delete(int? id, EditEventFormModel model)
+        {
+            if (!id.HasValue)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            try
+            {
+                await this._eventService.DeleteEventById(id.Value);
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
     }
 }
